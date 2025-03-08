@@ -26,16 +26,16 @@ export const characters = {
       sad: lustigSad
     }
   },
-  b: {
-    name: "B",
+  Kuro: {
+    name: "Kuro 愛",
     expressions: {
       neutral: lustigNeutral,
       happy: lustigHappy,
       sad: lustigSad
     }
   },
-  c: {
-    name: "C",
+  Damen: {
+    name: "Damen",
     expressions: {
       neutral: lustigNeutral,
       happy: lustigHappy,

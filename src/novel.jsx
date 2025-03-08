@@ -2,6 +2,7 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
+import { consoleLogger } from "@influxdata/influxdb-client";
 
 export default function VisualNovel() {
   const [currentScene, setCurrentScene] = useState("start");
@@ -10,15 +11,29 @@ export default function VisualNovel() {
   const [sceneCharacters, setSceneCharacters] = useState({}); 
 
   const [displayedText, setDisplayedText] = useState("");
-
-  const scene = scenes.find(s => s.id === currentScene);
-  const currentLine = scene.dialogue[dialogIndex];
+  const [skip, setSkip] = useState(false);
+  
+  let scene = scenes.find(s => s.id === currentScene);
+  let currentLine = scene.dialogue[dialogIndex];
+  // const [currLine, setCurrLine] = useState("");
 
   const [paths, setPaths] = useState({
     "a": false,
     "b": false,
     "c": false
   }); 
+
+  useEffect(() => {
+    console.log(currentScene)
+    
+    scene = scenes.find(s => s.id === currentScene);
+  }, [currentScene]);
+
+  useEffect(() => {
+    console.log(dialogIndex)
+    
+    currentLine = scene.dialogue[dialogIndex];
+  }, [dialogIndex]);
 
   useEffect(() => {    
     if (currentLine.characters) {
@@ -35,25 +50,55 @@ export default function VisualNovel() {
     setDisplayedText("");
 
     const interval = setInterval(() => {
-      if (index < text.length) {
+      if (skip) { 
+        console.log("SKIPPING");
+        clearInterval(interval);
+        setDisplayedText(text);
+      }
+      else if (index < text.length) {
         setDisplayedText(text.slice(0, index + 1));
         index++;
       } else {
         clearInterval(interval);
       }
-    }, 30);
+    }, 20);
     console.log(sceneCharacters);
   }, [dialogIndex, currentScene]);
-
-
+  
   const nextDialogue = () => {
+    if (displayedText != currentLine.text) {
+      setSkip(true);
+      return;
+    }
     console.log("CLICK")
+
 
     if (dialogIndex < scene.dialogue.length - 1) {
       setDialogIndex(dialogIndex + 1);
       console.log("NEXT")
-    } else {
-      setShowChoices(true);
+    } 
+    if (dialogIndex < scene.dialogue.length - 1) {
+      let nextLine = scene.dialogue[dialogIndex + 1];
+      console.log("NEXT LINE", nextLine);
+
+      if (nextLine.jump) {
+        console.log("JOMPING", nextLine.jump);
+        setCurrentScene(nextLine.jump);
+        console.log("what")
+        setDialogIndex(nextLine.index? nextLine.index: 0);
+        console.log("JUMPING");
+      }
+  
+    }
+
+    if (currentLine.jump) {
+      console.log("JOMPING", currentLine.jump);
+      setCurrentScene(currentLine.jump);
+      console.log("what")
+
+      setDialogIndex(currentLine.index? currentLine.index - 1: 0);
+      console.log("JUMPING");
+      nextDialogue();
     }
 
     // adding the characters to the scene
@@ -65,6 +110,7 @@ export default function VisualNovel() {
       console.log("CHOICES");
       setShowChoices(true);
     }
+
     console.log("LIIINE", currentLine);
 
   };
@@ -85,7 +131,7 @@ export default function VisualNovel() {
   };
 
   return (
-    <div className="game-container">
+    <div className="game-container" >
       <img className="background" src={scene.background} />
 
       {/* character image */}
@@ -125,7 +171,7 @@ export default function VisualNovel() {
           {currentLine.choices.map(choice => (
             <button key={choice.text} onClick={() => {
               nextScene(choice);
-              setDialogIndex(0);
+              setDialogIndex(choice.index? choice.index : 0);
               setSceneCharacters({});
               setShowChoices(false);
             }}>
