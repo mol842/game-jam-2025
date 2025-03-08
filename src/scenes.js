@@ -5,7 +5,7 @@ import dinos from './assets/dinos.png'
 import rose from './assets/rose.png'
 
 
-import coffeeShop from './assets/flinders.png'
+import coffeeShop from './assets/coffee-shop.png'
 import jewellers from './assets/flinders.png'
 import roseGarden from './assets/flinders.png'
 import supermarket from './assets/flinders.png'
@@ -15,17 +15,31 @@ export const scenes = [
     id: "start",
     background: coffeeShop,
     dialogue: [
+      { choices: [
+          { text: "START", next: "coffeeshop-start"},
+        ],
+        characters: { center: { character: characters.menu, expression: "menu" } }, 
+      }
+    ],
+  },
+
+
+
+  {
+    id: "coffeeshop-start",
+    background: coffeeShop,
+    dialogue: [
       { text: "welcome to the space coffee shop" },
 
-      { speaker: characters.a, 
-        characters: { left: { character: characters.a, expression: "neutral" }, center: { character: characters.b, expression: "neutral" }, right: {character: characters.c, expression: "neutral"} }, 
+      { speaker: characters.Oscar, 
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, center: { character: characters.b, expression: "neutral" }, right: {character: characters.c, expression: "neutral"} }, 
         text: "we r at the coffee shop" },
       { choices: [
           { text: "go to the jewellers with a", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
           { text: "go to the rose garden with b",  path: "b", next: "garden-start", else : "garden-repeat" },
           { text: "go to the supermarket with c",  path: "c", next: "supermarket-start", else: "supermarket-repeat"}
         ],
-        characters: { left: { character: characters.a, expression: "neutral" }, center: { character: characters.b, expression: "neutral" }, right: {character: characters.c, expression: "neutral"} }, 
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, center: { character: characters.b, expression: "neutral" }, right: {character: characters.c, expression: "neutral"} }, 
       }
     ],
   },

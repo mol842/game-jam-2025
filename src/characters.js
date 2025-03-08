@@ -3,6 +3,13 @@ import lustigHappy from "./assets/lustig-happy.png";
 import lustigSad from "./assets/lustig-sad.png";
 
 export const characters = {
+  menu: {
+    name: "Menu",
+    expressions: {
+      menu: lustigNeutral,
+    }
+  },
+
   lustig: {
     name: "Lustig",
     expressions: {
@@ -11,8 +18,8 @@ export const characters = {
       sad: lustigSad
     }
   },
-  a: {
-    name: "A",
+  Oscar: {
+    name: "Oscar",
     expressions: {
       neutral: lustigNeutral,
       happy: lustigHappy,
