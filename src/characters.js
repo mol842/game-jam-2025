@@ -10,5 +10,29 @@ export const characters = {
       happy: lustigHappy,
       sad: lustigSad
     }
-  }
+  },
+  a: {
+    name: "A",
+    expressions: {
+      neutral: lustigNeutral,
+      happy: lustigHappy,
+      sad: lustigSad
+    }
+  },
+  b: {
+    name: "B",
+    expressions: {
+      neutral: lustigNeutral,
+      happy: lustigHappy,
+      sad: lustigSad
+    }
+  },
+  c: {
+    name: "C",
+    expressions: {
+      neutral: lustigNeutral,
+      happy: lustigHappy,
+      sad: lustigSad
+    }
+  },  
 };

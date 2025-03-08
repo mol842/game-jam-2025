@@ -39,9 +39,9 @@
 }
 
 
-.character-container.right { left: 5%; }
-.character-container.left { left: 5%; }
-.character-container.center { right: 5%; }
+.character-container-right { margin-left: 60%; }
+.character-container-left { margin-right: 100%; }
+.character-container-center { margin-left: 1%; }
 
 
 .dialog-box {

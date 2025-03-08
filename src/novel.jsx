@@ -14,9 +14,14 @@ export default function VisualNovel() {
   const scene = scenes.find(s => s.id === currentScene);
   const currentLine = scene.dialogue[dialogIndex];
 
+  const [paths, setPaths] = useState({
+    "a": false,
+    "b": false,
+    "c": false
+  }); 
+
   useEffect(() => {    
     if (currentLine.characters) {
-      console.log("SETTING CHARACTYERS")
       setSceneCharacters(currentLine.characters);
     }
     // dpnt show slowly if its a choice box
@@ -64,6 +69,21 @@ export default function VisualNovel() {
 
   };
 
+  const nextScene = (choice) => {
+    console.log(paths);
+    if (!choice.path) {
+      setCurrentScene(choice.next);
+    }
+    else if (paths[choice.path] === false) {
+      setCurrentScene(choice.next);
+      console.log("SETTING PATH", choice.path);
+      setPaths({...paths, [choice.path]: true});
+    }
+    else {
+      setCurrentScene(choice.else);
+    }
+  };
+
   return (
     <div className="game-container">
       <img className="background" src={scene.background} />
@@ -78,8 +98,8 @@ export default function VisualNovel() {
       )} */}
 
       {currentLine.characters && Object.entries(currentLine.characters).map(([position, details]) => (
-        console.log(position, details),
-        <div key={details.name} className={`character-container ${position}`}>
+        // console.log(position, details),
+        <div key={details.name} className={`character-container-${position}`}>
           <img className="character" src={details.character.expressions[details.expression]}/>
         </div>
       ))}
@@ -104,7 +124,7 @@ export default function VisualNovel() {
         <div className="choices-box">
           {currentLine.choices.map(choice => (
             <button key={choice.text} onClick={() => {
-              setCurrentScene(choice.next);
+              nextScene(choice);
               setDialogIndex(0);
               setSceneCharacters({});
               setShowChoices(false);
