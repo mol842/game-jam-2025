@@ -33,9 +33,17 @@ export const scenes = [
         accessoryOptions: [
           {position: "hat", option: characters.Oscar.accessories[0]},
           {position: "hat", option: characters.Oscar.accessories[1]},
-          {position: "hat", option: characters.Oscar.accessories[2]}
+          {position: "hat", option: characters.Oscar.accessories[2]},
         ]
       },
+      { text: `earrings time? earrings time?`, 
+        accessoryOptions: [
+          {position: "earrings", option: characters.Oscar.accessories[3]},
+          {position: "earrings", option: characters.Oscar.accessories[4]},
+          {position: "earrings", option: characters.Oscar.accessories[5]},
+        ]
+      },
+
 
       { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
       { text: `lets try.... $HELP`, replace: true },

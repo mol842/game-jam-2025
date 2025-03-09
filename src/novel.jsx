@@ -2,7 +2,7 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
-import rose from './assets/oscar/hat1.png'
+import earrings from './assets/oscar/earrings1.png'
 
 
 export default function VisualNovel() {
@@ -237,7 +237,7 @@ export default function VisualNovel() {
 
               {currentLine.accessoryOptions.map(choice => (
                 <img className="accessory-choice" src={choice.option} key={choice.option} onClick={() => {
-                  addAccessory({type: "hat", img: choice.option});
+                  addAccessory({type: choice.position, img: choice.option});
                   nextDialogue();
                 }}>
                   {choice.text}

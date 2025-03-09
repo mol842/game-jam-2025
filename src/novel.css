@@ -136,7 +136,8 @@ img.accessory-hat-center {
 
 img.accessory-earrings-left { 
   margin-bottom: 10%;
-  bottom: 30%;
+  bottom: 13%;
+  margin-left: 1%;
 
   margin-right: 100%;
   z-index: 10;
@@ -145,12 +146,39 @@ img.accessory-earrings-left {
 }
 img.accessory-earrings-right { 
   margin-bottom: 10%;
+  bottom: 13%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+  margin-left:1%;
+}
+img.accessory-earrings-center { 
+  margin-bottom: 10%;
+  bottom: 13%;
+  margin-left: 1%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+
+
+img.accessory-necklace-left { 
+  margin-bottom: 10%;
+  bottom: 30%;
+
+  margin-right: 100%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+img.accessory-necklace-right { 
+  margin-bottom: 10%;
   bottom: 30%;
   z-index: 10;
   position: fixed;
   width: 20%;
 }
-img.accessory-earrings-center { 
+img.accessory-necklace-center { 
   margin-bottom: 10%;
   bottom: 30%;
   margin-left: 1%;
@@ -158,6 +186,7 @@ img.accessory-earrings-center {
   position: fixed;
   width: 20%;
 }
+
 
 
 
