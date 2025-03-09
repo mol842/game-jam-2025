@@ -75,3 +75,90 @@
   background-color: pink;
 
 }
+
+.accessory-container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.accessory-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+img.accessory-choice {
+  width: 20%;
+  height: 20%;
+}
+
+
+img.accessory-hat { 
+  bottom: 30%;
+  top: 30%;
+  left: 35%;  
+  z-index: 10;
+
+  position: relative;
+  width: 30%;
+  
+}
+
+img.accessory-hat-left { 
+  margin-bottom: 10%;
+  bottom: 30%;
+
+  margin-right: 100%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+img.accessory-hat-right { 
+  margin-bottom: 10%;
+  bottom: 30%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+img.accessory-hat-center { 
+  margin-bottom: 10%;
+  bottom: 30%;
+  margin-left: 1%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+
+
+
+img.accessory-earrings-left { 
+  margin-bottom: 10%;
+  bottom: 30%;
+
+  margin-right: 100%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+img.accessory-earrings-right { 
+  margin-bottom: 10%;
+  bottom: 30%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+img.accessory-earrings-center { 
+  margin-bottom: 10%;
+  bottom: 30%;
+  margin-left: 1%;
+  z-index: 10;
+  position: fixed;
+  width: 20%;
+}
+
+
+
+

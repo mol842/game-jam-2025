@@ -6,6 +6,13 @@ import oscarNeutral from "./assets/oscar/Oscar.png";
 import kuroNeutral from "./assets/kuro/Kuro.png";
 import damenNeutral from "./assets/damen/Damen.png";
 
+import hat1 from "./assets/oscar/hat1.png";
+import hat2 from "./assets/oscar/hat2.png";
+import hat3 from "./assets/oscar/hat3.png";
+// import necklace1 from "./assets/oscar/necklace1.png";
+// import necklace2 from "./assets/oscar/necklace2.png";
+// import necklace3 from "./assets/oscar/necklace3.png";
+
 export const characters = {
   menu: {
     name: "Menu",
@@ -28,7 +35,8 @@ export const characters = {
       neutral: oscarNeutral,
       happy: oscarNeutral,
       sad: oscarNeutral
-    }
+    },
+    accessories: [hat1, hat2, hat3 ]//, necklace1, necklace2, necklace3, earrings1, earrings2, earrings3]
   },
   Kuro: {
     name: "Kuro 愛",

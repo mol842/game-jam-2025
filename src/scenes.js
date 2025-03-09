@@ -26,9 +26,17 @@ export const scenes = [
     background: coffeeShop,
     dialogue: [
       { text: `Welcome to the story! $SMILE`, replace: true,
-        characters: { center: { character: characters.menu, expression: "menu" } }, 
+        characters: { center: { character: characters.menu, expression: "menu" }, right : { character: characters.Oscar, expression: "neutral" }},
 
       },
+      { text: `hat time? hat time?`, 
+        accessoryOptions: [
+          {position: "hat", option: characters.Oscar.accessories[0]},
+          {position: "hat", option: characters.Oscar.accessories[1]},
+          {position: "hat", option: characters.Oscar.accessories[2]}
+        ]
+      },
+
       { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
       { text: `lets try.... $HELP`, replace: true },
 

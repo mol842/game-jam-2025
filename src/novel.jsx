@@ -2,7 +2,8 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
-import { consoleLogger } from "@influxdata/influxdb-client";
+import rose from './assets/oscar/hat1.png'
+
 
 export default function VisualNovel() {
   const [currentScene, setCurrentScene] = useState("start");
@@ -26,6 +27,13 @@ export default function VisualNovel() {
     "c": false
   }); 
   const [replacements, setReplacements] = useState([{key:"$SMILE", value: ":))"}]);
+
+  const [accessoriesOscar, setAccessoriesOscar] = useState([]);
+
+  const addAccessory = (accessory) => {
+    setAccessoriesOscar([...accessoriesOscar, accessory]);
+  };
+
 
   useEffect(() => {
     console.log(currentScene)
@@ -154,6 +162,9 @@ export default function VisualNovel() {
   // wow... that was a sentence.
   const addReplacement = () => {
     const val = document.getElementById("replacementValue").value;
+    if (val === ""){
+      return;
+    };
     console.log(textInput, val);
     setReplacements([...replacements, {key: textInput, value: val}]);
 
@@ -168,10 +179,23 @@ export default function VisualNovel() {
       {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
         // console.log(position, details),
+        <>
         <div key={details.name} className={`character-container-${position}`}>
+          { 
+            (details.character.name === "Oscar") && (
+              accessoriesOscar.map((accessory) => (
+                console.log("ACCESSORY", accessory),
+                <img className={`accessory-${accessory.type}-${position}`}
+                src={accessory.img} />
+            )))
+            }
+
           <img className="character" src={details.character.expressions[details.expression]}/>
         </div>
+
+        </>
       ))}
+
 
       {/* object above */}
         {currentLine.item && (
@@ -180,7 +204,7 @@ export default function VisualNovel() {
 
 
       {/* dialog */}
-      {currentLine.text && !textInput && (
+      {currentLine.text && !textInput && !currentLine.accessoryOptions && (
         <div className="dialog-box" onClick={nextDialogue}>
           <strong>{currentLine.speaker ? currentLine.speaker.name : ""}</strong>
           <p>{displayedText}</p>
@@ -203,6 +227,29 @@ export default function VisualNovel() {
           ))}
         </div>
       )}
+      {
+        currentLine.accessoryOptions && (
+          <>
+
+          <div className="accessory-container">
+          <strong>{currentLine?.text? currentLine.text : "choose an accessory"}</strong>
+            <div className="accessory-grid">
+
+              {currentLine.accessoryOptions.map(choice => (
+                <img className="accessory-choice" src={choice.option} key={choice.option} onClick={() => {
+                  addAccessory({type: "hat", img: choice.option});
+                  nextDialogue();
+                }}>
+                  {choice.text}
+                </img>
+              ))}
+            </div>
+        </div>
+        </>
+
+        )
+
+      }
       
       {/* text input */}
       {textInput && (
