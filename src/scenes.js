@@ -7,12 +7,31 @@ import jewellers from './assets/flinders.png'
 import roseGarden from './assets/flinders.png'
 import supermarket from './assets/flinders.png'
 
+// replace
+/* OPTIONS
+text: "text"
+characters: [{position: "position", character: "character object", expression: "expression"}]
+speaker: "character object"
+item: "item.png"
+choice: [{text: "text", next: "scene id"}]
+jump: "scene id", index: line number within jump scene, path: "path id if true then jump to else", else: "scene id"
+replace: bool, replace all in text with replacement dict values 
+textInput:{"key to replace when submitted"}
+*/
+
+
 export const scenes = [
   {
     id: "start",
     background: coffeeShop,
     dialogue: [
-      { text: `Welcome to the story! $SMILE`, replace: true },
+      { text: `Welcome to the story! $SMILE`, replace: true,
+        characters: { center: { character: characters.menu, expression: "menu" } }, 
+
+      },
+      { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
+      { text: `lets try.... $HELP`, replace: true },
+
       { choices: [
           { text: "START", next: "coffeeshop-start"},
         ],

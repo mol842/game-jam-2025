@@ -25,9 +25,7 @@ export default function VisualNovel() {
     "b": false,
     "c": false
   }); 
-
-  const replacements = new Map();
-  replacements.set("$SMILE", ":))");
+  const [replacements, setReplacements] = useState([{key:"$SMILE", value: ":))"}]);
 
   useEffect(() => {
     console.log(currentScene)
@@ -47,7 +45,7 @@ export default function VisualNovel() {
     }
 
     if (currentLine.textInput) {
-      setTextInput(currentLine.textInput.key);
+      setTextInput(currentLine.textInput);
     }
 
     // dpnt show slowly if its a choice box
@@ -60,9 +58,9 @@ export default function VisualNovel() {
 
     // replace text 
     if (currentLine.replace) {
-      replacements.forEach((value, key) => {
-        console.log(key, value);
-        text = text.replace(key, value);
+      replacements.forEach((x) => {
+        console.log(x.key, x.value);
+        text = text.replace(x.key, x.value);
       } 
     );
 
@@ -88,10 +86,10 @@ export default function VisualNovel() {
   
   const nextDialogue = () => {
     console.log("CHARCATERS:" , sceneCharacters);
-    if (displayedText != currentLine.text) {
-      setSkip(true);
-      return;
-    }
+    // if (displayedText != currentLine.text) {
+    //   setSkip(true);
+    //   return;
+    // }
     console.log("CLICK")
 
 
@@ -152,25 +150,22 @@ export default function VisualNovel() {
     }
   };
 
+  // adds text to be replaced when replace is true
+  // wow... that was a sentence.
   const addReplacement = () => {
     const val = document.getElementById("replacementValue").value;
-    replacements.set(textInput, val);
+    console.log(textInput, val);
+    setReplacements([...replacements, {key: textInput, value: val}]);
+
     setTextInput("");
     console.log(replacements);
+    nextDialogue();
   }
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
 
-      {/* character image */}
-      {/* {currentLine.character && (
-        <img
-          className="character center"
-          src={currentLine.character.expressions[currentLine.expression]}
-          alt={currentLine.character.name}
-        />
-      )} */}
-
+      {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
         // console.log(position, details),
         <div key={details.name} className={`character-container-${position}`}>
@@ -185,7 +180,7 @@ export default function VisualNovel() {
 
 
       {/* dialog */}
-      {currentLine.text && (
+      {currentLine.text && !textInput && (
         <div className="dialog-box" onClick={nextDialogue}>
           <strong>{currentLine.speaker ? currentLine.speaker.name : ""}</strong>
           <p>{displayedText}</p>
@@ -212,8 +207,12 @@ export default function VisualNovel() {
       {/* text input */}
       {textInput && (
         <div className="choices-box">
+          {currentLine.text && 
+            <p>{currentLine.text}</p>
+          }
+          <strong>Enter text:</strong>
           <input type="text" id="replacementValue" />
-          <button onClick={addReplacement()}>Submit</button>
+          <button onClick={addReplacement}>Submit</button>
         </div>
       )}
       
