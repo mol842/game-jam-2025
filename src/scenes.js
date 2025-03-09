@@ -337,7 +337,7 @@ export const scenes = [
         text: "seeing as you obviously don’t care for subtly or easing anyone into anything, let’s just say everything out right. Hmm?",
 
       },
-      { jump: "coffeeshop-roses", index: 4 }
+      { jump: "coffeeshop-roses"}
     ]
   },
   { id: "coffeeshop-introductions",
@@ -379,7 +379,7 @@ export const scenes = [
         text: "We segway into roses.",
 
       },
-      { jump: "coffeeshop-roses", index: 4 }
+      { jump: "coffeeshop-roses"}
     ]
 
   },
@@ -443,13 +443,130 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "Let’s talk about the roses.",
+      },
+      { jump: "coffeeshop-roses"}
+    ]
+  },
+  
+  { id: "coffeeshop-roses",
+    dialogue: [
+      { choices: [ 
+        {text: "Roses? Cliche, but okay. ", next: "coffeeshop-roses-cliche"},
+        {text: "Is this some stupid Bachelor inspired romance bit?", next: "coffeeshop-roses-bachelor"},
+        {text: "I don’t want to talk about roses, especially not with those segways. ", next: "coffeeshop-roses-segways"}
+        ]
+      },
+    ]
+  },
 
-      }
+  { id: "coffeeshop-roses-cliche",
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "It’s a dating sim, okay, what were you expecting?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "They do typify romance, but it does make for easy symbology. Like, this is practically the only thing the devs agreed on, so it’s best not to rock the boat at this point.",
+      },
+      { speaker: characters.Kuro,
+        text: "They’re both so stubborn, their arguments over every tiny detail have literally ruined everything, the roses are, like, the holy ground this place is built on.",
+      },
+      { speaker: characters.Oscar,
+        text: "Exactly, so I’d advise you to take them seriously.",
+      },
+      { speaker: characters.Oscar,
+        text: "... Also, you have to get a rose to finish the game. You need one to ask one of us to the Space Ball (working title).",
+      },
+      { jump: "coffeeshop-rose-locations"}
+    ]
+  },
+  { id: "coffeeshop-roses-bachelor",
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "... no?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Kuro,
+        text: " I'm checking the notes, and I don't think they thought of the comparison. But it’s also not like they noted everything down. ",
+      },
+      { speaker: characters.Damen,
+        text: "Roses are a pretty clear romantic symbol, it’s not like its exclusively a Bachelor or Bachelorette thing. So, I don’t think so?",
+      },
+      { speaker: characters.Kuro,
+        text: "It’s definitely convergent evolution of some sort. Romantic convergent evolution. ",
+      },
+      { speaker: characters.Kuro,
+        text: "...",
+      },
+      { speaker: characters.Kuro,
+        text: "We’re denying it too much aren’t we?",
+      },
+      { speaker: characters.Damen,
+        text: "Whether our life is more of a contrived and badly written lie than we already knew is irrelevant. ",
+      },
+      { speaker: characters.Oscar,
+        text: "What is relevant is that you need to have a rose so you can ask one of us to the Space Ball (working title) to finish the game. ",
+      },
+      { jump: "coffeeshop-rose-locations"}
+    ]
+  },
+  { id: "coffeeshop-roses-segways",
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "You sure are... vocal... in your irritation.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Oscar,
+        text: "How... delightfully straight forwards of you.",
+      },
+      { speaker: characters.Kuro,
+        text: "Wow, that looked like it hurt you to say. ",
+      },
+      { speaker: characters.Oscar,
+        text: "I just think that maybe we could all get through this much easier if a single one of you co-operated, LITERALLY EVER..",
+      },
+      { speaker: characters.Damen,
+        text: "Why are you yelling at me? I never did anything.",
+      },
+      { speaker: characters.Kuro,
+        text: "Yeah, we didn’t– wait, you meant both of us, right?",
+      },
+      { speaker: characters.Damen,
+        text: "You are a naturally antagonistic person, Kuro. ",
+      },
+      { speaker: characters.Kuro,
+        text: "I… is this what betrayal feels like? ",
+      },
+      { speaker: characters.Damen,
+        text: "Betrayal is getting all your expressions deleted in petty vengeance because the devs got into a fight over clear character building vs plot progression. ",
+      },
+      { speaker: characters.Damen,
+        text: "You can’t tell, but I am morose right now.",
+      },
+      { speaker: characters.Kuro,
+        text: "... um… there there?",
+      },
+      { speaker: characters.Oscar,
+        text: "Well, obviously the character building is winning because the plot is going nowhere, very slowly. ",
+      },
+      { speaker: characters.Oscar,
+        text: "Long story short, you need to get a rose and ask one of us to the Space Ball (working title) to finish the game.",
+      },
+      { jump: "coffeeshop-rose-locations"}
     ]
   },
   
 
-  
+
   {
     id: "jewellers-start",
     background: jewellers,
