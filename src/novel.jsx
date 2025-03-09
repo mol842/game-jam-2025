@@ -13,6 +13,9 @@ export default function VisualNovel() {
   const [displayedText, setDisplayedText] = useState("");
   const [skip, setSkip] = useState(false);
   
+
+  const [textInput, setTextInput] = useState("");
+
   let scene = scenes.find(s => s.id === currentScene);
   let currentLine = scene.dialogue[dialogIndex];
   // const [currLine, setCurrLine] = useState("");
@@ -22,6 +25,9 @@ export default function VisualNovel() {
     "b": false,
     "c": false
   }); 
+
+  const replacements = new Map();
+  replacements.set("$SMILE", ":))");
 
   useEffect(() => {
     console.log(currentScene)
@@ -39,6 +45,11 @@ export default function VisualNovel() {
     if (currentLine.characters) {
       setSceneCharacters(currentLine.characters);
     }
+
+    if (currentLine.textInput) {
+      setTextInput(currentLine.textInput.key);
+    }
+
     // dpnt show slowly if its a choice box
     if (currentLine.choices) {
       setShowChoices(true);
@@ -46,6 +57,16 @@ export default function VisualNovel() {
     }
     // making the text display one letter at a time like its being typed
     let text = currentLine.text || "";
+
+    // replace text 
+    if (currentLine.replace) {
+      replacements.forEach((value, key) => {
+        console.log(key, value);
+        text = text.replace(key, value);
+      } 
+    );
+
+    }
     let index = 0;
     setDisplayedText("");
 
@@ -131,6 +152,12 @@ export default function VisualNovel() {
     }
   };
 
+  const addReplacement = () => {
+    const val = document.getElementById("replacementValue").value;
+    replacements.set(textInput, val);
+    setTextInput("");
+    console.log(replacements);
+  }
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
@@ -181,6 +208,15 @@ export default function VisualNovel() {
           ))}
         </div>
       )}
+      
+      {/* text input */}
+      {textInput && (
+        <div className="choices-box">
+          <input type="text" id="replacementValue" />
+          <button onClick={addReplacement()}>Submit</button>
+        </div>
+      )}
+      
 
     </div>
   );

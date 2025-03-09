@@ -12,6 +12,7 @@ export const scenes = [
     id: "start",
     background: coffeeShop,
     dialogue: [
+      { text: `Welcome to the story! $SMILE`, replace: true },
       { choices: [
           { text: "START", next: "coffeeshop-start"},
         ],
