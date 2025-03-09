@@ -66,6 +66,7 @@ export default function VisualNovel() {
   }, [dialogIndex, currentScene]);
   
   const nextDialogue = () => {
+    console.log("CHARCATERS:" , sceneCharacters);
     if (displayedText != currentLine.text) {
       setSkip(true);
       return;
@@ -143,7 +144,7 @@ export default function VisualNovel() {
         />
       )} */}
 
-      {currentLine.characters && Object.entries(currentLine.characters).map(([position, details]) => (
+      {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
         // console.log(position, details),
         <div key={details.name} className={`character-container-${position}`}>
           <img className="character" src={details.character.expressions[details.expression]}/>
@@ -172,7 +173,7 @@ export default function VisualNovel() {
             <button key={choice.text} onClick={() => {
               nextScene(choice);
               setDialogIndex(choice.index? choice.index : 0);
-              setSceneCharacters({});
+              // setSceneCharacters({});
               setShowChoices(false);
             }}>
               {choice.text}

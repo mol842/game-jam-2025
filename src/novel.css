@@ -33,13 +33,14 @@
 
 .character {
   position: absolute;
-  bottom: 30%;
-  width: 25%;
+  bottom: 0%;
+  /* width: 25%; */
+  height: 70%;
   transition: transform 0.3s;
 }
 
 
-.character-container-right { margin-left: 60%; }
+.character-container-right { margin-left: 50%; }
 .character-container-left { margin-right: 100%; }
 .character-container-center { margin-left: 1%; }
 

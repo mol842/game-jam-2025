@@ -33,14 +33,14 @@ export const scenes = [
           { text: "… New in space?", next: "coffeeshop-new"},
           { text: "Isn’t your name meant to be blank until you introduce yourself?", next: "coffeeshop-blank"}
         ],
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+        // characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { choices: [
         { text: "Space Ball (working title)? Sounds interesting!", next: "coffeeshop-interesting"},
         { text: "Space Ball (working tile)?... you’re kidding me? (working title)?", next: "coffeeshop-kidding"},
         { text: "No need to explain, it sounds kind of dumb. Can you explain the windows instead?", next: "coffeeshop-windows"}
       ],
-      characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      // characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { choices: [
         { text: "A date? And so soon? But I barely know anyone?", next: "coffeeshop-date-1" },
