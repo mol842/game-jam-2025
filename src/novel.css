@@ -15,7 +15,7 @@
   bottom: 0;
   left: 0;
 
-  object-fit: cover;
+  object-fit: fill;
   position: fixed;
 }
 
@@ -45,6 +45,14 @@
 .character-container-right { margin-left: 50%; }
 .character-container-left { margin-right: 100%; }
 .character-container-center { margin-left: 1%; }
+
+.character-container-logo { 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* bottom: 50%;
+  left: 50%; */
+}
 
 
 .dialog-box {

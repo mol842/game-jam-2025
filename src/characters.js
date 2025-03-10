@@ -24,11 +24,13 @@ import necklace1 from "./assets/oscar/necklace1.png";
 import necklace2 from "./assets/oscar/necklace2.png";
 import necklace3 from "./assets/oscar/necklace3.png";
 
+import logo from "./assets/logo.png";
+
 export const characters = {
   menu: {
     name: "Menu",
     expressions: {
-      menu: lustigNeutral,
+      menu: logo,
     }
   },
 

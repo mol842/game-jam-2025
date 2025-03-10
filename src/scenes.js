@@ -7,8 +7,8 @@ import jewellers from './assets/space-jeweller.png'
 import jewellersSparkly from './assets/space-jeweller-sparkly.png'
 
 import roseGarden from './assets/flinders.png'
-import supermarket from './assets/flinders.png'
-import { Dialog } from "@mantine/core";
+import supermarket from './assets/space-market.png'
+import menuBackground from './assets/menu-background.png'
 
 // replace
 /* OPTIONS
@@ -26,7 +26,7 @@ textInput:{"key to replace when submitted"}
 export const scenes = [
   {
     id: "start",
-    background: coffeeShop,
+    background: menuBackground,
     dialogue: [      
       // { text: `Welcome to the story! $SMILE`, replace: true,
       //   characters: { center: { character: characters.menu, expression: "menu" }, right : { character: characters.Oscar, expression: "neutral" }},
@@ -40,7 +40,7 @@ export const scenes = [
         { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
         { text: "Skip to the ending", path: "d", next: "coffeeshop-start", else: "start"}
       ],
-      characters: { center: { character: characters.menu, expression: "menu" } },
+      // characters: { logo: { character: characters.menu, expression: "menu" } },
     },
     //   { text: `hat time? hat time?`, 
     //     accessoryOptions: [
@@ -1943,7 +1943,9 @@ export const scenes = [
     id: "supermarket-start",
     background: supermarket,
     dialogue: [
-      { text: "You stand at the entrance of the Space Market" },
+      { text: "You stand at the entrance of the Space Market",
+        characters: {}
+      },
       { text: "It’s multiple stalls of pretty trinkets and delicious smelling food catch your eye as you search for Kuro through the crowd." },
       { speaker: characters.Kuro,
         text: "Ah yes, look at me, lost in this... \"crowd\"....",
@@ -1960,7 +1962,7 @@ export const scenes = [
       },
       { choices: [
         { text: "How, though? This isn’t the most interactive of games.", next: "supermarket-how" },
-        {text: "Kuro? Was that you? Truely, I couldn’t spot you!", next: "supermarket-spot" },
+        {text: "Kuro? Was that you? Truly, I couldn’t spot you!", next: "supermarket-spot" },
         {text: "Shouldn’t you know where it is? This is your date location after all.", next: "supermarket-where" }
       ]}
     ]
@@ -2336,9 +2338,10 @@ export const scenes = [
       { speaker: characters.Kuro,
         text: "Really, there is no way to lose. ",
       },
-      { text: "Venture into the Space Market?", 
-        choices: [{ text: "Yes", next: "supermarket-maze" },
-          { text: "No", next: "supermarket-no-maze" }
+      { 
+        choices: [
+          { text: "Venture into the Space Market", next: "supermarket-maze" },
+          { text: "No Thanks.", next: "supermarket-no-maze" }
         ]
     }
     ]
@@ -2371,9 +2374,10 @@ export const scenes = [
       { speaker: characters.Kuro,
         text: "So, maze? ",
       },
-      { choices: [{ text: "Yes", next: "supermarket-maze" },
-        { text: "No", next: "supermarket-no-maze" }
-      ]}
+      { choices: [
+        { text: "Venture into the Space Market", next: "supermarket-maze" },
+        { text: "No Thanks.", next: "supermarket-no-maze" }
+    ]}
     ]
   },
 
