@@ -10,9 +10,9 @@ import oscarSad from "./assets/oscar/OscarSad.png";
 import kuroSad from "./assets/kuro/KuroSad.png";
 import damenSad from "./assets/damen/DamenSad.png";
 
-import oscarAngry from "./assets/oscar/OscarAngry.png";
-import kuroAngry from "./assets/kuro/KuroAngry.png";
-import damenAngry from "./assets/damen/DamenAngry.png";
+import oscarAnnoyed from "./assets/oscar/OscarAngry.png";
+import kuroAnnoyed from "./assets/kuro/KuroAngry.png";
+import damenAnnoyed from "./assets/damen/DamenAngry.png";
 
 import hat1 from "./assets/oscar/hat1.png";
 import hat2 from "./assets/oscar/hat2.png";
@@ -48,7 +48,7 @@ export const characters = {
       neutral: oscarNeutral,
       happy: oscarNeutral,
       sad: oscarSad,
-      angry: oscarAngry
+      annoyed: oscarAnnoyed
     },
     accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ],
     colour: "rgba(9, 66, 10, 0.9)"
@@ -59,7 +59,7 @@ export const characters = {
       neutral: kuroNeutral,
       happy: kuroNeutral,
       sad: kuroSad,
-      angry: kuroAngry
+      annoyed: kuroAnnoyed
     },
     colour: "rgba(7, 24, 74, 0.9)"
   },
@@ -69,7 +69,7 @@ export const characters = {
       neutral: damenNeutral,
       happy: damenNeutral,
       sad: damenSad,
-      angry: damenAngry
+      annoyed: damenAnnoyed
     },
     colour: "rgba(72, 8, 8, 0.9)"
 

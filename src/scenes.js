@@ -6,7 +6,7 @@ import coffeeShop from './assets/coffee-shop.png'
 import jewellers from './assets/space-jeweller.png'
 import jewellersSparkly from './assets/space-jeweller-sparkly.png'
 
-import roseGarden from './assets/flinders.png'
+import roseGarden from './assets/space-rose-garden.jpg'
 import supermarket from './assets/space-market.png'
 import menuBackground from './assets/menu-background.png'
 import flowerGrove from './assets/flower-grove.png'
@@ -34,7 +34,7 @@ export const scenes = [
 
       // },
       { choices: [
-        { text: "START", next: "jewellers-reward"},
+        { text: "START", next: "coffeeshop-start" },
         { text: "Skip Ahead", next: "skip-ahead" },
         { text: "Skip to the Space Jewelers with Oscar", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
         { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
@@ -147,7 +147,7 @@ export const scenes = [
     dialogue: [
       { speaker: characters.Oscar,
         text: "Well, my name is Oscar, so that fixed itself there! I’m surprised you noticed, that’s awfully nitpick- I mean, you’ve got a great eye for detail. Haha...",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
        },
       { speaker: characters.Oscar,
         text: "...",
@@ -175,7 +175,7 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "(come on, really? That’s the script? It doesn’t even make sense!)",  
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
         text: "*sigh*",
@@ -197,7 +197,7 @@ export const scenes = [
       { 
         speaker: characters.Oscar,
         text: "Just ignore it, all right? Space Ball (working title) is what it’s called and we all have to live with it? You think I wanted this either? You’re not the one who has to live here!",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { 
         speaker: characters.Oscar,
@@ -225,7 +225,7 @@ export const scenes = [
     dialogue: [
       { speaker: characters.Oscar,
         text: "...",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
         text: "...wow",
@@ -264,7 +264,7 @@ export const scenes = [
        },
       { speaker: characters.Oscar,
         text: "All you need is a– Oh what the hell!",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { jump: "coffeeshop-chaos" }
     ]
@@ -283,7 +283,7 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "Though, for formality, you need a– Are you kidding me right now!",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
 
       },
       { jump: "coffeeshop-chaos" }
@@ -309,7 +309,7 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "But to ask anyone out, you, legally, apparently, need to– I swear to space god!",
-        characters: { left: { character: characters.Oscar, expression: "angry" } },
+        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
 
       },
       { jump: "coffeeshop-chaos" }
@@ -343,7 +343,7 @@ export const scenes = [
       { speaker: characters.Damen,
         text: "So since everything is already screwed, I can come in too right?",
         characters: { 
-          left: { character: characters.Oscar, expression: "angry" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
@@ -395,7 +395,7 @@ export const scenes = [
         text: "She tried her best man, at least she doesn't have all of E’s weird hang ups. ",
         characters: { 
           left: { character: characters.Oscar, expression: "sad" }, 
-          right: { character: characters.Kuro, expression: "angry" },
+          right: { character: characters.Kuro, expression: "annoyed" },
           center: { character: characters.Damen, expression: "neutral" } },
 
       },
@@ -451,7 +451,7 @@ export const scenes = [
         text: "As my aristocratic father, or maybe homeless-man slum mentor figure always used to say ‘life is full of contradiction, but… um… something about flower symbology’",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
-          right: { character: characters.Kuro, expression: "angry" },
+          right: { character: characters.Kuro, expression: "annoyed" },
           center: { character: characters.Damen, expression: "neutral" } },
 
       },
@@ -485,7 +485,7 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "NO DON’T LEAVE!!!",
         characters: { 
-          left: { character: characters.Oscar, expression: "angry" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
@@ -513,7 +513,7 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "Don’t listen to them, you have been wonderful so far!",
         characters: { 
-          left: { character: characters.Oscar, expression: "angry" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
 
@@ -550,7 +550,7 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "ROSES.",
         characters: { 
-          left: { character: characters.Oscar, expression: "angry" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
 
@@ -1835,7 +1835,7 @@ export const scenes = [
   { id: "jewellers-reward",
     background: flowerGrove,
     dialogue: [
-      { speaker: characters.Oscar,
+      { 
         text: "The Space Worker takes you the the crystal flower grove."
       },
       { speaker: characters.Worker,
@@ -2851,7 +2851,7 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: "...",
-        characters: { center: { character: characters.Kuro, expression: "angry" } },
+        characters: { center: { character: characters.Kuro, expression: "annoyed" } },
       },
       { speaker: characters.Kuro,
         text: "... If you’re actually blushing, I’m gonna throw up. "
@@ -2898,14 +2898,763 @@ export const scenes = [
   },
 
 
+
+  /// DAMEN ROUTE
+
   {
     id: "garden-start",
     background: roseGarden,
     dialogue: [
-      { speaker: characters.lustig, characters: { center: { character: characters.lustig, expression: "sad" } }, text: "Oh no! Why! what did i do????" },
-      { choices: [{ text: "cry of guilt", next: "start" }] }
-    ],
+      { text: "You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the… space light." },
+      { speaker: characters.Damen,
+        text: "You chose me, I’m so happy.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+      },
+      { speaker: characters.Damen,
+        text: "...",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "Really, I am. It’s just…",
+      },
+      { speaker: characters.Damen,
+        text: "Hard to show.",
+      },
+      { speaker: characters.Damen,
+        text: "During one of their biggest fights in development, E deleted all the character art of me smiling or… any positive emotion. ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "Any emotion at all really"
+      },
+      { choices: [
+        { text: "Why would E delete your character art?", next: "garden-why" },
+        { text: "What were they fighting over? Something about your design?", next: "garden-fighting" },
+        { text: "Yikes! I am not touching that mess.", next: "garden-yikes" }
+      ]
+      }
+    ]
   },
+  {
+    id: "garden-why",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "... it's a little embarrassing. ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "Um, the devs were never subtle in their favoritism. ",
+      },
+      { speaker: characters.Damen,
+        text: "E’s favourite was Oscar, it’s why he’s got so much more dialogue. ",
+      },
+      { speaker: characters.Damen,
+        text: "An M’s favourite was me.",
+      },
+      { speaker: characters.Damen,
+        text: "So when they fought, E took vengeance on M by ‘making her favourite as miserable as M made her.’ ",
+      },
+      { speaker: characters.Damen,
+        text: "So, I was more collateral damage than anything purposeful."
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "They weren’t even fighting over the game. ",
+      },
+      { speaker: characters.Damen,
+        text: "E was angry about M never making time for her outside of work, I think. ",
+      },
+      { speaker: characters.Damen,
+        text: "I suppose it says something about M’s work ethic if the only way E could even argue with her was over google docs."
+      },
+      { speaker: characters.Damen,
+        text: "... space google docs. ",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "It’s fine, I guess. ",
+      },
+      { speaker: characters.Damen,
+        text: "It just means I have to be a little more open and straightforward about what I feel. ",
+      },
+      { speaker: characters.Damen,
+        text: "And it makes me nervous, and a little scared "
+      },
+      { speaker: characters.Damen,
+        text: "But in the end, I just have to tell people what I feel. "
+      },
+      { speaker: characters.Damen,
+        text: "You don’t mind, do you?"
+      },
+      { choices: [
+        { text: "I kind of do mind, that was awkward and embarrassing.", next: "garden-mind" },
+        { text: "Jeez, that’s rough. Talk about catching a stray!", next: "garden-rough" },
+        { text: "Your devs seem kind of crazy, no offense.", next: "garden-crazy" }
+      ]
+      }
+    ]
+  },
+  {
+    id: "garden-fighting",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "It was, uh, not about the game at all, actually.",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "Turns out E only joined M in developing this because she wanted to spend time together. ",
+      },
+      { speaker: characters.Damen,
+        text: "M had apparently grown so busy with working over the last year that they never had enough time to hang out. ",
+      },
+      { speaker: characters.Damen,
+        text: "But M and E had very different work ethics when it came to this game. ",
+      },
+      { speaker: characters.Damen,
+        text: "So they just ended up arguing instead of working a lot. ",
+      },
+      { speaker: characters.Damen,
+        text: "The only reason I even know this is because they argued in the google docs… space google docs.",
+      },
+      { speaker: characters.Damen,
+        text: "… I was M’s favourite, apparently.",
+      },
+      { speaker: characters.Damen,
+        text: "So E decided to ‘make me as miserable as M makes her’ by… taking away my ability to smile or emote. ",
+      },
+      { speaker: characters.Damen,
+        text: "… ",
+      },
+      { speaker: characters.Damen,
+        text: "It’s okay. ",
+      },
+      { speaker: characters.Damen,
+        text: "I just have to be more vocal with how I feel. ",
+      },
+      { speaker: characters.Damen,
+        text: "And that makes me nervous, and a little scared, but I have to tell people if I want to be understood. ",
+      },
+      { speaker: characters.Damen,
+        text: "You don’t mind, do you?"
+      },
+      { choices: [
+        { text: "I kind of do mind, that was awkward and embarrassing.", next: "garden-mind" },
+        { text: "Jeez, that’s rough. Talk about catching a stray!", next: "garden-rough" },
+        { text: "Your devs seem kind of crazy, no offense.", next: "garden-crazy" }
+      ]
+      }
+    ]
+  },
+
+  { 
+    id: "garden-yikes",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "Fair enough. ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "The devs’ arguments have done a lot of damage to this world, I’d stay away from it if I could too. ",
+      },
+      { speaker: characters.Damen,
+        text: "Y’know they argued over google… space google docs? ",
+      },
+      { speaker: characters.Damen,
+        text: "M is a major workaholic, apparently, and E realised that the only way to make sure she answered was to use a project document to talk to her. ",
+      },
+      { speaker: characters.Damen,
+        text: "… it was a mess in the notes. ",
+      },
+      { speaker: characters.Damen,
+        text: "E was angry that M never seemed to make time for her anymore, and that the only reason they were really talking was because they were working. ",
+      },
+      { speaker: characters.Damen,
+        text: "And I got… caught in the crossfire… ",
+      },
+      { speaker: characters.Damen,
+        text: "I’m M’s favourite character, apparently, and E decided to make her grievances clearer by ‘making me as miserable as M makes her.’",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "It’s alright, I guess. ",
+      },
+      { speaker: characters.Damen,
+        text: "I’ve just got to say what I feel more openly. ",
+      },
+      { speaker: characters.Damen,
+        text: "And that makes me nervous, and a little scared. ",
+      },
+      { speaker: characters.Damen,
+        text: "But you won’t judge me for it, right? ",
+      },
+      { choices: [
+        { text: "I kind of do mind, that was awkward and embarrassing.", next: "garden-mind" },
+        { text: "Jeez, that’s rough. Talk about catching a stray!", next: "garden-rough" },
+        { text: "Your devs seem kind of crazy, no offense.", next: "garden-crazy" }
+      ]
+      }
+    ]
+  },
+
+  {
+    id: "garden-mind",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "...oh",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "That's... disheartening...",
+      },
+      { speaker: characters.Damen,
+        text: "Thank you for being honest, I guess…",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "But how else am I meant to express myself? ",
+      },
+      { speaker: characters.Damen,
+        text: "I don’t… I don’t want E to have taken something like that away from me. ",
+      },
+      { speaker: characters.Damen,
+        text: "I wasn’t even involved, so why… ",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "No, it’s okay. These things happen sometimes. ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "There’s no use wondering what it would have been like if E had been less vengeful and dramatic ",
+      },
+      { speaker: characters.Damen,
+        text: "Or if M had taken more time to address their decaying relationship. ",
+      },
+      { speaker: characters.Damen,
+        text: "It’s pointless to wonder. ",
+      },
+      { speaker: characters.Damen,
+        text: "E refused to draw me with expressions. ",
+      },
+      { speaker: characters.Damen,
+        text: "M can’t draw and refused to ruin my image by trying. ",
+      },
+      { speaker: characters.Damen,
+        text: "I can’t really do anything about that…",
+      },
+      { speaker: characters.Damen,
+        text: "… although… maybe you can?"
+      },
+      { jump: "damen-minigame-intro"}
+    ]
+  },
+  {
+    id: "garden-rough",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "I’m happy that you are sympathetic, but uneasy with the reminder of the damage. ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "..."
+      },
+      { speaker: characters.Damen,
+        text: "I know it’s pointless to wonder about what it would have been like if the devs didn’t fight. ",
+      },
+      { speaker: characters.Damen,
+        text: "E could have drawn me with real expressions, the world might be a little less… patchwork. ",
+      },
+      { speaker: characters.Damen,
+        text: "But, I… ",
+      },
+      { speaker: characters.Damen,
+        text: "If only E could have taken her anger at M out on something different. ",
+      },
+      { speaker: characters.Damen,
+        text: "If only M could have taken E’s frustration over her distance more seriously. ",
+      },
+      { speaker: characters.Damen,
+        text: "If they could have addressed their decaying relationship before it hurt us… ",
+      },
+      { speaker: characters.Damen,
+        text: "…"
+      },
+      { speaker: characters.Damen,
+        text: "I am frustrated that they took it out on me when I never…",
+      },
+      { speaker: characters.Damen,
+        text: "… It’s okay, though. ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "Sometimes you ‘catch strays’, and when it happens you’ve just got to keep going. ",
+      },
+      { speaker: characters.Damen,
+        text: "I wish there was a way to express myself easier though, that the option wasn’t taken away from me. ",
+      },
+      { speaker: characters.Damen,
+        text: "I can’t do anything about it, though.",
+      },
+      { speaker: characters.Damen,
+        text: "... but… maybe you can? "
+      },
+      { jump: "damen-minigame-intro"}
+    ]
+  },
+  {
+    id: "garden-crazy",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "No offense taken. ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "They’re not crazy, they’re just… ",
+      },
+      { speaker: characters.Damen,
+        text: "Their relationship was decaying before they even started making this game.",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "And their solution seemed to be to do a project together and hope it would magically fix them. ",
+        characters: { center: { character: characters.Damen, expression: "annoyed" } },
+      },
+      { speaker: characters.Damen,
+        text: "… but it didn’t.",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "And their decay just spread to the rest of us. "
+      },
+      { speaker: characters.Damen,
+        text: "It’s pointless to try and wish reality were different, but… "
+      },
+      { speaker: characters.Damen,
+        text: "I didn’t do anything to them, so why did they…"
+      },
+      { speaker: characters.Damen,
+        text: "… "
+      },
+      { speaker: characters.Damen,
+        text: "I always wonder what it would be like if they just got along a little better. "
+      },
+      { speaker: characters.Damen,
+        text: "I’d be able to express myself clearly."
+      },
+      { speaker: characters.Damen,
+        text: "It makes me feel very wistful. "
+      },
+      { speaker: characters.Damen,
+        text: "But there’s nothing I can do to change that. "
+      },
+      { speaker: characters.Damen,
+        text: "… Although… Maybe you can? "
+      },
+      { jump: "damen-minigame-intro"}
+    ]
+  },
+  { 
+    id: "damen-minigame-intro",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "I have a request for you, if you don’t mind. ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "M designed this text based mini-game for our date. ",
+      },
+      { speaker: characters.Damen,
+        text: "It was originally meant to be about making cute nicknames, but…",
+      },
+      { speaker: characters.Damen,
+        text: "I can rearrange it a little to make it different. ",
+      },
+      { speaker: characters.Damen,
+        text: "There are some perks to being M’s favourite, she put more work into this so I can change it a bit without breaking it. ",
+      },
+      { speaker: characters.Damen,
+        text: "It’s not all bad things, in the end. ",
+      },
+      { speaker: characters.Damen,
+        text: "I’ve changed it to a way for you to teach me shorthand expressions.",
+      },
+      { speaker: characters.Damen,
+        text: "Can you help me out here? Please?"
+      },
+      { choices: [
+        { text: "Yes", next: "damen-minigame" },
+        { text: "No", next: "damen-nope" }
+      ]
+      }
+    ]
+  },
+  {
+    id: "damen-nope",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "… Uh, this is awkward… ",
+        characters: { center: { character: characters.Damen, expression: "annoyed" } },
+      },
+      { speaker: characters.Damen,
+        text: "The mini-game is still mandatory. ",
+      },
+      { speaker: characters.Damen,
+        text: "It was like that in the original form and I couldn’t change that bit…",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "… would it really be so bad? ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+
+      },
+      { speaker: characters.Damen,
+        text: "… Please? "
+      },
+      { choices: [
+        { text: "Yes", next: "damen-minigame" },
+        { text: "No", next: "damen-nope-again" }
+      ]
+      }
+    ]
+  },
+  {
+    id: "damen-nope-again",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "…",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "No really, I can’t change it. It is mandatory.",
+      },
+      { speaker: characters.Damen,
+        text: "I’m sorry, but you have to help me out here. ",
+      },
+      { choices: [
+        { text: "Yes", next: "damen-minigame" },
+        { text: "No", next: "damen-nope-again" }
+      ]
+      }
+    ]
+  },
+
+
+  {
+    id: "damen-minigame",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "Thank you.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+      },
+      { speaker: characters.Damen,
+        text: "I am ecstatic. ",
+      },
+      { speaker: characters.Damen,
+        text: "I am so pleased and happy right now. ",
+      },
+      { speaker: characters.Damen,
+        text: "I just want something small I can add to a sentence to make my emotions clear. ",
+      },
+      { speaker: characters.Damen,
+        text: "Thank you so much for helping me out. "
+      },
+      { speaker: characters.Damen,
+        text: "Ok... first off.. I'd like something to show that I'm feeling happy. Like a smile or something?"
+      },
+      { text: "TYPE SOMETHING TO SYMBOLISE HAPPINESS", 
+        textInput: "$HAPPY" 
+      },
+
+      { speaker: characters.Damen,
+        text: `Alrighty, time to try this out... happiness here I come!` 
+      },
+      { speaker: characters.Damen,
+        text: `...` 
+      },
+      { speaker: characters.Damen,
+        text: `.........` 
+      },
+      { speaker: characters.Damen,
+        text: `......... $HAPPY`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "IT WORKED! I look so happy right now! $HAPPY", 
+        replace: true,
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+      },
+      { speaker: characters.Damen,
+        text: "Ok!!!! Next up... I'd like something to show that I'm feeling sad. Like a frown or something?"
+      },
+      { text: "TYPE SOMETHING TO SYMBOLISE SADNESS", 
+        textInput: "$SAD" 
+      },
+      { speaker: characters.Damen,
+        text: `$SAD`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `$SAD $SAD $SAD $SAD $SAD $SAD $SAD`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `I look sad a lot, so it's great to have something to portray actual sadness.` 
+      },
+      { speaker: characters.Damen,
+        text: "Okay... final one. Do you have anything for ‘mourning the slow decaying relationship of your creators and the things they could have achieved if only they had resolved their issues’?",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "… That’s a pretty common feeling for me."
+      },
+      { text: "TYPE SOMETHING TO SYMBOLISE DEEP SOULFUL MOURNING", 
+        textInput: "$MOURN" 
+      },
+      { speaker: characters.Damen,
+        text: `$MOURN`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `Man... I'm gonna get so much use out of this one... $MOURN`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `Thank you so much $HAPPY`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `I’ve never felt so relaxed and free $HAPPY`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `oh. $HAPPY. I guess I don’t need to describe that anymore. $HAPPY.`,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `I wish I could have had this the whole time $MOURN `,
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: `...` 
+      },
+      { speaker: characters.Damen,
+        text: `Thank you for indulging me. ` 
+      },
+      { speaker: characters.Damen,
+        text: `We should go find that rose now. ` 
+      },
+      { choices:
+        [
+          {text: "Indulge? It’s not like you really gave me an option. ", next: "damen-indulge"},
+          {text: "Well, it’s good to see you’re getting some use out of them at least. ", next: "damen-use"},
+          {text: "Right, the rose! We should get on that. ", next: "damen-rose"}
+        ]
+      }
+      ]
+  },
+  {
+    id: "damen-indulge",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "I suppose not…",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "I’m sorry if it seemed like I was pushing you $SAD",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "I guess I just got jealous, earlier… back in the space coffee shop. ",
+      },
+      { speaker: characters.Damen,
+        text: "Oscar and Kuro can convey themselves so easily. $MOURN ",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "While I… ",
+      },
+      { speaker: characters.Damen,
+        text: "Sorry. ",
+      },
+      { speaker: characters.Damen,
+        text: "I guess you don’t really want to listen to this. ",
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "I wonder if this is how E felt whenever M brushed off her attempts to talk with excuses of work… $MOURN…",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "Or if this was how M felt while they were working and E kept trying to distract them both. ",
+      },
+      { speaker: characters.Damen,
+        text: "Like she didn’t really care about the project at all $MOURN… ",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "… ",
+      },
+      { speaker: characters.Damen,
+        text: "Or maybe this is just how I feel, knowing that it is this world and my life that have to suffer the consequences of their inability to tell each other how they feel. ",
+      },
+      { speaker: characters.Damen,
+        text: "Maybe they should have just tried harder. "
+      },//CONTINUE
+    ]
+  },
+  {
+    id: "damen-use",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "Of course $HAPPY ",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I was a little jealous, back in the space cafe, at how easily Kuro and Oscar could portray how they feel,"
+      },
+      { speaker: characters.Damen,
+        text: "But I…",
+      },
+      { speaker: characters.Damen,
+        text: "$MOURN",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "M and E… they thought this project would fix their problems.",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "E could finally spend time with M. And M didn’t even have to make room in her schedule for it. "
+      },
+      { speaker: characters.Damen,
+        text: "But, all it seemed to do was highlight how incompatible they had become $MOURN",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "E was too unfocused and dreamy, M was too task driven and serious."
+      },
+      { speaker: characters.Damen,
+        text: "It’s almost like they hated each other $MOURN…",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "…"
+      },
+      { speaker: characters.Damen,
+        text: "In the end, it's us that had to suffer the consequence of their hate. $SAD",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "The consequence of their inability to ever say what they really feel. "
+      },
+      { speaker: characters.Damen,
+        text: "Maybe they should have tried harder."
+      }, // CONTINUE
+    ]
+  },
+  {
+    id: "damen-rose",
+    background: roseGarden,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "It shouldn’t be too hard, right?",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+      },
+      { speaker: characters.Damen,
+        text: "I mean look, there’s roses all over the background. It must be here. $HAPPY",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "Y’know, I was a little jealous of Kuro and Oscar in the space cafe?",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "They way they could convey how they felt so easily $MOURN…",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "It’s only fair that I have the rose then, right? ",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "Because… ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "I guess I want to have something. $SAD",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "M and E… they tried, y’know? $MOURN",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "But they just got in their own way. ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "E thought it was going to be a fun and lighthearted project with her old friend",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "And just ended up getting upset when M just wanted to get it done and move on. $MOURN",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "M thought it would be a new project to work on with a friend",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "But just got more and more frustrated with the fact that E never seemed to take any of it seriously. $MOURN",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "Every relationship has its ups and downs, but…",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+      },
+      { speaker: characters.Damen,
+        text: "We’re the ones who end up suffering the consequences of their misunderstandings. ",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+      },
+      { speaker: characters.Damen,
+        text: "…",
+      },
+      { speaker: characters.Damen,
+        text: "Maybe they should have tried harder."
+      }, // CONTINUE
+    ]
+  },
+
   {
     id: "garden-repeat",
     background: roseGarden,

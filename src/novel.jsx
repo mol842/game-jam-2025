@@ -67,7 +67,7 @@ export default function VisualNovel() {
     if (currentLine.replace) {
       replacements.forEach((x) => {
         console.log(x.key, x.value);
-        text = text.replace(x.key, x.value);
+        text = text.replaceAll(x.key, x.value);
       } 
     );
 
