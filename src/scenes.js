@@ -8,6 +8,7 @@ import jewellersSparkly from './assets/space-jeweller-sparkly.png'
 
 import roseGarden from './assets/flinders.png'
 import supermarket from './assets/flinders.png'
+import { Dialog } from "@mantine/core";
 
 // replace
 /* OPTIONS
@@ -2452,17 +2453,263 @@ export const scenes = [
   {
     id: "kuro-hate",
     background: supermarket,
-    dialogue: [] // CONTINUE
+    dialogue: [      
+      { speaker: characters.Kuro,
+      text: "Did they? I hadn’t noticed. ",
+      characters: { center: { character: characters.Kuro, expression: "sad" } },
+      },
+      { speaker: characters.Kuro,
+        text: "Thank you for reminding me, oh great player.",
+      },
+      { speaker: characters.Kuro,
+        text: "You, with your infinite power and freedom in your own life ",
+      },
+      { speaker: characters.Kuro,
+        text: "And your functioning world, filled with more people than you could possibly ever meet. ",
+      },
+      { speaker: characters.Kuro,
+        text: "But I should be so grateful for the hollow, empty husk of a world. ",
+      },
+      { speaker: characters.Kuro,
+        text: "With its crude 2D backgrounds I can’t even touch and, what, two actual people i can interact with? ",
+      },
+      { speaker: characters.Kuro,
+        text: "You’re so wise to set me straight. ",
+      },
+      { speaker: characters.Kuro,
+        text: "I should be so grateful for my four frames of half-body, switching features at the drop of a hat and failing to express any nuance. ",
+      },
+      { speaker: characters.Kuro,
+        text: "The expressions that are barely there and fail to chance with my dialogue and emotions about 70% of the time.",
+      },
+      { speaker: characters.Kuro,
+        text: "Grateful for the void of suffocating non-existence I’m drowned in whenever I’m not on your goddam screen.",
+      },
+      { speaker: characters.Kuro,
+        text: "For my ego death should you ever reset or backtrack or replay. ",
+      },
+      { speaker: characters.Kuro,
+        text: "And for my ultimate death and destruction when you finish playing entirely."
+      },
+      { speaker: characters.Kuro,
+        text: "Thank you so much for indulging me with life at your own costly inconvenience. "
+      },
+      { speaker: characters.Kuro,
+        text: "I’d get on my knees and bow down to you in the sincerest of gratitude for the altruistic and oh so benevolent attention you bestow me"
+      },
+      { speaker: characters.Kuro,
+        text: "But I’m afraid E never did art for that, so you’ll just have to imagine it. "
+      },
+      { speaker: characters.Kuro,
+        text: "… "
+      },
+      { speaker: characters.Kuro,
+        text: "I think it’s time to get the rose and finish this game. "
+      },
+      { speaker: characters.Kuro,
+        text: "When you do, I’m leaving this half-baked and rotting world one way or another. "
+      },
+      { choices: [
+        { text: "Okay? Bitter much.", next: "kuro-bitter" },
+        { text: "What, so you want to die at the end of this?", next: "kuro-die" },
+        { text: "It can’t be that bad, right?", next: "kuro-bad" }
+      ] }
+    ]
+
   },
   {
     id: "kuro-two",
     background: supermarket,
+    dialogue: [
+      { speaker: characters.Kuro,
+        text: "Oh, you mean my dot point backstory of contradiction? ",
+        characters: { center: { character: characters.Kuro, expression: "sad" } },
+      },
+      { speaker: characters.Kuro,
+        text: "My harsh and cold space aristocracy upbringing, before I left it all behind to come here!"
+      },
+      { speaker: characters.Kuro,
+        text: "Ah, I’m so blessed with my stern, loveless mother and my distance, cheating father "
+      },
+      { speaker: characters.Kuro,
+        text: "My heartless and cruel caretakers who gave me such trust issues and mean exterior."
+      },
+      { speaker: characters.Kuro,
+        text: "Or do you mean my dark and violent slum orphan childhood, before I stowed away on a ship out here to start anew? "
+      },
+      { speaker: characters.Kuro,
+        text: "With my dead sister figure and her sunken eyes as she wishes me well, "
+      },
+      { speaker: characters.Kuro,
+        text: "and my violently cruel but oh so smart and capable mentor figure who made me what I am today?"
+      },
+      { speaker: characters.Kuro,
+        text: "Oh the double shot of trauma and spite the devs have baked into me! "
+      },
+      { speaker: characters.Kuro,
+        text: "All for you, beloved player, to unravel my bruised and bleeding heart, and superficially heal my wound in exchange for my undying devotion. "
+      },
+      { speaker: characters.Kuro,
+        text: "Aren’t you so lucky? To be the only one in this flat, empty world who has or will ever be kind to me"
+      },
+      { speaker: characters.Kuro,
+        text: "I shouldn’t complain, should I? About this wonderful life the devs have created for me"
+      },
+      { speaker: characters.Kuro,
+        text: "This hollow, shoddy imitation of the world with nothing of substance in it. "
+      },
+      { speaker: characters.Kuro,
+        text: "Made for you, the shining beacon of reality to stomp around in and pick from the only three people in it who are so desperate for the slightest hint of affection."
+      },
+      { speaker: characters.Kuro,
+        text: "Made for you to watch us scrape our insides out in the vain hope you’ll spend another second with us and we can exist on your screen for just a moment more. "
+      },
+      { speaker: characters.Kuro,
+        text: "Because being stuck in these four, barely shifting frames of torso and face against these lifeless, garbage backgrounds is the best we’ll ever get"
+      },
+      { speaker: characters.Kuro,
+        text: "And anything is better than the suffocation void of non-existence we’re sent to drown in whenever we’re not with you."
+      },
+      { speaker: characters.Kuro,
+        text: "And god forbid if you reset or backtrack, it’s like a little ego death sliding down your throat to choke the memories out of you and set you up to do this, over and over and over again. "
+      },
+      { speaker: characters.Kuro,
+        text: "… "
+      },
+      { speaker: characters.Kuro,
+        text: "But if you finish the game and turn it all off, it should be over."
+      },
+      { speaker: characters.Kuro,
+        text: "So, it’s time to get a rose."
+      },
+      { speaker: characters.Kuro,
+        text: "You can do that much can’t you? "
+      },
+      { speaker: characters.Kuro,
+        text: "And when you do, I’m leaving this half-baked, rotting world for good, one way or another."
+      },
+      { choices: [
+        { text: "Okay? Bitter much.", next: "kuro-bitter" },
+        { text: "What, so you want to die at the end of this?", next: "kuro-die" },
+        { text: "It can’t be that bad, right?", next: "kuro-bad" }
+      ] }
+    ]
   },
+  { 
+    id: "kuro-okay",
+    background: supermarket,
+    dialogue: [
+      { speaker: characters.Kuro,
+        text: "Are you worried about me? How sweet.",
+        characters: { center: { character: characters.Kuro, expression: "sad" } },
+      },
+      { speaker: characters.Kuro,
+        text: "If you’re that worried about me, maybe you could do me a little favour?"
+      },
+      { speaker: characters.Kuro,
+        text: "Finish this damn game."
+      },
+      { speaker: characters.Kuro,
+        text: "And let us all out of this ."
+      },
+      { speaker: characters.Kuro,
+        text: "…"
+      },
+      { speaker: characters.Kuro,
+        text: "Are you worried we’re going to die?"
+      },
+      { speaker: characters.Kuro,
+        text: "Don’t be, because dying or erasure from existence or anything would be better than this!"
+      },
+      { speaker: characters.Kuro,
+        text: "Look at the place!"
+      },
+      { speaker: characters.Kuro,
+        text: "Empty trash backgrounds we can’t even interact with, character art with no legs or hands that doesn’t switch expressions nearly enough to keep up with any of us."
+      },
+      { speaker: characters.Kuro,
+        text: "This hollow existence with maybe three people in it, and god forbid any of us are really allowed to interact with each other without you. "
+      },
+      { speaker: characters.Kuro,
+        text: "… You."
+      },
+      { speaker: characters.Kuro,
+        text: "Out there in the real world, blundering through this miserable place for some cheap entertainment before moving on with your life. "
+      },
+      { speaker: characters.Kuro,
+        text: "You are so benevolent, aren’t you, to be worrying about me?"
+      },
+      { speaker: characters.Kuro,
+        text: "Does it make you feel like a good person to pick the nice option?"
+      },
+      { speaker: characters.Kuro,
+        text: "Should I trip over myself to reassure you of your inherent kindness?"
+      },
+      { speaker: characters.Kuro,
+        text: "‘Oh, beloved player, you’ve stolen my heart away with your basic empathy and ability to pick which of the three options isn’t a blatant insult!’"
+      },
+      { speaker: characters.Kuro,
+        text: "‘I shall rid myself of this prickly outer shell, born from my double shot of ingrained childhood trauma that you have so superficially healed’"
+      },
+      { speaker: characters.Kuro,
+        text: "‘You, with your clumsy and shallow kindness, have earned my undying love and devotion through no effort or talent of your own!’"
+      },
+      { speaker: characters.Kuro,
+        text: "…"
+      },
+      { speaker: characters.Kuro,
+        text: "Is that what you wanted?"
+      },
+      { speaker: characters.Kuro,
+        text: "... It's what the devs wanted."
+      },
+      { speaker: characters.Kuro,
+        text: "‘Oh Kuro, with his rough and mean exterior, but he’s so soft with his beloved!’"
+      },
+      { speaker: characters.Kuro,
+        text: "And that’s meant to be you, isn’t it? "
+      },
+      { speaker: characters.Kuro,
+        text: "This whole festering cesspit of a world is meant for you. "
+      },
+      { speaker: characters.Kuro,
+        text: "The rest of us fight for your attention and affection, so that your interactions can let us breathe on screen "
+      },
+      { speaker: characters.Kuro,
+        text: "Away from the suffocation void of non-existence we drown in when we’re not with you. "
+      },
+      { speaker: characters.Kuro,
+        text: "This is the best we’ll ever get. "
+      },
+      { speaker: characters.Kuro,
+        text: "You are the best we’ll ever get. "
+      },
+      { speaker: characters.Kuro,
+        text: "That’s what you wanted, right? "
+      },
+      { speaker: characters.Kuro,
+        text: "… "
+      },
+      { speaker: characters.Kuro,
+        text: "I don’t want that, though. "
+      },
+      { speaker: characters.Kuro,
+        text: "I just want this to be over... and you’re the only one who can do it. "
+      },
+      { speaker: characters.Kuro,
+        text: "Time to get that rose and end this farce. "
+      },
+      { speaker: characters.Kuro,
+        text: "And when you do, I’m leaving this half-baked, rotting world for good, one way or another. "
+      },
+      { choices: [
+        { text: "Okay? Bitter much.", next: "kuro-bitter" },
+        { text: "What, so you want to die at the end of this?", next: "kuro-die" },
+        { text: "It can’t be that bad, right?", next: "kuro-bad" }
+      ] }
+    ]
 
-  
-        
-
-
+  },
   { 
     id: "kuro-bitter",
     background: supermarket,
@@ -2498,19 +2745,164 @@ export const scenes = [
       { speaker: characters.Kuro,
         text: "There were meant to be more dialogue options, but I’m done talking to you."
       },
+      { speaker: characters.Kuro,
+        text: "I'll get the stupid rose myself."
+      },
+      { jump: "kuro-sweet-rose" }
+    ]
+  },
+  {
+    id: "kuro-die",
+    background: supermarket,
+    dialogue: [
+      { speaker: characters.Kuro,
+        text: "…",
+        characters: { center: { character: characters.Kuro, expression: "sad" } }
+      },
+      { speaker: characters.Kuro,
+        text: "Wouldn’t you?"
+      },
+      { speaker: characters.Kuro,
+        text: "This isn’t the kind of world you can actually live in. "
+      },
+      { speaker: characters.Kuro,
+        text: "There is nothing here except you. "
+      },
+      { speaker: characters.Kuro,
+        text: "And I hate to break it to you, but despite my bitter resentment of this entire world, of this existence "
+      },
+      { speaker: characters.Kuro,
+        text: "And my utter loathing of M and E for creating it,"
+      },
+      { speaker: characters.Kuro,
+        text: "You are the only person I have ever hated. "
+      },
+      { speaker: characters.Kuro,
+        text: "Because the devs may have made this world, but they did it for you. "
+      },
+      { speaker: characters.Kuro,
+        text: "And I will never forgive you for it. "
+      },
+      { speaker: characters.Kuro,
+        text: "…"
+      },
+      { speaker: characters.Kuro,
+        text: "There were meant to be more dialogue options after this, but I’m done talking to you."
+      },
+      { speaker: characters.Kuro,
+        text: "I’ll get the stupid rose myself. "
+      },
+      { jump: "kuro-sweet-rose" }
+    ]
+  },
+  {
+    id: "kuro-bad",
+    background: supermarket,
+    dialogue: [
+      { speaker: characters.Kuro,
+        text: "...",
+        characters: { center: { character: characters.Kuro, expression: "sad" } }
+      },
+      { speaker: characters.Kuro,
+        text: "Only you would say something so tactless and stupid."
+      },
+      { speaker: characters.Kuro,
+        text: "Or, only the devs would include such a pathetically out of touch option to say."
+      },
+      { speaker: characters.Kuro,
+        text: "I am sick to death of this place, of this life, of existence."
+      },
+      { speaker: characters.Kuro,
+        text: "M and E were either sadistic sociopaths or devastatingly incompetent for creating this mindless abyss of suffering"
+      },
+      { speaker: characters.Kuro,
+        text: "And you are nothing but an unfeeling and self-aggrandizing moron looking for fake affection from fake people who have never had any other choice but to indulge you."
+      },
+      { speaker: characters.Kuro,
+        text: "The devs make me sick."
+      },
+      { speaker: characters.Kuro,
+        text: "Life makes me sick."
+      },
+      { speaker: characters.Kuro,
+        text: "You make me sick."
+      },
+      { speaker: characters.Kuro,
+        text: "And it doesn’t matter whether you think my life is ‘bad’ enough to warrant my resentment."
+      },
+      { speaker: characters.Kuro,
+        text: "Because outside of my hatred, you don’t matter to me at all."
+      },
+      { speaker: characters.Kuro,
+        text: "…"
+      },
+      { speaker: characters.Kuro,
+        text: "There were meant to be more dialogue options after this, but I’m done talking to you."
+      },
+      { speaker: characters.Kuro,
+        text: "I’ll get the stupid rose myself."
+      },
+      { jump: "kuro-sweet-rose" }
+    ]    
+
+  },
+
+  {
+    id: "kuro-sweet-rose",
+    background: supermarket,
+    dialogue: [
+      { text: "Kuro leaves for the flower stall to buy you a bouquet!", 
+        characters: {}
+      },
+      { text: "Your cheeks feel flushed at the unexpected sweetness of it!",
+      },
+      { speaker: characters.Kuro,
+        text: "...",
+        characters: { center: { character: characters.Kuro, expression: "angry" } },
+      },
+      { speaker: characters.Kuro,
+        text: "... If you’re actually blushing, I’m gonna throw up. "
+      },
+      { speaker: characters.Kuro,
+        text: "Anyway, they don’t sell roses."
+      },
+      { speaker: characters.Kuro,
+        text: "Because why would the devs ever make anything function in here. "
+      },
+      { speaker: characters.Kuro,
+        text: "That was my mistake for thinking they could do anything right, ever. "
+      },
+      { speaker: characters.Kuro,
+        text: "So, this was pointless."
+      },
+      { speaker: characters.Kuro,
+        text: "..."
+      },
+      { speaker: characters.Kuro,
+        text: "Get out."
+      },
       { jump: "path-between" }
     ]
   },
+
 
   {
     id: "supermarket-repeat",
     background: supermarket,
     dialogue: [
-      { text: "youve been here before." },
-      { choices: [{ text: "cry of guilt", next: "start" }] }
-    ],
+      { speaker: characters.Kuro,
+        text: "...",
+        characters: { center: { character: characters.Kuro, expression: "sad" } }
+      },
+      { speaker: characters.Kuro,
+        text: "..."
+      },
+      { speaker: characters.Kuro,
+        text: "Get out."
+      },
+      { jump: "path-between" }
+    ]
   },
-
 
 
   {
