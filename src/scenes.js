@@ -742,6 +742,27 @@ export const scenes = [
 
     ]
   },
+
+  { id: "path-between",
+    background: coffeeShop,
+    dialogue: [  
+      { text: "Choose a path to follow.",
+      characters: { 
+        left: { character: characters.Oscar, expression: "neutral" }, 
+        right: { character: characters.Kuro, expression: "neutral" },
+        center: { character: characters.Damen, expression: "neutral" } },
+      }, 
+      { choices:
+        [
+          { text: "Go to the Space Jewelers with Oscar",  path: "a", next: "jewellers-start", else: "jewellers-repeat" },
+          { text: "Go to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
+          { text: "Go to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"}
+        ]
+        
+      }
+      ]
+  },
+
   
     
   // OSCAR! JEWELLERS PATH
@@ -1741,7 +1762,70 @@ export const scenes = [
       { jump: "jewellers-reward" }
     ]
   },
-  
+  { id: "jewellers-reward",
+    background: jewellersSparkly,
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "The Space Worker takes you the the crystal flower grove."
+      },
+      { speaker: characters.Worker,
+        text: "Here are the crystal flowers! You can take your pick of them."
+      },
+      { speaker: characters.Worker,
+        text: "We have orchids, chrysanthemums, spider lilies, peace lilies, lotus flowers, jacarandas, cherry blossoms, tulips, bottle brushes, irises, daffodils, lavenda, blue bells–"
+      },
+      { speaker: characters.Oscar,
+        text: "Roses."
+      },
+      { speaker: characters.Oscar,
+        text: "We’d like a rose please. "
+      },
+      { speaker: characters.Worker,
+        text: "Oh! Unfortunately, we’re all out of stock! "
+      },
+      { speaker: characters.Oscar,
+        text: "Out of… "
+      },
+      { speaker: characters.Oscar,
+        text: "... haha… "
+      },
+      { speaker: characters.Oscar,
+        text: "Hahahaha! OF COURSE YOU ARE!"
+      },
+      { speaker: characters.Oscar,
+        text: "haha… that’s so… HAHAHA!"
+      },
+      { speaker: characters.Oscar,
+        text: "... "
+      },
+      { speaker: characters.Oscar,
+        text: "..."
+      },
+      { speaker: characters.Oscar,
+        text: "... We’re leaving."
+      },
+      { speaker: characters.Worker,
+        text: "Oh? Well have a wonderful–"
+      },
+      { speaker: characters.Oscar,
+        text: "GOODBYE!"
+      },
+      { speaker: characters.Oscar,
+        text: "... "
+      },
+      { speaker: characters.Oscar,
+        text: "... Mission failed, I guess. "
+      },
+      { speaker: characters.Oscar,
+        text: "So that’s it. The rose wasn't in this path."
+      },
+      { speaker: characters.Oscar,
+        text: "... I think It’s time for you to move on. "
+      },
+      { jump: "path-between" }
+
+      ]
+  },
 
   {
     id: "jewellers-repeat",
