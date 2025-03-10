@@ -52,6 +52,7 @@ export const scenes = [
     id: "skip-ahead",
     background: coffeeShop,
     dialogue: [
+
       { speaker: characters.Oscar,
         text: "Hey... I know you're proably just checking out this game quickly and don't have time to read the whole story.",
         characters: { left: { character: characters.Oscar, expression: "neutral" } }

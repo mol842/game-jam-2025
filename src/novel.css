@@ -39,7 +39,7 @@
   position: absolute;
   z-index: -1;
   bottom: 0%;
-  height: 70%;
+  height: 80%;
   transition: transform 0.3s;
 }
 
@@ -82,7 +82,7 @@
   width: 80%;
   /* background: rgba(0, 0, 0, 0.7); */
   color: white;
-  padding: 20px;
+  padding: 1%;
   text-align: left;
   transform: translateX(-50%);
   cursor: pointer;
@@ -112,7 +112,7 @@
   left: 50%;
   width: 60%;
   background: rgba(255, 255, 255, 0.9);
-  padding: 10px;
+  padding: 2%;
   text-align: center;
   transform: translateX(-50%);
 }
@@ -137,21 +137,26 @@ img.accessory-hat {
 }
 
 img.accessory-hat-left { 
-  margin-bottom: 10%;
+  margin-bottom: 17%;
   bottom: 30%;
+  margin-left: 3%;
 
   margin-right: 100%;
   position: fixed;
   width: 20%;
 }
 img.accessory-hat-right { 
-  margin-bottom: 10%;
+  margin-bottom: 17%;
+  margin-left: 3%;
+
   bottom: 30%;
   position: fixed;
   width: 20%;
 }
 img.accessory-hat-center { 
-  margin-bottom: 10%;
+  margin-bottom: 17%;
+  margin-left: 3%;
+
   bottom: 30%;
   margin-left: 1%;
   position: fixed;
@@ -161,34 +166,34 @@ img.accessory-hat-center {
 
 
 img.accessory-earrings-left { 
-  margin-bottom: 10%;
+  margin-bottom: 11%;
   bottom: 13%;
-  margin-left: 1%;
+  margin-left: 3%;
 
   margin-right: 100%;
   position: fixed;
   width: 20%;
 }
 img.accessory-earrings-right { 
-  margin-bottom: 10%;
+  margin-bottom: 11%;
   bottom: 13%;
   position: fixed;
   width: 20%;
-  margin-left:1%;
+  margin-left:2%;
 }
 img.accessory-earrings-center { 
-  margin-bottom: 10%;
+  margin-bottom: 11%;
   bottom: 13%;
-  margin-left: 1%;
+  margin-left: 2%;
   position: fixed;
   width: 20%;
 }
 
 
 img.accessory-necklace-left { 
-  margin-bottom: 5%;
+  margin-bottom: 9%;
   bottom: 0%;
-  margin-left: 6%;
+  margin-left: 8%;
   bottom: 0%;
 
   margin-right: 100%;
@@ -198,14 +203,14 @@ img.accessory-necklace-left {
 img.accessory-necklace-right { 
   margin-bottom: 5%;
   bottom: 0%;
-  margin-left: 6%;
+  margin-left: 8%;
   position: fixed;
   width: 10%;
 }
 img.accessory-necklace-center { 
   margin-bottom: 5%;
   bottom: 0%;
-  margin-left: 6%;
+  margin-left: 8%;
   position: fixed;
   width: 10%;
 }
