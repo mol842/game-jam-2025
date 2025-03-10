@@ -2,7 +2,7 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
-import earrings from './assets/oscar/earrings1.png'
+import Cookies from 'js-cookie';
 
 
 export default function VisualNovel() {
@@ -13,7 +13,10 @@ export default function VisualNovel() {
 
   const [displayedText, setDisplayedText] = useState("");
   const [skip, setSkip] = useState(false);
-  
+
+  Cookies.set('name', 'value')
+  const what = Cookies.get('name')
+  console.log(what)
 
   const [textInput, setTextInput] = useState("");
 
@@ -175,6 +178,7 @@ export default function VisualNovel() {
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
+      <button onClick={() => {Cookies.set("huh", (new Date()).toString()); console.log(Cookies.get("huh"))}}>Skip</button>
 
       {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
