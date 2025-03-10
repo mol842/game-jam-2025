@@ -9,6 +9,7 @@
 }
 
 .background {
+  z-index: -2;
   width: 100%;
   height: 100%;
   bottom: 0;
@@ -33,6 +34,7 @@
 
 .character {
   position: absolute;
+  z-index: -1;
   bottom: 0%;
   /* width: 25%; */
   height: 70%;
@@ -53,7 +55,7 @@
   background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   transform: translateX(-50%);
   cursor: pointer;
 }
@@ -100,7 +102,6 @@ img.accessory-hat {
   bottom: 30%;
   top: 30%;
   left: 35%;  
-  z-index: 10;
 
   position: relative;
   width: 30%;
@@ -112,14 +113,12 @@ img.accessory-hat-left {
   bottom: 30%;
 
   margin-right: 100%;
-  z-index: 10;
   position: fixed;
   width: 20%;
 }
 img.accessory-hat-right { 
   margin-bottom: 10%;
   bottom: 30%;
-  z-index: 10;
   position: fixed;
   width: 20%;
 }
@@ -127,7 +126,6 @@ img.accessory-hat-center {
   margin-bottom: 10%;
   bottom: 30%;
   margin-left: 1%;
-  z-index: 10;
   position: fixed;
   width: 20%;
 }
@@ -140,14 +138,12 @@ img.accessory-earrings-left {
   margin-left: 1%;
 
   margin-right: 100%;
-  z-index: 10;
   position: fixed;
   width: 20%;
 }
 img.accessory-earrings-right { 
   margin-bottom: 10%;
   bottom: 13%;
-  z-index: 10;
   position: fixed;
   width: 20%;
   margin-left:1%;
@@ -156,35 +152,34 @@ img.accessory-earrings-center {
   margin-bottom: 10%;
   bottom: 13%;
   margin-left: 1%;
-  z-index: 10;
   position: fixed;
   width: 20%;
 }
 
 
 img.accessory-necklace-left { 
-  margin-bottom: 10%;
-  bottom: 30%;
+  margin-bottom: 5%;
+  bottom: 0%;
+  margin-left: 6%;
+  bottom: 0%;
 
   margin-right: 100%;
-  z-index: 10;
   position: fixed;
-  width: 20%;
+  width: 10%;
 }
 img.accessory-necklace-right { 
-  margin-bottom: 10%;
-  bottom: 30%;
-  z-index: 10;
+  margin-bottom: 5%;
+  bottom: 0%;
+  margin-left: 6%;
   position: fixed;
-  width: 20%;
+  width: 10%;
 }
 img.accessory-necklace-center { 
-  margin-bottom: 10%;
-  bottom: 30%;
-  margin-left: 1%;
-  z-index: 10;
+  margin-bottom: 5%;
+  bottom: 0%;
+  margin-left: 6%;
   position: fixed;
-  width: 20%;
+  width: 10%;
 }
 
 

@@ -88,7 +88,7 @@ export default function VisualNovel() {
       } else {
         clearInterval(interval);
       }
-    }, 20);
+    }, text.length / 20);
     console.log(sceneCharacters);
   }, [dialogIndex, currentScene]);
   
@@ -207,7 +207,7 @@ export default function VisualNovel() {
       {currentLine.text && !textInput && !currentLine.accessoryOptions && (
         <div className="dialog-box" onClick={nextDialogue}>
           <strong>{currentLine.speaker ? currentLine.speaker.name : ""}</strong>
-          <p>{displayedText}</p>
+          <p style={{"text-indent": "5%"}}>{displayedText}</p>
         </div>
       )}
 

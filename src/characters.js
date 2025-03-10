@@ -12,9 +12,9 @@ import hat3 from "./assets/oscar/hat3.png";
 import earrings1 from "./assets/oscar/earrings1.png";
 import earrings2 from "./assets/oscar/earrings2.png";
 import earrings3 from "./assets/oscar/earrings3.png";
-// import necklace1 from "./assets/oscar/necklace1.png";
-// import necklace2 from "./assets/oscar/necklace2.png";
-// import necklace3 from "./assets/oscar/necklace3.png";
+import necklace1 from "./assets/oscar/necklace1.png";
+import necklace2 from "./assets/oscar/necklace2.png";
+import necklace3 from "./assets/oscar/necklace3.png";
 
 export const characters = {
   menu: {
@@ -39,7 +39,7 @@ export const characters = {
       happy: oscarNeutral,
       sad: oscarNeutral
     },
-    accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3 ]//, necklace1, necklace2, necklace3, ]
+    accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ]
   },
   Kuro: {
     name: "Kuro 愛",
@@ -57,4 +57,12 @@ export const characters = {
       sad: damenNeutral
     }
   },  
+  Barista: {
+    name: "Space Barista"
+  },  
+  Worker: {
+    name: "Space Worker"
+  },  
+
+
 };
