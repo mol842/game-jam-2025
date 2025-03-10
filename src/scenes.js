@@ -241,7 +241,7 @@ export const scenes = [
         characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        characters: {center: { character: characters.Damen, expression: "neutral" } },
+        characters: {center: { character: characters.Oscar, expression: "neutral" } },
         text: "It’s a big dance at the end of the month that you need to find a date for.",
       },
       { speaker: characters.Oscar,
@@ -3388,7 +3388,7 @@ export const scenes = [
       },
 
       { speaker: characters.Damen,
-        text: `Alrighty, time to try this out... happiness here I come!` 
+        text: `Alright, time to try this out...` 
       },
       { speaker: characters.Damen,
         text: `...` 
@@ -3401,12 +3401,12 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "IT WORKED! I look so happy right now! $HAPPY", 
+        text: "IT WORKED. I look so happy right now. $HAPPY", 
         replace: true,
         characters: { center: { character: characters.Damen, expression: "happy" } },
       },
       { speaker: characters.Damen,
-        text: "Ok!!!! Next up... I'd like something to show that I'm feeling sad. Like a frown or something?"
+        text: "Ok. Next up... I'd like something to show that I'm feeling sad. Like a frown or something?"
       },
       { text: "TYPE SOMETHING TO SYMBOLISE SADNESS", 
         textInput: "$SAD" 

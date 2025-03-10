@@ -177,7 +177,7 @@ export default function VisualNovel() {
 
       {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
-        // console.log(position, details),
+        console.log(position, details),
         <>
         <div key={details.name} className={`character-container-${position}`}>
           { 
