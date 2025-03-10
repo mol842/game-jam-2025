@@ -204,8 +204,10 @@ export default function VisualNovel() {
 
       {/* dialog */}
       {currentLine.text && !textInput && !currentLine.accessoryOptions && (
-        <div className="dialog-box" onClick={nextDialogue}>
+        <div style={{"background": (currentLine.speaker && currentLine.speaker.colour ? currentLine.speaker.colour : "rgba(0, 0, 0, 0.7)")}} className="dialog-box" onClick={nextDialogue}>
+          <div style={{"text-align": "center"}}>
           <strong>{currentLine.speaker ? currentLine.speaker.name : ""}</strong>
+          </div>
           <p style={{"margin-left": "5%"}}>{displayedText}</p>
         </div>
       )}

@@ -50,7 +50,8 @@ export const characters = {
       sad: oscarSad,
       angry: oscarAngry
     },
-    accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ]
+    accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ],
+    colour: "rgba(9, 66, 10, 0.9)"
   },
   Kuro: {
     name: "Kuro 愛",
@@ -59,7 +60,8 @@ export const characters = {
       happy: kuroNeutral,
       sad: kuroSad,
       angry: kuroAngry
-    }
+    },
+    colour: "rgba(7, 24, 74, 0.9)"
   },
   Damen: {
     name: "Damen",
@@ -68,7 +70,9 @@ export const characters = {
       happy: damenNeutral,
       sad: damenSad,
       angry: damenAngry
-    }
+    },
+    colour: "rgba(72, 8, 8, 0.9)"
+
   },  
   Barista: {
     name: "Space Barista"

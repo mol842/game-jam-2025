@@ -9,6 +9,7 @@ import jewellersSparkly from './assets/space-jeweller-sparkly.png'
 import roseGarden from './assets/flinders.png'
 import supermarket from './assets/space-market.png'
 import menuBackground from './assets/menu-background.png'
+import flowerGrove from './assets/flower-grove.png'
 
 // replace
 /* OPTIONS
@@ -33,7 +34,7 @@ export const scenes = [
 
       // },
       { choices: [
-        { text: "START", next: "coffeeshop-start"},
+        { text: "START", next: "jewellers-reward"},
         { text: "Skip Ahead", next: "skip-ahead" },
         { text: "Skip to the Space Jewelers with Oscar", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
         { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
@@ -42,21 +43,6 @@ export const scenes = [
       ],
       // characters: { logo: { character: characters.menu, expression: "menu" } },
     },
-    //   { text: `hat time? hat time?`, 
-    //     accessoryOptions: [
-    //       {position: "hat", option: characters.Oscar.accessories[0]},
-    //       {position: "hat", option: characters.Oscar.accessories[1]},
-    //       {position: "hat", option: characters.Oscar.accessories[2]},
-    //     ]
-    //   },
-    //   { text: `earrings time? earrings time?`, 
-    //     accessoryOptions: [
-    //       {position: "earrings", option: characters.Oscar.accessories[3]},
-    //       {position: "earrings", option: characters.Oscar.accessories[4]},
-    //       {position: "earrings", option: characters.Oscar.accessories[5]},
-    //     ]
-    //   },
-
 
     //   { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
     //   { text: `lets try.... $HELP`, replace: true },
@@ -1847,7 +1833,7 @@ export const scenes = [
     ]
   },
   { id: "jewellers-reward",
-    background: jewellersSparkly,
+    background: flowerGrove,
     dialogue: [
       { speaker: characters.Oscar,
         text: "The Space Worker takes you the the crystal flower grove."
@@ -1859,7 +1845,8 @@ export const scenes = [
         text: "We have orchids, chrysanthemums, spider lilies, peace lilies, lotus flowers, jacarandas, cherry blossoms, tulips, bottle brushes, irises, daffodils, lavenda, blue bells–"
       },
       { speaker: characters.Oscar,
-        text: "Roses."
+        text: "Roses.",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
         text: "We’d like a rose please. "
@@ -1868,7 +1855,9 @@ export const scenes = [
         text: "Oh! Unfortunately, we’re all out of stock! "
       },
       { speaker: characters.Oscar,
-        text: "Out of… "
+        text: "Out of… ",
+        characters: { center: { character: characters.Oscar, expression: "sad" } }
+
       },
       { speaker: characters.Oscar,
         text: "... haha… "
