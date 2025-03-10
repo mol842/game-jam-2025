@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
 import VisualNovel from './novel.jsx'
+import MazeGame from './mazeGame.jsx'
 
 createRoot(document.getElementById('root')).render(
   <MantineProvider>

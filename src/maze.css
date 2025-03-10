@@ -1,0 +1,22 @@
+#gameCanvas {
+  border: 1px solid black;
+}
+.controls {
+  margin-top: 10px;
+}
+
+.maze-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  height: 10vh;
+  width: 30vw;
+  margin: 0 auto; */
+  height: 300px;
+
+}
+.maze-img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  } 
