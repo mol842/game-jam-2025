@@ -2,6 +2,7 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
+import MazeGame from "./mazeGame";
 
 
 export default function VisualNovel() {
@@ -260,6 +261,10 @@ export default function VisualNovel() {
         </div>
       )}
       
+      { 
+        currentLine.maze &&
+        <MazeGame onFinish={nextDialogue}/>
+      }
 
     </div>
   );

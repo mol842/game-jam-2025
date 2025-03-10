@@ -27,6 +27,15 @@ export const scenes = [
     id: "start",
     background: coffeeShop,
     dialogue: [
+      { speaker: characters.Oscar,
+        text: "Alright... maze time.",
+        characters: { left: { character: characters.Oscar, expression: "neutral" } }
+      },
+      {
+        maze: true,
+      },
+
+      
       // { text: `Welcome to the story! $SMILE`, replace: true,
       //   characters: { center: { character: characters.menu, expression: "menu" }, right : { character: characters.Oscar, expression: "neutral" }},
 
@@ -41,11 +50,6 @@ export const scenes = [
       ],
       characters: { center: { character: characters.menu, expression: "menu" } },
     },
-
-    //   ],
-    //   characters: { center: { character: characters.menu, expression: "menu" } }, 
-    // },
-
     //   { text: `hat time? hat time?`, 
     //     accessoryOptions: [
     //       {position: "hat", option: characters.Oscar.accessories[0]},
