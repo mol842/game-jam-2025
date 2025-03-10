@@ -2,7 +2,6 @@ import { useState } from "react";
 import { scenes } from "./scenes";
 import "./novel.css";
 import { useEffect } from "react";
-import Cookies from 'js-cookie';
 
 
 export default function VisualNovel() {
@@ -13,10 +12,6 @@ export default function VisualNovel() {
 
   const [displayedText, setDisplayedText] = useState("");
   const [skip, setSkip] = useState(false);
-
-  Cookies.set('name', 'value')
-  const what = Cookies.get('name')
-  console.log(what)
 
   const [textInput, setTextInput] = useState("");
 
@@ -178,7 +173,6 @@ export default function VisualNovel() {
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
-      <button onClick={() => {Cookies.set("huh", (new Date()).toString()); console.log(Cookies.get("huh"))}}>Skip</button>
 
       {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
@@ -211,7 +205,7 @@ export default function VisualNovel() {
       {currentLine.text && !textInput && !currentLine.accessoryOptions && (
         <div className="dialog-box" onClick={nextDialogue}>
           <strong>{currentLine.speaker ? currentLine.speaker.name : ""}</strong>
-          <p style={{"text-indent": "5%"}}>{displayedText}</p>
+          <p style={{"margin-left": "5%"}}>{displayedText}</p>
         </div>
       )}
 
@@ -223,7 +217,6 @@ export default function VisualNovel() {
             <button key={choice.text} onClick={() => {
               nextScene(choice);
               setDialogIndex(choice.index? choice.index : 0);
-              // setSceneCharacters({});
               setShowChoices(false);
             }}>
               {choice.text}

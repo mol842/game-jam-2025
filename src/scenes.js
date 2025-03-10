@@ -32,10 +32,12 @@ export const scenes = [
 
       // },
       { choices: [
-        { text: "START", next: "jewellers-fitting"},
-        { text: "Go to the Space Jewelers with Oscar",  path: "a", next: "jewellers-start", else: "jewellers-repeat" },
-        { text: "Go to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
-        { text: "Go to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"}
+        { text: "START", next: "coffeeshop-start"},
+        { text: "Skip Ahead", next: "skip-ahead" },
+        { text: "Skip to the Space Jewelers with Oscar", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
+        { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
+        { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
+        { text: "Skip to the ending", path: "d", next: "coffeeshop-start", else: "start"}
       ],
       characters: { center: { character: characters.menu, expression: "menu" } },
     },
@@ -62,13 +64,45 @@ export const scenes = [
 
     //   { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
     //   { text: `lets try.... $HELP`, replace: true },
-
-      { choices: [
-          { text: "START", next: "coffeeshop-start"},
+    ],
+  },
+  {
+    id: "skip-ahead",
+    background: coffeeShop,
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "Hey... I know you're proably just checking out this game quickly and don't have time to read the whole story.",
+        characters: { left: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { text: "But, uh, it would mean a lot to me if you didn't skip ahead.",
+        speaker: characters.Oscar,
+      },
+      { text: "At LEAST check out the intro before you do any individual paths.",
+        speaker: characters.Oscar,
+      },
+      { text: "(Also, the devs didn't know how to implement save files, so if you do the ending in a seperate session then it might not make sense.)",
+        speaker: characters.Oscar,
+      },
+      { text: "I mean, it's not like I can stop you, but... I'd appreciate it.",
+        speaker: characters.Oscar,
+      },
+      { text: "Thanks.",
+        speaker: characters.Oscar,
+      },
+      { text: "...",
+        speaker: characters.Oscar
+      },
+      { 
+        choices: [
+          { text: "Skip to the Intro", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
+          { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
+          { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
+          { text: "Skip to the ending", path: "d", next: "coffeeshop-start", else: "start"}
         ],
-        characters: { center: { character: characters.menu, expression: "menu" } }, 
+        character: {}
       }
     ],
+
   },
   {
     id: "coffeeshop-start",
@@ -158,12 +192,15 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "(come on, really? That’s the script? It doesn’t even make sense!)",  
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
       },
       { speaker: characters.Oscar,
         text: "*sigh*",
       },
       { speaker: characters.Oscar,
         text: "… if you dance together under the multiple full space moons, you’ll join souls!",
+        characters: { left: { character: characters.Oscar, expression: "happy" } },
+
       },
       { speaker: characters.Oscar,
         text: "Getting a date is pretty important for this, so you’ll want to ask someone fast!",
@@ -177,7 +214,7 @@ export const scenes = [
       { 
         speaker: characters.Oscar,
         text: "Just ignore it, all right? Space Ball (working title) is what it’s called and we all have to live with it? You think I wanted this either? You’re not the one who has to live here!",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
       },
       { 
         speaker: characters.Oscar,
@@ -185,6 +222,7 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha…",
+        characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
         text: "Anyway, the Space Ball (working title)! It’s a big, dance at the end of the month that in this completely habituated space station goes to. You bring your date to dance together and solidify your love for each other!",
@@ -204,7 +242,7 @@ export const scenes = [
     dialogue: [
       { speaker: characters.Oscar,
         text: "...",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
       },
       { speaker: characters.Oscar,
         text: "...wow",
@@ -239,6 +277,7 @@ export const scenes = [
        },
       { speaker: characters.Oscar,
         text: "All you need is a– Oh what the hell!",
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
       },
       { jump: "coffeeshop-chaos" }
     ]
@@ -257,6 +296,8 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "Though, for formality, you need a– Are you kidding me right now!",
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
+
       },
       { jump: "coffeeshop-chaos" }
 
@@ -281,6 +322,8 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "But to ask anyone out, you, legally, apparently, need to– I swear to space god!",
+        characters: { left: { character: characters.Oscar, expression: "angry" } },
+
       },
       { jump: "coffeeshop-chaos" }
     ]
@@ -293,7 +336,7 @@ export const scenes = [
     dialogue: [
       { speaker: characters.Kuro, 
         text: "Heya Oscar, sor–",
-        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" } },
+        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Oscar, 
         text: "Get Out!",
@@ -313,7 +356,7 @@ export const scenes = [
       { speaker: characters.Damen,
         text: "So since everything is already screwed, I can come in too right?",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
+          left: { character: characters.Oscar, expression: "angry" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
@@ -339,23 +382,19 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "I am not engaging with this question. ",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
+          left: { character: characters.Oscar, expression: "angry" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Kuro,
         text: "Oh, I know this one, actually. It’s because it was done by M instead of E.",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
-          right: { character: characters.Kuro, expression: "neutral" },
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "happy" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
         text: "I Thought E did all the art?",
-        characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
-          right: { character: characters.Kuro, expression: "neutral" },
-          center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Kuro,
         text: "They were on a time crunch, I think M did the backgrounds.",
@@ -367,6 +406,10 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: "She tried her best man, at least she doesn't have all of E’s weird hang ups. ",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "angry" },
+          center: { character: characters.Damen, expression: "neutral" } },
 
       },
       { speaker: characters.Damen,
@@ -375,6 +418,10 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "How about, instead of gossiping about our devs, we just cut to the roses? Forward the plot or something.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
 
       },
       { speaker: characters.Oscar,
@@ -391,9 +438,8 @@ export const scenes = [
         text: "I’m Kuro 愛, but you can just call me Kuro. I don’t even know why there’s Kanji in here, I can’t even read it. The Devs didn’t leave any notes to say what it means, so don’t even ask.",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
-          right: { character: characters.Kuro, expression: "neutral" },
-          center: { character: characters.Damen, expression
-          : "neutral" } },
+          right: { character: characters.Kuro, expression: "happy" },
+          center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
         text: "Damen, that’s me. I’m happy to meet you.",
