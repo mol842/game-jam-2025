@@ -12,6 +12,7 @@ import menuBackground from './assets/menu-background.png'
 import flowerGrove from './assets/flower-grove.png'
 import planet from './assets/planet.png'
 import blank from './assets/blank.png'
+import toBeContinued from './assets/tobecontinued.png'
 // replace
 /* OPTIONS
 text: "text"
@@ -87,7 +88,9 @@ export const scenes = [
         { text: "Go to the Space Jewelers with Oscar",  path: "a", next: "jewellers-start", else: "jewellers-repeat" },
         { text: "Go to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
         { text: "Go to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
-        { text: "Skip to the ending", next: "end-intro"}
+        { text: "Skip to the ending", next: "end-intro"},
+        { text: "Skip to the very end", next: "choice-end"}
+
       ],
       characters: {}
       }
@@ -3411,7 +3414,9 @@ export const scenes = [
     id: "garden-start",
     background: roseGarden,
     dialogue: [
-      { text: "You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the… space light." },
+      { text: "You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the… space light.",
+        characters: {}
+       },
       { speaker: characters.Damen,
         text: "You chose me, I’m so happy.",
         characters: { center: { character: characters.Damen, expression: "happy" } },
@@ -4800,6 +4805,15 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro, text: "Put us all out of our collective misery." },
+      { jump: "choice-end"
+      }
+    ]
+  },
+  {
+    id: "choice-end",
+    background: coffeeShop,
+    dialogue: [
+      { text: "Who will you take to the Space Ball (working title)?" },
       { choices:
         [{ text: "Oscar", next: "oscar-end"},
         { text: "Kuro", next: "kuro-end"},
@@ -4808,6 +4822,7 @@ export const scenes = [
       }
     ]
   },
+
   {
     id: "oscar-end",
     background: coffeeShop,
@@ -5074,10 +5089,10 @@ export const scenes = [
   },
   {
     id: "end-screen",
-    background: menuBackground,
+    background: toBeContinued,
     dialogue: [
-      { text: "Thank you for playing Unresolved Co-dependency..."},
-      { text: "(The \"To be Continued\" is a lie)"},
+      { text: "Thank you for playing Unresolved Co-dependency...", characters: {}},
+      { text: "(The \"To be Continued\" is a lie)", characters: {}},
       { text: "If anyone actually played through this we really appreciate it!"},
       { text: "Love, M and E :)"},
     ]
