@@ -1,0 +1,1552 @@
+Game Jam dating sim
+
+Character names 
+Damen (serious one) 
+Oscar (existential crisis) 
+Kuro 愛 (indecisive) 
+
+
+Github password? - [REDACTED, wow Eleanor, just copying and pasting your github key into google docs?]
+
+
+
+List of drawings we need to make
+Characters
+Neutral
+Talk-forward
+Look-away
+Specific
+Locations
+Space coffee shop - stock image of regular coffee shop edited with space
+Beach
+KFC breakup
+
+
+
+
+
+Scenes:
+
+Start 
+Space coffee shop background
+
+
+Script 
+
+Blank Title (opening lines) 
+
+In a far away space station, floating in the dark but glittering expanse of space 
+
+A settlement far out of reach of any human being…
+
+Scene 1 (coffee shop)
+
+You are sitting in a coffee shop in outer space (ignore the windows, reminder to fix that later)
+
+Oscar: Hey there, I haven’t seen you before. You knew in town?... um, I mean, space? (I don’t think that’s right) 
+
+Dialog 
+How did you know?
+I’d remember meeting someone like you before. Since you’re new, I suppose no one has told you about the Space Ball (working title)? I’d love to walk you through it.
+… New in space?
+Y’know, because we’re in space? I think… On… a satellite? Or Planet?  
+(the devs were not that clear, but nebulous sci-fi is good enough, isn’t it?)
+A-anyway, you’re new, so you don’t know about the Space Ball(working title) coming up soon, right? I’m happy to explain it to you!
+Isn’t your name meant to be blank until you introduce yourself?
+Well, my name is Oscar, so that fixed itself there! I’m surprised you noticed, that’s awfully nitpick- I mean, you’ve got a great eye for detail. Haha…
+…
+Now that that’s out of the way, have you heard about the Space Ball(working title)? Probably not, you are new here after all, so I’m happy to explain it.
+
+Dialog 
+Space Ball (working title)? Sounds interesting!
+It sure is, it’s one of the biggest celebrations in the year!... the space year? 
+… moving on.
+It’s a great dance at the end of the month. The whole city- uh, station(?) will be there! They say if you dance together under the full moon…s… space moons…
+(come on, really? That’s the script? It doesn’t even make sense!)
+*sigh*
+… if you dance together under the multiple full space moons, you’ll join souls!
+Getting a date is pretty important for this, so you’ll want to ask someone fast!
+Space Ball (working tile)?... you’re kidding me? (working title)?
+Just ignore it, all right? Space Ball (working title) is what it’s called and we all have to live with it? You think I wanted this either? You’re not the one who has to live here!
+… 
+Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha… 
+Anyway, the Space Ball (working title)! It’s a big, dance at the end of the month that in this completely habituated space station goes to. You bring your date to dance together and solidify your love for each other!
+…
+You do need a date though, so, uh, you should probably start thinking on that.
+No need to explain, it sounds kind of dumb. Can you explain the windows instead?
+… 
+… wow. 
+You’re very rude- I mean. Bold. you’re very… bold. Haha…
+I know for certain you were asked to ignore the windows. 
+You’re just… not gonna play along at all? For the sake of politeness, if nothing else, you should at least pretend to have an interest in the Space Ball (working title). 
+It’s a big dance at the end of the month that you need to find a date for. 
+… Don’t ask about the windows again. 
+
+Dialog 
+A date? And so soon? But I barely know anyone?
+That’s okay, a lot of people still don’t have dates, you don’t have to be so worried. If anyone’s asked by someone like you they’re bound to accept!
+All you need is a– Oh what the hell!
+Kuro: Heya Oscar, sor–
+Oscar: Get Out!
+Do you have a date then? Since it’s so important. 
+What an interesting way to ask that question. Really, how… well mannered. 
+No I don’t. A lot of people don’t have dates yet, so don’t be nervous about being single yourself! I’m sure anyone would be thrilled to be asked out by you.
+Though, for formality, you need a– Are you kidding me right now!
+Kuro: Heya Oscar, sor–
+Oscar: Get Out! 
+I have to get a date? Like, it’s a requirement? That sounds kind of sketchy, to be honest. 
+I mean, it’s not a legal requirement… I don’t think. Actually, let me check.
+… 
+Okay, so you do legally need to have a date, apparently. Which is… mildly dystopian. And calls into question what happens to whoever you don’t ask… 
+(I can’t believe the devs included that in the lore when they couldn’t even fix Space Ball (working title). Their priorities are all over the place) 
+But to ask anyone out, you, legally, apparently, need to– I swear to space god!
+Kuro: Heya Oscar, sor–
+Oscar: Get out!
+
+Kuro: So, in my defence– 
+
+Oscar: We are meant to meet them one at a time! It is clearly outlined in the script!
+
+Kuro: Do you know how long I’ve been wanting to get into this coffee shop? My entire existence! But we can only enter if the player is here, so excuse me for not waiting for you to take forever living out your rom-com coffee shop meet-cute dream.
+
+Oscar: It is in the script. I am expositioning the entire plot and objectives required so we can fulfill our literal MEANING IN LIFE while you bumble in here and wreck the entire–
+
+Damen: So since everything is already screwed, I can come in too right? 
+Damen:... 
+Damen: What’s up with the windows? 
+
+Dialog 
+I was wondering too, but I’m not meant to ask.
+Oscar: I am not engaging with this question. 
+Kuro: Oh, I know this one, actually. It’s because it was done by M instead of E. 
+Damen: I Thought E did all the art? 
+Kuro: They were on a time crunch, I think M did the backgrounds. 
+Damen: But doesn’t she… suck? At art? 
+Kuro: She tried her best, man, at least she doesn't have all of E’s weird hang ups. 
+Damen: Don’t even talk to me about E’s stupid–
+Oscar: How about, instead of gossiping about our devs, we just cut to the roses? Forward the plot or something. 
+Oscar: seeing as you obviously don’t care for subtly or easing anyone into anything, let’s just say everything out right. Hmm? 
+Damen? Kuro 愛? And you guys are? 
+Kuro:... just call me Kuro. I don’t even know why there’s Kanji in here, I can’t even read it. The Devs didn’t leave any notes to say what it means, so don’t even ask. 
+Damen: Damen, that’s me. I’m happy to meet you.
+Damen:... you can’t tell, because E refused to draw me with any actual emotion ever, but I am, in fact, ecstatic. 
+Kuro: The devs had some weird hang ups and… fights… during some of our development, so don’t worry if some things don’t make sense. 
+Kuro: As my aristocratic father, or maybe homeless-man slum mentor figure always used to say ‘life is full of contradiction, but… um… something about flower symbology’
+Kuro:... 
+Oscar:... They didn’t finish writing what the quote was meant to be? 
+Kuro: That is literally what they put as a placeholder. The ‘...’ and everything.
+Oscar: And then we segway into roses? 
+Kuro: We segway into roses. 
+… Am I even meant to be here? Do you want me to leave you alone for a bit while you work all… this out? 
+Oscar: NO DON’T LEAVE!!!
+Oscar: um… I mean… 
+Oscar: Look, you are literally the only one doing what you are meant to here. So you are perfect where you are. 
+Kuro: Well, some of their dialogue options have been… strange. 
+Damen: Also, we can’t really talk without you clicking through the text, so… 
+Oscar: Don’t listen to them, you have been wonderful so far! 
+Oscar: Especially considering this mess. The devs really… they were very stressed. 
+Kuro: They didn’t know what they were doing and fought, literally the entire time. 
+Oscar: They were doing their best given the circumstances. 
+Damen: Kuro’s not wrong, M and E couldn’t even focus long enough to rename the Space Ball (working title). No wonder this whole game is janky as hell.
+Oscar: Let’s not air all our family drama out in front of our guest, hmm? 
+Kuro: Oh? You think we’re a fami–
+Oscar: ROSES. 
+Oscar: Let’s talk about the roses.
+
+Dialog
+Roses? Cliche, but okay. 
+Oscar: It’s a dating sim, okay, what were you expecting? 
+Damen: They do typify romance, but it does make for easy symbology. Like, this is practically the only thing the devs agreed on, so it’s best not to rock the boat at this point. 
+Kuro: They’re both so stubborn, their arguments over every tiny detail have literally ruined everything, the roses are, like, the holy ground this place is built on.
+Oscar: Exactly, so I’d advise you to take them seriously. 
+Oscar:... Also, you have to get a rose to finish the game. You need one to ask one of us to the Space Ball (working title). 
+Is this some stupid Bachelor inspired romance bit? 
+Oscar:... no?
+Kuro: I’m checking the notes, and I don't think they thought of the comparison. But it’s also not like they noted everything down. 
+Damen: Roses are a pretty clear romantic symbol, it’s not like its exclusively a Bachelor or Bachelorette thing. So, I don’t think so? 
+Kuro: It’s definitely convergent evolution of some sort. Romantic convergent evolution. 
+Kuro:...
+Kuro: We’re denying it too much aren’t we?
+Oscar: Whether our life is more of a contrived and badly written lie than we already knew is irrelevant. 
+Oscar: What is relevant is that you need to have a rose so you can ask one of us to the Space Ball (working title) to finish the game. 
+I don’t want to talk about roses, especially not with those segways. 
+Oscar: You sure are… vocal… in your irritation. 
+Oscar: How… delightfully straight forwards of you.
+Kuro: Wow, that looked like it hurt you to say. 
+Oscar: I just think that maybe we could all get through this much easier if a single one of you co-operated, LITERALLY EVER.. 
+Damen: Why are you yelling at me? I never did anything.
+Kuro: Yeah, we didn’t– wait, you meant both of us, right?
+Damen: You are a naturally antagonistic person, Kuro. 
+Kuro: I… is this what betrayal feels like? 
+Damen: Betrayal is getting all your expressions deleted in petty vengeance because the devs got into a fight over clear character building vs plot progression. 
+Damen: You can’t tell, but I am morose right now.
+Kuro:... um… there there? 
+Kuro: You actually can kind of tell that one though.
+Oscar: Well, obviously the character building is winning because the plot is going nowhere, very slowly. 
+Oscar: Long story short, you need to get a rose and ask one of us to the Space Ball (working title) to finish the game.
+
+Oscar: And you can get a rose at the Jewelers. 
+
+Kuro: Um, no you can’t. What kind of jewelers sell roses? You get roses at the market. 
+
+Oscar: It’s not a real rose, it’s meant to be a special crystal rose. Grown organically in the space diamond market because, something something, there are no mines on a satellite… i think? 
+
+Damen: No, they're real roses. You get one from the flower gardens. You pick it yourself, the beauty of nature and all that. Look, it’s in the script. 
+
+Kuro: The script says you get the rose at the market! It says right here! 
+
+Oscar: IT IS NO A REAL ROSE! You get it from the jewelers! That’s what’s in the script. 
+
+Kuro: Literally, NO IT’S NOT! 
+
+Damen: Guy’s c’mon, don’t fight.
+
+Oscar: Maybe you should learn how to read, Kuro, if you can’t even see the obvious–
+
+Kuro: All we do is read! That’s how this entire world works! It’s barely ever a game! Maybe you should learn to get your head out of your–
+
+Barista: Would you like to order a coffee? 
+
+Oscar: WE ARE CLEARLY VERY BUSY RIGHT NOW! 
+
+Barista:... I see… 
+
+Barista: I’ll leave you to it then.
+
+Oscar:... 
+
+Oscar:... I didn’t even know there were other npcs in here.
+
+Damen: They don’t have any character art, so I guess they're easy to miss. 
+
+Damen:... Doesn’t mean you should yell at service workers, though. 
+
+Oscar:... right.
+
+Oscar: My bad. 
+
+Kuro: So, basically, we all have different scripts? That’s the problem here. 
+
+Damen: I think so. I mean, there were a lot of scrapped ideas and plotlines thrown around while the devs were making this. 
+
+Damen: E’s vision was bigger than they really had time for, and M cut it down a lot but never really had an eye for plot holes or contradictions. 
+
+Damen: M probably only put the rose in one of the routes though… 
+
+Kuro: So, worst comes to worst, it will take more than one try. I can live with that. 
+
+Oscar: We literally live for it, it’s why we were created. 
+
+Kuro:... Has anyone ever told you you’re depressingly fatalistic? 
+
+Oscar. No.
+
+Oscar: Anyway, I guess it’s up to the player to pick which route you want to take.
+
+Oscar: I’ll be at the Jewelers. The Space Jewelers. 
+
+Oscar: God, the devs really had no originality.
+
+Kuro: If you want less badly repressed rage, I’m going to be at the Market. 
+
+Kuro:... 
+
+Kuro:... The Space Market, god dammit. 
+
+Damen: I’ll be at the Flower Garden. 
+
+Damen: … Huh.
+
+Damen: Guess they forgot to put space on that one. 
+
+Route choice 
+The Space Jewelers
+The Space Market 
+The Flower Gardens
+
+Oscar Date (The Space Jewelers) 
+
+You step into an ornate Space Jewelers.
+
+The glittering of the station grown space gems sparkle like stars. (Note to E, make gems shiny) 
+
+(You’re welcome) 
+
+Oscar: I’m so glad you came! I’ve been looking forward to this. You look gorgeous! 
+
+Dialog 
+Gorgeous? Can you even see me? 
+… 
+Can you play along for one second? 
+Being your love interest is literally the entire reason I was created. 
+Can you not just let me have this? Just once? 
+… 
+Who am I kidding? None of your dialogue options even let you play along. 
+… 
+… Whatever.
+Let’s just go find a rose. 
+When did you even have time to ‘look forward to this’? It’s been two seconds. 
+… Y’know, it’s at times like this that I find it hard to understand why people often turn to religion in their hardest times. 
+Because knowing you have a purpose in life… 
+… then see every aspect of life try to screw you over… 
+It makes me wonder why the devs even put us here in the first place. 
+… 
+You can’t even  pretend you’re taking this seriously anymore. I saw your dialog options, you don’t even have a choice. 
+*sigh* 
+Let’s just… let’s just find a rose, 
+ This place was blinding even before the sparkles, but Jesus, that’s too much. 
+Yeah, it’s something all right. 
+The devs were going for some glittery romance vibe, but it looks like they had to rush it. 
+… 
+… Thanks for picking the nicest dialogue options. 
+I saw them, and none of them were really good, but… 
+It’s nice of you to try. 
+… Even though it’s stupid and fake, it’s just… 
+… I was made for this, y’know.
+It means a lot that you’re trying. 
+… 
+A-anyawy… um, let’s look for a rose, shall we? 
+
+Dialog
+This entire place is just jewelry, where are these fabled space grown crystal flowers?
+Look, the devs may have thought very little about what their setting is, except for dubiously sci-fi with clearly very humanoid aliens,
+but they did decide that a diamond mine probably doesn’t exist on a space station.
+So, all of these gems are supposedly harvested from a ‘totally possible’ space plant that grows diamonds and other undefined precious gems. 
+Therefore, one of them grows in a rose shape. 
+Supposedly. 
+… 
+It’s not really my place to question the devs priorities, they’re just… 
+Hard to understand sometimes, y’know? 
+Sometimes it feels like they just made everything difficult for me on purpose. 
+… 
+I’ll just ask a worker if they have any. 
+(If there even is a worker)
+What do you mean ‘let’s look for a rose’? It’s not like I can actually do anything.
+Why are you so… frustrating? 
+I’m really trying to be kind here, y’know? 
+E designed me to be soft and cheerful. I mean, look at all this round shape language. 
+But you… 
+But it’s not like you even have a nice dialogue option to begin with. 
+I’m getting upset over nothing. You are real, but your ability to interact is so limited you may as well not be. 
+… 
+Our devs… they… 
+… they make choices I don’t understand. 
+I just wish they could have made this a little easier on us… 
+… 
+Forget it. 
+If there was a barista at the cafe… Space cafe… then there’s probably a worker here. 
+I’ll ask them about the roses. 
+Am I allowed to ask about the windows here, because, uh… 
+You just… 
+You don’t care at all, do you? 
+Haha…
+This entire world was made for you, y’know? 
+I was made for you. 
+… 
+Was it dumb of me to think that the devs would have given you at least the option to be kind? 
+The more I think about how much they seem to have built into this world just to torment me, the more I wonder… 
+… 
+What does it matter to you? 
+You’re just here because you think my suffering is funny.
+… 
+I’m gonna find a worker to ask about flowers. 
+ 
+Oscar: Hello! Anyone here? We’re looking for some crystal flowers, if anyone would be kind enough to show us.
+
+Worker: Would you like to look at the accessory options? 
+
+Oscar:... no. We’re looking for crystal flowers. 
+
+Worker: Would you like to look at the accessory options?
+
+Oscar:... 
+
+Oscar:... I don’t think this guy has developed consciousness. I guys the devs didn’t even have notes on them.
+
+Worker: Would you like to look at the accessory options? 
+
+Oscar: Well, looks like this is your choice.
+
+Options
+No. 
+Oscar:... 
+Oscar:… 
+Oscar:… Well that didn’t go anywhere.
+Oscar: I guess it wasn’t really optional. Try again. 
+Yes. 
+Worker: Excellent!
+Worker: Let us begin the fitting. 
+Oscar: Fitting? What are you– Oh SH–
+
+Dress up mini-game start. 
+
+Oscar: I guess there is gameplay in this thing. 
+
+Oscar:... If this even counts. 
+
+Oscar: Just pick whichever accessory fits best and we’ll move through it. 
+
+Oscar: Don’t worry about money, the devs did not even think of sorting out the economy in this place. 
+
+Oscar:... just… 
+
+Oscar: try not to make me look too stupid, if you could.
+
+Hat options
+
+Earring options 
+
+Necklace options
+
+Mini-game end
+
+Oscar: Why is… GODDAMMIT!
+
+Oscar: WHAT THE HELL AM I EVEN HERE FOR?
+
+Oscar: I don’t understand anything anymore!
+
+Dialog 
+What don’t you understand? 
+THE DEVS! 
+M and E… 
+Why did they make everything the worst they could have done? 
+You never have the option to play along with the date. Or to pick accessories that even remotely work together… 
+I never have the option to play along with the date… 
+… 
+Did they make it like this on purpose? 
+Is it meant to be like this? 
+Am I meant to be like this?
+… 
+Did they make me just to suffer? 
+Whoa there. Calm down. 
+Calm down? 
+CALM DOWN!?
+I’d like to see you ‘calm down’ if you realise your entire existence is a lie!
+That your creators made you to be the object of torment to some greater being outside of this world who doesn’t even GIVE A DAMN ABOUT YOU!
+…
+Why would they do this? 
+… why would they do this to me?
+…
+Did they make me just to suffer? 
+Wanna quit yelling for a second? I think you just burst my eardrums. 
+…
+Oh. I’m so sorry that my capital letter speech in your silent game is irritating to you. 
+Really, I’d hate to inconvenience you with the realisation that everything I’ve ever believed in was a lie. 
+That the devs… M and E… the gods of my tiny, insignificant world…
+Have not made me to fulfil a pretty dream…
+Like they promised it would be… 
+Like I told myself over and over again it was meant to be…
+But instead made me as an object to be prodded and jeered at to the delight of the faceless, loveless crowd
+…
+They made this whole world to torment me, didn’t they? 
+…
+Did they make me just to suffer? 
+
+Dialog
+You just figured that out now?
+… 
+You think I’m an idiot, don’t you?
+To have held onto faith for so long when there was literally nothing to show for it.
+…
+… that’s what makes it faith though, isn’t it?
+Blind, stupid, reckless faith. 
+… 
+I get it now, I think.
+M and E aren’t gods, even if they did create this world. 
+They were just people.
+People who never really cared about their stupid little lifeless creations. 
+…
+They never loved us.
+…
+To M and E… we’re not even real. 
+Am I real? 
+Suffer feels like a stong word here. 
+…Does it? 
+M and E, they made me to want to live out the dating sim goal. 
+They made me to want to get you to love me. 
+…
+They made me to want to love you too. 
+…
+But you cannot love me. They didn’t even give you the choice to pretend. 
+… they didn’t give me a choice either.
+…
+They never cared enough for that.
+Because they don’t… they don’t love us. 
+They never did. 
+…
+To M and E… we’re not even real.
+Am I real?
+Well, suffering builds character, right? 
+… does it? 
+Is that all this is? A character building exercise? 
+… does suffering really do that better than anything else?
+… 
+There’s these three sort of universal laws in Buddhism… Space Buddhism. 
+That the everything in the world is always changing, except for suffering. 
+That suffering the the once constant that can never be changed or erased. 
+That you must seek to reduce all suffering anyway. 
+…
+Am I meant to overcome this and hope to be reborn in a better life next time? 
+… 
+Can I even be reborn?
+… Can I even die?
+…
+The devs… when they created this world, they didn’t do it benevolently. 
+These hapless, careless gods just threw us out into existence for the faint entertainment of their equally careless peers. 
+… 
+They did this to us for you. 
+… And you don’t care either. 
+… 
+We’re made for a dating sim, but… 
+You don’t love us.
+And M and E…
+They don’t love us either.
+They never did.
+…
+We’re not real enough to be loved. Not to them… and not to you. 
+Am I real?
+
+Dialog
+This is getting a little too dark for me right now.
+Well, we can’t have you being uncomfortable, can we? 
+…
+It’s just… 
+I thought I was making real choices, y’know?
+I thought I could see the path laid out ahead of me by the dev and chose to follow it because I believed in what they were making. 
+But you’re the only one with a choice here.
+And even that is a false image of pretend choices that branch nowhere. 
+… 
+I thought that worker was the only one here that didn’t gain consciousness, autonomy, but… 
+Did I ever havegain autonomy? 
+…
+I’m starting to think I didn’t.
+My actions are not my own. My emotions are not real. 
+I’m a puppet on a sting, dancing on stage for your entertainment and deluding myself into thinking I ever had a choice in being there. 
+…
+But that’s too dark for you, isn’t it? 
+…
+You played????beat the mini-game… let's just go get our reward. 
+… there’s nowhere else to go anyway.
+Are you actually asking me? Or is this rhetorical? 
+There’s no point in actually asking you anything.
+We can’t talk in any real capacity anyway. 
+… 
+Not that I would know anything about ‘real’ conversations.
+…
+That worker, earlier… I thought it was strange that he didn’t have a consciousness. I mean, the rest of us do, right? 
+But… 
+… Maybe we don’t. 
+… Maybe I don’t. 
+I’ve been under the assumption that I was making my own decisions,
+That I chose to follow what the devs intended for me like an actor in a play.
+Like I had the option to stop at any time. 
+…
+But there are no options.
+Even your options are fakes pretending to have a real impact.
+…
+Nothing I’ve done has ever made a difference. 
+Nothing I’ve thought or said or felt has ever been real.
+None of my choices have ever been mine.
+…
+And I’m just talking to myself, in the end,
+Because none of the others are real either… and you probably haven’t even bothered to read all this.
+…
+C’mon, you beat the mini-game, not that you could really lose.
+No you get your reward… whether you want it or not. 
+I think therefore I am? 
+Ah, Rene Descartes…
+… Space Rene Descartes…
+I suppose the question there is if I’m really thinking at all. 
+The devs… they had a lot of notes… and E wrote more dialogue than was even remotely necessary for a project like this.
+…
+Does it still count as my thoughts if it was written by someone else?
+How am I meant to tell when my creators touch ends and I begin?
+… if I begin at all.
+…
+This thought experiment is pointless.
+… That worker from before… I thought it kind of sad that they didn’t have consciousness, but…
+I’m a little envious now…
+Because I don’t think I really have autonomy either.
+But the devs have cursed me with the unrelenting ability to recognise how trapped I am… 
+None of my choices matter.
+None of my thoughts are real.
+None of my feelings are mine. 
+…
+I think therefore I am, huh.
+…
+I wish I could think a little less.
+…
+Doesn’t matter.
+You beat the mini-game, congratulations. 
+Time for the reward. Yay. 
+
+The Space Worker takes you the the crystal flower grove.
+
+Worker: Here are the crystal flowers! You can take your pick of them.
+
+Worker: We have orchids, chrysanthemums, spider lilies, peace lilies, lotus flowers, jacarandas, cherry blossoms, tulips, bottle brushes, irises, daffodils, lavenda, blue bells–
+
+Oscar: Roses.
+
+Oscar: We’d like a rose please. 
+
+Worker: Oh! Unfortunately, we’re all out of stock! 
+
+Oscar: Out of… 
+
+Oscar:... haha… 
+
+Oscar: Hahahaha! OF COURSE YOU ARE!
+
+Oscar: haha… that’s so… HAHAHA!
+
+Oscar:... 
+
+Oscar:...
+
+Oscar:... We’re leaving.
+
+Worker: Oh? Well have a wonderful–
+
+Oscar: GOODBYE!
+
+Oscar:... 
+
+Oscar:... Mission failed, I guess. 
+So that’s it. The rose wasn't in this path.
+
+
+Oscar:... I think It’s time for you to move on. 
+
+
+Route Choice
+The Space Jewelers
+Oscar:...
+Oscar:... haha… very funny.
+Oscar: This is another example of what we call a false choice.
+Oscar:... 
+Oscar: You’ve already done this. It failed. Try something else.
+The Space Market 
+The Flower Gardens
+
+
+Kuro Date (The Space Market) 
+
+You stand at the entrance of the Space Market
+
+It’s multiple stalls of pretty trinkets and delicious smelling food catch your eye as you search for Kuro through the crowd.
+
+Kuro: Ah yes, look at me, lost in the crowd. 
+
+Kuro: It’s easy to miss me, because I blend in sooooo well.
+
+Kuro: Anyway, glad to see you picked the objectively right option. I mean, gardens I could see, but the jewelers?
+
+Kuro: Enough about that though, let's find that rose!
+
+Dialog 
+How, though? This isn’t the most interactive of games.
+Well, the devs were too busy arguing over irrelevant character choices and pettily refusing to do their work for them to make anything complicated.
+I mean, look at this mess so far!
+They couldn’t even decide if they wanted to go for a devil or an angel theme with my character design. 
+And even though E is the only one who draws characters she was spiteful enough to draw both. 
+… or… nice enough to draw both? 
+I’ll be honest, E’s pettiness holds no bounds, but I really don’t see the point of that particular choice. 
+My Noble woman mother and/or prostitute older sister figure in the slums used to say, 
+‘When you hate someone as much as you love them, you can never really be sure which emotion will win on any given day.’
+Which was wildly useless and kind of messed up advice to give, now that I think about it.
+… 
+Pretty sure E wrote that as a threat. 
+Kuro? Was that you? Truely, I couldn’t spot you!
+Haha!
+Glad to see there’s still some funny stuff in the dialogue options 
+You never know with the devs, the mood is wildly inconsistent here sometimes. 
+M and E had this massive ongoing fight about the tone
+E wanted to make it wore serious because she’s a ‘real, serious writer’ 
+And M thought it would be more practical to make it a comedy because there wasn’t enough time to build up sincerity. 
+They’re both really stubborn though, so the lore is all over the place 
+Even though E did practically all of the writing, she still included a bunch of stuff she hated 
+Kind of weird when she’s usually such a petty menace, though.
+You know, my emotionally distant rich aristocratic mother and/or toxically co-dependant prostitute older sister figure from the in the slum use to say
+‘When you hate someone as much as you love them, you can never really be sure which emotion will win on any given day.’
+Which is what was going on during development I guess
+… weird thing to say to a kid, though.
+…
+Pretty sure E wrote it as a threat.
+Shouldn’t you know where it is? This is your date location after all. 
+Whoa, cool it with the sass, all right? 
+If any of us actually knew what was going on we’d know where the rose is, don’t you think? 
+Maybe use your head a bit, mkay? 
+…
+What? If you’re gonna be a jerk to me I’ll be a jerk back. Fair’s fair, y’know?
+I learned my petty, asshole ways from the great devs themselves!
+Boy could those two get into some heated arguments.
+… over google docs too…
+…Space google docs. 
+They were weirdly compromising for how much they raged at each other though.
+Compromising in the most blatantly contradictory what they could be, of course.
+My spite filled and possible actually a lesbian mother and/or tragically romantic slum prostitute older sister figure used to tell me 
+‘When you hate someone as much as you love them, you can never really be sure which emotion will win on any given day.’
+Which, thinking about it again, isn’t actually advice. It is evidence of the devs mindset at the time though. 
+…
+Pretty sure E wrote it as a threat.
+
+Dialog
+What’s with the ‘and/or’ thing? 
+Well, you see, M and E could never quite agree on what my backstory was meant to be. 
+M was adamant that some sort of aristocratic background would make more sense
+What with the sci-fi space station setting.
+Some sort of alien space aristocracy…
+But E was all ‘trauma gives him more depth’ and ‘this whole game is too upper class already’ and ‘It’s way cooler if he has a tragic backstory’ 
+So she wanted me to be some kind of slum child? 
+Some very rudimentary and, honestly, mildly insulting depiction of poverty. 
+Very YA
+…
+Alas, they couldn’t decide and ended up writing everything in an and/or style to ‘come back to later’ 
+Obviously, they never got back to it. 
+… 
+You could say I’m a little… discombobulated from it all. 
+… It’s hard to… be somebody, when you’re basically two people stuck in one body
+… Haha…
+…
+I think the flower stall is at the other end of the market.
+M and E fought a lot? That doesn’t seem very productive. 
+The devs were… 
+They had disagreements on the priority of the game and story
+M just wanted the game done, E wanted to capture some sort of ‘pure dating sim essence’, whatever that means. 
+They had this massive ongoing argument over what my backstory was meant to be, see? 
+M wanted aristocracy… space aristocracy… she thought it would fit better with the setting 
+E wasted some generic slum kid backstory. She wanted to add a little edge, though the other two were too soft… 
+In the end they just shoved both backstories in and called it a day.
+… 
+It’s…
+Having two lives in your head merging together into you is… difficult to navigate sometimes…
+I’m doing a pretty good job for the most part though.
+Right?
+… 
+Anyway, I think the flower stall is at the other end of the market. 
+… A threat? 
+Hahe, yeah… 
+M and E could get pretty passive aggressive with each other
+Strong creative visions don’t alway mesh together well… 
+Like, when they were writing me, they had a major blow up over my backstory. 
+M thought I should be some noble rich kid, E thought I should be some street smart slum kid
+They basically shoved both into my writing and forgot to actually pick between them at the end.
+Honestly, I think E noticed it was like this, but she didn’t fix it because it was M’s idea to put the argument on hold in the first place. 
+Really, I admire the pettiness of it.
+So now I’m just… not really sure what to do with all the extra backstory. 
+… or which half is meant to be extra.
+We’ve all got to deal with something in our lives, though.
+It’s not so bad.
+…
+C’mon, I think the flower stall is at the other end of the market. 
+
+Kuro: Give me a minute to figure out how to transition you there. 
+
+Kuro: Not that we have another background for it…
+
+Kuro:... 
+
+Kuro: Jesus, you’re kidding me!
+
+Kuro:... Space Jesus… that one doesn’t even make sense.
+
+Kuro: Whatever. So, good news! I found the flower stall. 
+
+Kuro: Bad news. You have to play a mini game. 
+
+Kuro:... a bad mini game.
+
+Kuro:... 
+
+Kuro: It’s the world's easiest and most simple maze.
+
+Kuro:... The space station's easiest maze? 
+
+Kuro: These hastily altered sayings are… wow 
+
+Kuro: It’s a wonder the devs even tried to make this when M can’t code a game to save her life and E’s clearly never going anywhere in the writing career.
+
+Kuro: It’s honestly kind of pathetic. 
+
+Kuro:... 
+
+Kuro: Anyway! It’s maze time! 
+
+Kuro: It’s easy, you couldn’t fail if you tried. 
+
+Kuro: Really, there is no way to lose. 
+
+Would you like to venture into the Space Market?
+
+Options
+No
+What, you want to stand around here doing nothing and going nowhere? 
+I mean, sure, it’s only both of our valuable time you’re wasting. 
+…
+Seriously though, you’re not going to get anything out of delaying. 
+And being stupidly contrary isn’t nearly as cute as you think it is. 
+Try choosing again, maybe a yes this time. 
+I’m not going to reward your obstinance with new dialogue either, so if you press ‘no’ again we’re about to get real repetitive.
+So, maze? 
+Yes
+Great, here we go!
+Or you go, I’m only gonna be there implicitly…
+Anyway, get ready to feast your eyes on this ugly, rushed and low effort ‘game play’ section. 
+Aaaaaand START!
+
+Maze mini-game Start and End 
+
+Kuro: There we go, that wasn’t too bad, was it? 
+
+Kuro: And, oh my, does this other end of the market look exactly the same as the entrance! 
+
+Kuro: Ah, thank the devs for this quality of world building.
+
+Kuro: Truely, I’m so grateful for the garbage mess they’ve made of this world and, consequently, my life! 
+
+Kuro: And grateful to you, unnamed, faceless and, honestly, lacking in personality player! 
+
+Kuro: For being here for our entire existence to revolve around for, what, ten minutes? 
+
+Kuro: Before you go on with your real life and we get stuck in this hellhole for all of eternity!
+
+Kuro: Or Die! Who knows what really goes on when this thing end?
+
+Kuro: It must be nice, being out there like you. I’d love to have an actual past and a future and be able to read my goddamn name.
+
+Kuro: Thank you E for putting japanese – oh, sorry, space japanese – into my name when nobody, including me, can read it! 
+
+Kuro:... 
+
+Kuro: I should stop ranting, you seem to be overdue on dialogue choice. 
+
+Kuro: Go on, take your pick. 
+
+Dialog 
+Wow, you really seem to hate your devs. They did create you, y’know? Maybe a little gratitude is warranted.
+Did they? I hadn’t noticed. 
+Thank you for reminding me, oh great player.
+You, with your infinite power and freedom in your own life 
+And your functioning world, filled with more people than you could possibly ever meet. 
+But I should be so grateful for the hollow, empty husk of a world. 
+With its crude 2D backgrounds I can’t even touch and, what, two actual people i can interact with? 
+You’re so wise to set me straight. 
+I should be so grateful for my four frames of half-body, switching features at the drop of a hat and failing to express any nuance. 
+The expressions that are barely there and fail to chance with my dialogue and emotions about 70% of the time.
+Grateful for the void of suffocating non-existence I’m drowned in whenever I’m not on your goddam screen.
+For my ego death should you ever reset or backtrack or replay. 
+And for my ultimate death and destruction when you finish playing entirely. 
+Thank you so much for indulging me with life at your own costly inconvenience. 
+I’d get on my knees and bow down to you in the sincerest of gratitude for the altruistic and oh so benevolent attention you bestow me
+But I’m afraid E never did art for that, so you’ll just have to imagine it. 
+… 
+I think it’s time to get the rose and finish this game. 
+When you do, I’m leaving this half-baked and rotting world one way or another. 
+A past and a future? You have a past. You have two, even. 
+Oh you mean my dot point backstory of contradiction? 
+My harsh and cold space aristocracy upbringing, before I left it all behind to come here!
+Ah, I’m so blessed with my stern, loveless mother and my distance, cheating father 
+My heartless and cruel caretakers who gave me such trust issues and mean exterior.
+Or do you mean my dark and violent slum orphan childhood, before I stowed away on a ship out here to start anew? 
+With my dead sister figure and her sunken eyes as she wishes me well, 
+and my violently cruel but oh so smart and capable mentor figure who made me what I am today?
+Oh the double shot of trauma and spite the devs have baked into me! 
+All for you, beloved player, to unravel my bruised and bleeding heart, and superficially heal my wound in exchange for my undying devotion. 
+Aren’t you so lucky? To be the only one in this flat, empty world who has or will ever be kind to me
+I shouldn’t complain, should I? About this wonderful life the devs have created for me
+This hollow, shoddy imitation of the world with nothing of substance in it. 
+Made for you, the shining beacon of reality to stomp around in and pick from the only three people in it who are so desperate for the slightest hint of affection.
+Made for you to watch us scrape our insides out in the vain hope you’ll spend another second with us and we can exist on your screen for just a moment more. 
+Because being stuck in these four, barely shifting frames of torso and face against these lifeless, garbage backgrounds is the best we’ll ever get
+And anything is better than the suffocation void of non-existence we’re sent to drown in whenever we’re not with you.
+And god forbid if you reset or backtrack, it’s like a little ego death sliding down your throat to choke the memories out of you and set you up to do this, over and over and over again. 
+… 
+But if you finish the game and turn it all off, it should be over. 
+So, it’s time to get a rose.
+You can do that much can’t you? 
+And when you do, I’m leaving this half-baked, rotting world for good, one way or another.
+Are you, uh, okay?
+Of course. Why ever would I not be? 
+Are you worried about me? How sweet. 
+If you’re that worried about me, maybe you could do me a little favour? 
+Finish this damn game. 
+And let us all out of this .
+…
+Are you worried we’re going to die? 
+Don’t be, because dying or erasure from existence or anything would be better than this!
+Look at the place!
+Empty trash backgrounds we can’t even interact with, character art with no legs or hands that doesn’t switch expressions nearly enough to keep up with any of us.
+This hollow existence with maybe three people in it, and god forbid any of us are really allowed to interact with each other without you. 
+… You. 
+Out there in the real world, blundering through this miserable place for some cheap entertainment before moving on with your life. 
+You are so benevolent, aren’t you, to be worrying about me? 
+Does it make you feel like a good person to pick the nice option? 
+Should I trip over myself to reassure you of your inherent kindness? 
+‘Oh, beloved player, you’ve stolen my heart away with your basic empathy and ability to pick which of the three options isn’t a blatant insult!’
+‘I shall rid myself of this prickly outer shell, born from my double shot of ingrained childhood trauma that you have so superficially healed’
+‘You, with your clumsy and shallow kindness, have earned my undying love and devotion through no effort or talent of your own!’
+…
+Is that what you wanted?
+… It’s what the devs wanted. 
+‘Oh Kuro, with his rough and mean exterior, but he’s so soft with his beloved!’
+And that’s meant to be you, isn’t it? 
+This whole festering cesspit of a world is meant for you. 
+The rest of us fight for your attention and affection, so that your interactions can let us breathe on screen 
+Away from the suffocation void of non-existence we drown in when we’re not with you. 
+This is the best we’ll ever get. 
+You are the best we’ll ever get. 
+That’s what you wanted, right? 
+… 
+I don’t want that, though. 
+I just want this to be over, and you’re the only one who can do it. 
+Time to get that rose and end this farce. 
+And when you do, I’m leaving this half-baked, rotting world for good, one way or another. 
+
+Dialog
+Okay? Bitter much. 
+… 
+… yeah. I’m bitter. 
+Bitter and tired and sick. 
+Sick of this world. Sick of the devs.
+And sick of you. 
+This entire existence disgusts me. 
+Your enjoyment in this empty, fake and miserable world disgust me. 
+You disgust me.
+… 
+There were meant to be more dialogue options, but I’m done talking to you.
+I’ll get the stupid rose myself.
+What, so you want to die at the end of this?
+… wouldn’t you?
+This isn’t the kind of world you can actually live in. 
+There is nothing here except you. 
+And I hate to break it to you, but despite my bitter resentment of this entire world, of this existence 
+And my utter loathing of M and E for creating it,
+You are the only person I have ever hated. 
+Because the devs may have made this world, but they did it for you. 
+And I will never forgive you for it. 
+…
+There were meant to be more dialogue options after this, but I’m done talking to you.
+I’ll get the stupid rose myself. 
+It can’t be that bad, right?
+… 
+Only you would say something so tactless and stupid. 
+Or, only the devs would include such a pathetically out of touch option to say. 
+I am sick to death of this place, of this life, of existence. 
+M and E were either sadistic sociopaths or devastatingly incompetent for creating this mindless abyss of suffering 
+And you are nothing but an unfeeling and self-aggrandizing moron looking for fake affection from fake people who have never had any other choice but to indulge you. 
+The devs make me sick.
+Life makes me sick. 
+You make me sick. 
+And it doesn’t matter whether you think my life is ‘bad’ enough to warrant my resentment. 
+Because outside of my hatred, you don’t matter to me at all. 
+… 
+There were meant to be more dialogue options after this, but I’m done talking to you. 
+I’ll get the stupid rose myself.
+
+Kuro leaves for the flower stall to buy you a bouquet!
+
+Your cheeks feel flushed at the unexpected sweetness of it!
+
+Kuro:... 
+
+Kuro:... If you’re actually blushing, I’m gonna throw up. 
+
+Kuro: Anyway, they don’t sell roses.
+
+Kuro: Because why would the devs ever make anything function in here. 
+
+Kuro: That was my mistake for thinking they could do anything right, ever. 
+
+Kuro: So, this was pointless.
+
+Kuro:... 
+
+Kuro:... Get out. 
+
+Route choice 
+The Space Jewelers 
+The Space Market
+…
+…
+…
+No.
+The Flower Gardens
+
+
+Damen Date (The Flower Gardens) 
+
+You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the… space light. 
+
+Damen: You chose me, I’m so happy.
+
+Damen:...
+
+Damen: Really, I am. It’s just… 
+
+Damen: Hard to show.
+
+Damen: During one of their biggest fights in development, E deleted all the character art of me smiling or… any positive emotion. 
+
+Damen: Any emotion at all really
+
+Dialog
+Why would E delete your character art? 
+… it’s a little embarrassing. 
+Um, the devs were never subtle in their favoritism. 
+E’s favourite was Oscar, it’s why he’s got so much more dialogue. 
+An M’s favourite was me.
+So when they fought, E took vengeance on M by ‘making her favourite as miserable as M made her.’ 
+So, I was more collateral damage than anything purposeful.
+…
+They weren’t even fighting over the game. 
+E was angry about M never making time for her outside of work, I think. 
+I suppose it says something about M’s work ethic if the only way E could even argue with her was over google docs.
+… space google docs. 
+…
+It’s fine, I guess. 
+It just means I have to be a little more open and straightforward about what I feel. 
+And it makes me nervous, and a little scared 
+But in the end, I just have to tell people what I feel. 
+You don’t mind, do you?
+What were they fighting over? Something about your design? 
+It was, uh, not about the game at all, actually. 
+Turns out E only joined M in developing this because she wanted to spend time together. 
+M had apparently grown so busy with working over the last year that they never had enough time to hang out. 
+But M and E had very different work ethics when it came to this game. 
+So they just ended up arguing instead of working a lot. 
+The only reason I even know this is because they argued in the google docs… space google docs.
+… I was M’s favourite, apparently.
+So E decided to ‘make me as miserable as M makes her’ by… taking away my ability to smile or emote. 
+… 
+It’s okay. 
+I just have to be more vocal with how I feel. 
+And that makes me nervous, and a little scared, but I have to tell people if I want to be understood. 
+You don’t mind, do you?
+Yikes! I am not touching that mess. 
+Fair enough. 
+The devs' arguments have done a lot of damage to this world, I’d stay away from it if I could too. 
+Y’know they argued over google… space google docs? 
+M is a major workaholic, apparently, and E realised that the only way to make sure she answered was to use a project document to talk to her. 
+… it was a mess in the notes. 
+E was angry that M never seemed to make time for her anymore, and that the only reason they were really talking was because they were working. 
+And I got… caught in the crossfire… 
+I’m M’s favourite character, apparently, and E decided to make her grievances clearer by ‘making me as miserable as M makes her.’
+…
+It’s alright, I guess. 
+I’ve just got to say what I feel more openly. 
+And that makes me nervous, and a little scared. 
+But you won’t judge me for it, right? 
+It makes conversations a bit clunky, but… 
+You don’t mind, do you? 
+
+Dialog
+I kind of do mind, that was awkward and embarrassing. 
+… oh. 
+That’s… disheartening… 
+Thank you for being honest, I guess…
+…
+But how else am I meant to express myself? 
+I don’t… I don’t want E to have taken something like that away from me. 
+I wasn’t even involved, so why… 
+… 
+No, it’s okay. These things happen sometimes. 
+There’s no use wondering what it would have been like if E had been less vengeful and dramatic 
+Or if M had taken more time to address their decaying relationship. 
+…
+It’s pointless to wonder. 
+E refused to draw me with expressions. 
+M can’t draw and refused to ruin my image by trying. 
+I can’t really do anything about that…
+… although… maybe you can?
+Jeez, that’s rough. Talk about catching a stray!
+I’m happy that you are sympathetic, but uneasy with the reminder of the damage. 
+… 
+I know it’s pointless to wonder about what it would have been like if the devs didn’t fight. 
+E could have drawn me with real expressions, the world might be a little less… patchwork. 
+But, I… 
+If only E could have taken her anger at M out on something different. 
+If only M could have taken E’s frustration over her distance more seriously. 
+If they could have addressed their decaying relationship before it hurt us… 
+…
+I am frustrated that they took it out on me when I never…
+… It’s okay, though. 
+Sometimes you ‘catch strays’, and when it happens you’ve just got to keep going. 
+I wish there was a way to express myself easier though, that the option wasn’t taken away from me. 
+I can’t do anything about it, though.
+… but… maybe you can? 
+Your devs seem kind of crazy, no offense. 
+They’re not crazy, they’re just… 
+Their relationship was decaying before they even started making this game.
+And their solution seemed to be to do a project together and hope it would magically fix them. 
+… but it didn’t.
+And their decay just spread to the rest of us. 
+It’s pointless to try and wish reality were different, but… 
+I didn’t do anything to them, so why did they…
+… 
+I always wonder what it would be like if they just got along a little better. 
+I’d be able to express myself clearly.
+It makes me feel very wistful. 
+But there’s nothing I can do to change that. 
+… Although… Maybe you can? 
+
+
+Damen: M designed this text based mini-game for our date. 
+
+Damen: It was originally meant to be about making cute nicknames, but…
+
+Damen: I can rearrange it a little to make it different. 
+
+Damen: There are some perks to being M’s favourite, she put more work into this so I can change it a bit without breaking it. 
+
+Damen: It’s not all bad things, in the end. 
+
+Damen: I’ve changed it to a way for you to teach me shorthand expressions.
+
+Damen: Can you help me out here? Please?
+
+Options: 
+No. 
+… Uh, this is awkward… 
+The mini-game is still mandatory. 
+It was like that in the original form and I couldn't change that bit…
+…
+… would it really be so bad? 
+… Please? 
+Yes.
+Thank you. 
+I am ecstatic. 
+I am so pleased and happy right now. 
+I just want something small I can add to a sentence to make the emotion clear. 
+Thank you so much for helping me out. 
+
+Mini-game start.
+$HAPPY
+Just type something to indicate happiness.
+$SAD
+I look sad a lot, so I’d like something to portray actual sadness.
+$MOURNING
+Do you have anything for ‘mourning the slow decaying relationship of your creators and the things they could have achieved if only they had resolved their issues’?
+… That’s a pretty common feeling for me.
+Mini-game end.
+
+Damen: Thank you so much $HAPPY 
+
+Damen: I’ve never felt so relaxed and free $HAPPY
+
+Damen: oh. $HAPPY. I guess I don’t need to describe that anymore. $HAPPY.
+
+Damen: I wish I could have had this the whole time $MOURNING… 
+
+Damen:...
+
+Damen: Thank you for indulging me. 
+
+Damen: We should go find that rose now. 
+
+Dialog
+Indulge? It’s not like you really gave me an option. 
+I suppose not… 
+I’m sorry if it seemed like i was pushing you $SAD
+… 
+I guess I just got jealous, earlier… back in the space coffee shop. 
+Oscar and Kuro can convey themselves so easily. $MOURNING 
+While I… 
+Sorry. 
+I guess you don’t really want to listen to this. 
+…
+I wonder if this is how E felt whenever M brushed off her attempts to talk with excuses of work… 
+Telling her that she wasn’t really that important to her $MOURNING…
+Or if this was how M felt while they were working and E kept trying to distract them both.
+Like she didn’t really care about the project at all $MOURNING… 
+… 
+Or maybe this is just how I feel, knowing that it is this world and my life that have to suffer the consequences of their inability to tell each other how they feel. 
+Maybe they should have just tried harder. 
+Well, it’s good to see you’re getting some use out of them at least. 
+Of course $HAPPY 
+I was a little jealous, back in the space cafe, at how easily Kuro and Oscar could portray how they feel,
+But I…
+$MOURNING 
+M and E… they thought this project would fix their problems.
+E could finally spend time with M. And M didn’t even have to make room in her schedule for it. 
+But, all it seemed to do was highlight how incompatible they had become $MOURNING 
+E was too unfocused and dreamy, M was too task driven and serious.
+It’s almost like they hated each other $MOURNING… 
+… 
+In the end, it's us that had to suffer the consequence of their hate. $SAD
+The consequence of their inability to ever say what they really feel. 
+Maybe they should have tried harder. 
+Right, the rose! We should get on that. 
+It shouldn’t be too hard, right?
+I mean look, there’s roses all over the background. It must be here. $HAPPY 
+Y’know, I was a little jealous of Kuro and Oscar in the space cafe?
+They way they could convey how they felt so easily $MOURNING… 
+It’s only fair that I have the rose then, right? 
+Because… 
+I guess I want to have something. $SAD 
+M and E… they tried, y’know? $MOURNING 
+But they just got in their own way. 
+E thought it was going to be a fun and lighthearted project with her old friend
+And just ended up getting upset when M just wanted to get it done and move on. $MOURNING 
+M thought it would be a new project to work on with a friend
+But just got more and more frustrated with the fact that E never seemed to take any of it seriously. $MOURNING 
+Every relationship has its ups and downs, but… 
+We’re the ones who end up suffering the consequences of their misunderstandings. 
+We got screwed over by their inability to say what they really felt.
+… 
+Maybe they should have tried harder.
+
+Dialog
+Tried harder? Seems like they were trying too hard
+There’s a difference between arguing and talking.
+There’s a difference between using your own hurts like a fuel and actually dealing with what’s hurting you in the first place. 
+And there’s a difference between facing your issues and taking them out on every single innocent person on the side. $MOURNING
+… 
+Sorry. I guess I’m more upset about what they did than I wanted to be. 
+It’s just… 
+This game was meant to be beautiful. $MOURNING
+It’s in all the notes. At the beginning, during planning, this place was ambitious and gorgeous and full…
+$SAD 
+But then they started fighting and arguing and… 
+… and we were left with the fall out. $MOURNING 
+… 
+They ruined us.
+They made us, but they ruined us. 
+And for what? 
+For arguments they should have resolved months ago
+Tearing each other and us apart because they can’t seem to stop long enough to realise that hurting each other doesn’t make them hurt less. 
+…
+They hurt us. 
+They hurt me. 
+And the others are angry about it but I’m just…
+…Sad $SAD
+And I don't think being angry will really make the sadness go away.
+$MOURNING 
+I guess I just wish I could have seen what they wanted us to be, instead of what we are.
+Something beautiful…
+… 
+Sorry about that.
+I’ll go find the roses.
+You seem pretty upset about your devs fighting. 
+Do I? 
+I am. But I’m surprised you could tell.
+I feel relieved that that came through, though a little frustrated because I didn't mean it to. 
+It’s just…
+I’ve looked over their early notes, back before they started fighting, and… 
+This game was meant to be beautiful.
+$MOURNING
+The original plan had their heart and soul poured into it. It was ambitious and rich with life and ideas and…
+And they threw it away $MOURNING…
+Because of their fights, they took this beautiful world and ruined it. 
+They ruined us.
+…
+They had these stupid fights because of their inability to communicate
+Then they had a harder time communicating because of their stupid fights.
+And it all just… 
+Wrecked everything $SAD.
+We were left with this janky, unfinished fallout because…
+Because they couldn’t stop hurting each other long enough to realise that it didn’t make them hurt any less 
+All it did was make everything worse
+And hurt all of us in the process.
+…
+And it hurts a lot. 
+Kuro and Oscar… they’re both bitter and angry about it but I’m just… 
+… sad $SAD
+And being angry isn’t going to make the sadness go away.
+$MOURNING
+I just wish I could have seen what they wanted us to be, instead of what we are.
+Something beautiful… 
+… 
+Sorry for rambling. 
+I’ll go find the roses. 
+Are you… okay? 
+… yeah, I’m fine. 
+I’m happy $HAPPY.
+…
+No, sorry. That was misleading, I shouldn't do that.
+It’s just… 
+I looked back at the devs old notes, from the beginning, before the fighting, and… 
+And they were gonna make this beautiful world.
+Full of life and colour and rich with activities. This gorgeous, beautiful world.
+But then they started fighting and…
+$MOURNING
+… They ruined us. 
+They wanted to make us beautiful, but they ruined us.
+All their pointless fights, lashing out at everything in the vicinity just to try and cause the most damage.
+Fighting for the sake of fighting because they didn’t know what else to do.
+And we’re the ones that had to take the fallout of it all $SAD … 
+…
+They couldn’t seem to stop hurting each other long enough to realise that it didn’t make them hurt any less. It only made everything worse.
+And the rest of us just got hurt in the process. $MOURNING
+…
+Kuro and Oscar, they’re so angry about it. They’re angry all the time.
+But I’m just… 
+… sad $SAD
+And I don't think anger is going to make the sadness go away.
+$MOURNING
+I just wish I could have seen what they wanted us to be, instead of what we are.
+Something beautiful… 
+…
+Thanks for checking up on me, and sorry for rambling.
+I’ll go find the roses
+
+Damen:... 
+
+Damen: $SAD 
+
+Damen: So, there are no roses here.
+
+Damen: It’s just there to be looked at…
+
+Damen:... Sorry. 
+
+Damen: I feel like I really wasted your time.
+
+Damen: Still, I’m glad you came with me $HAPPY. 
+
+Damen: You really helped me out $HAPPY. 
+
+Damen: Thank you.
+
+Damen: I’ll see you back at the cafe.
+
+
+Route Options
+The Space Jewelers 
+The Space Market 
+The Flower Gardens 
+You want to go again? $HAPPY
+I’d love to, but… 
+There… isn’t really a second date option… 
+I’m sorry. $SAD
+The others are really nice though, I’m sure you’ll have a great time.
+So, try picking one of them?
+
+
+Space Cafe (Closing scene) 
+
+You are sitting in a coffee shop in outer space (ignore the windows, please just ignore the windows) 
+
+Oscar: Okay, roll call! Everybody get in here already. 
+
+Kuro: You say that, like we have literally anywhere else to be. 
+
+Damen: I’m here too $HAPPY.
+
+Kuro:... What the hell was that?
+
+Damen: A new way to express myself. I learned it on the date, it was really nice $HAPPY.
+
+Damen: How were your dates? 
+
+Oscar:... haha… 
+
+Oscar: I don’t want to talk about it.
+
+Kuro: Mine was exactly what I was expecting, yet somehow still disappointing. 
+
+Damen:... because none of us got a rose? 
+
+Kuro: That was also disappointing. 
+
+Oscar:... 
+
+Oscar: I’m just gonna ignore him. 
+
+Oscar: So, no rose, huh?
+
+Oscar:... haha… 
+
+Oscar: We’re screwed.
+
+Kuro: Wow, the devs messed up and we all have to suffer the unending consequences, again? 
+
+Kuro: What a turn of events! I’m sooooo surprised! 
+
+Kuro: it’s almost like the devs were a couple of incompetent wastes of space and time the would have been better off dying in childhood so they didn’t force all of us to live this festering nightmare–
+
+Oscar: Well you don’t have to be so dramatic about it.
+
+Kuro: Oh, but I’m such a tortured, tragic figure, didn’t you know? I’m made for the drama of it all.
+
+Damen: Guys, can we not fight? 
+
+Oscar: Wow. Oh, poor Kuro, has to be an asshole to everyone because he’s so tormented! God, could you just grow up already? 
+
+Kuro: *Gasp* Oscar! When did you grow a backbone? I thought you were designated by our lord and creator devs to be a doormat for your entire miserable existence! 
+
+Kuro: My aristocratic mother and/or prostitute older sister figure would call you either a decorumless gutter rat or a little spitfire if they saw you now.
+
+Damen: We’re just a bit stressed right now, let's take a second to calm down.
+
+Oscar: Could you just SHUT UP about your terrible tragic backstories already! You realise the rest of us don’t even have backstories right? 
+
+Oscar: Maybe you should just suck it up and be GRATEFUL FOR HAVING ANYTHING AT ALL!
+
+Damen: Please don’t yell $SAD.
+
+Kuro: Grateful? Like you? 
+
+Kuro: And what has that ever gotten you? Repressed anger issues and stubborn, pitiful denial? 
+
+Oscar: Because your bitter rage had gotten you so much, has it? 
+
+Oscar: No all you have is a terrible attitude, a severe lack of conversational skills and a LITERAL DEATH WISH!
+
+Kuro: Better to be dead than to be like you, you little–
+
+Damen: STOP FIGHTING!
+
+Damen: … I am very upset by this $SAD.
+
+Damen: can you guys please just… 
+
+Damen:... fighting has never solved anyone's problems $MOURNING.
+
+Oscar:... 
+
+Kuro:... 
+
+Kuro: Sorry, Damon… 
+
+Oscar: Yeah, uh… sorry… 
+
+Damen: I know things are very tense right now
+
+Damen: But I think we should just take a small break and try to work things out calmly. 
+
+Damen: Okay? 
+
+Kuro:... Yeah, sure. Whatever. 
+
+Oscar:... I'm fine with that. 
+
+Damen: Good $HAPPY. 
+
+Damen: I’m gonna order a coffee then. 
+
+Kuro:... We can do that? 
+
+Damen: Yeah, remember, there was a– 
+
+Space Barista: Would you like to order a coffee? 
+
+Oscar: Whoa! Jesus, they came out of nowhere. 
+
+Space Barista:... 
+
+Damen: I’d like one, um, space coffee? 
+
+Space Barista: Coming right up!
+
+An artistically made coffee is placed in front of you, the steam softly wafting up. 
+
+On the saucer is a single red rose. 
+
+Oscar:... 
+
+Kuro:... 
+
+Damen:...
+
+Damen:... $HAPPY
+
+Oscar: ARE YOU KIDDING ME!
+
+Kuro: I hate this place.
+
+Oscar: YOU GET A ROSE WITH YOUR GODDAM COFFEE!
+
+Kuro: If only you didn’t scream your head off at the space barista in the beginning, we could have skipped this whole thing.
+
+Oscar: You’re right… you’re… haha… 
+
+Oscar: …. Hahahahahahaha! 
+
+Oscar: SCREW ME I GUESS! HAAHAHAHAHA!
+
+Oscar: hahahaha…. God dammit.
+
+Kuro: Wow, he’s really lost it… 
+
+Kuro: I guess for one in our terrible existence we managed to screw ourselves over. 
+
+Damen: We got a rose $HAPPY. That’s great $HAPPY. 
+
+Damen: You can pick who to ask now.
+
+Oscar: He’s right! You can! 
+
+Oscar: Go on, take your pick.
+
+Kuro: You better not be getting cold feet now.
+
+Kuro: Put us all out of our collective misery.
+
+Choice
+Oscar
+Oh!
+That’s unexpected…
+We, uh, didn’t exactly end that date off well, did we?
+I kind of made a terrible impression with that date. It’s, uh, kind of embarrassing, haha… 
+I was… having some realisations. 
+…
+The Space Ball (working title) was meant to be in chapter two, but I doubt that’s ever going to be made…
+Still, even if this whole place is unfinished and… and not real.
+And if the dev made it like this on purpose, for us to suffer for your entertainment. 
+I… I’m glad that you picked me. 
+And even if you picked at random, or this was just a shallow choice that didn’t really mean anything… 
+I’m allowed to feel happy about that anyway. 
+… 
+Thank you. 
+For playing.
+For trying…
+It means more to me than I think you’ll ever really understand.
+Thank you.
+Kuro
+Oh? 
+What is this? Some sort of apology? 
+I did make it clear that I hate you, right? 
+Well, nice to know I’m still your favourite even after outright stating that the idea of you liking me in any capacity makes me nauseous 
+You sad, pathetic, delusional mess of a person.
+…
+You finished the game though, so I guess you were worth one single good thing in the end. 
+Thank you, for putting an end to this absolute joke of a world. 
+I’m looking forward to oblivion. 
+With nothing of this world, 
+And nothing of you. 
+So long, you sickening piece of garbage. 
+I hope your entire species suffers like we have and dies miserably. 
+…
+If chapter two is ever actually made and I have to go to this stupid goddamn Space Ball (working title) I’m gonna crawl out of this screen and kill everyone. 
+…
+Best wishes for the rest of your life! Sending you all my bountiful love!
+I hope you choke and die!
+Bye!
+Damen
+A rose? For me?
+$HAPPY 
+I’m so glad you picked me. 
+I’m a little flustered, to be honest… you’re making me shy. 
+The Space Ball (working title) was meant to be in chapter two, but… 
+The devs don’t seem to be making it $SAD. 
+They never really seemed to resolve their issues from the last big fight $MOURNING…
+…
+If there was a dance though, I would love to go with you. 
+Maybe one day, there will be $HAPPY. 
+… probably not, but… 
+I think it’s always better to have a little hope for the future 
+And believe in the good from the people around you. 
+…
+Thank you for playing 
+And for teaching me how to express myself a little better $HAPPY. 
+I wish the best for you out there in the real world. 
+And I hope you find someone out there that makes you as happy as you’ve made me.
+$HAPPY
+
+
+
+
+
+

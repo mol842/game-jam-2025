@@ -1,12 +1,25 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# UNRESOLVED [CO]DEPENDENCY
+## A space dating sim that never should have happened...
 
-Currently, two official plugins are available:
+Made by Eleanor and Molly (M and E) for the Unimelb Cissa x GMC Game Jam March 2025
+Theme: A World without Humans...
+Team Name: anemone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Art, story, dialogue, characters, worldbuilding, heart and soul crafted lovingly by Eleanor Nguyen
+Cursed React js programming by Molly Stow
 
-## Expanding the ESLint configuration
+We signed up for this at like 2pm on Friday. 
+If you told me last week that I would spend my weekend coding a dating simulator I honestly would not have believed you.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If anyone actually finishes this... PLEASE LET US KNOW!!!
+(The story is actually completeable!)
+
+Play it here:
+https://mol842.itch.io/unresolved-codependency
+
+Or here:
+unresolved-codependency.netlify.app
+
+Github:
+https://github.com/mol842/game-jam-2025/
