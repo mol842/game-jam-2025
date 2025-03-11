@@ -83,9 +83,10 @@ export const scenes = [
       },
       { 
       choices: [
-        { text: "Skip to the Intro", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
-        { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
-        { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
+        { text: "Skip to the Intro", next: "start-intro"},
+        { text: "Go to the Space Jewelers with Oscar",  path: "a", next: "jewellers-start", else: "jewellers-repeat" },
+        { text: "Go to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
+        { text: "Go to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
         { text: "Skip to the ending", next: "end-intro"}
       ],
       characters: {}
