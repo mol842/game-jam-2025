@@ -829,10 +829,13 @@ export const scenes = [
   },
 
   { id: "path-between",
-    checkPaths: ["a", "b", "c"],
-    else: "start", ///// FIX ME,
     background: coffeeShop,
     dialogue: [
+      {    
+        checkPaths: ["a", "b", "c"],
+        else: "end-intro", ///// FIX ME,
+      },
+
       { text: "Choose a path to follow.",
       characters: { 
         left: { character: characters.Oscar, expression: "neutral" }, 
@@ -4044,10 +4047,42 @@ export const scenes = [
     id: "garden-repeat",
     background: roseGarden,
     dialogue: [
-      { text: "youve been here before." },
-      { choices: [{ text: "cry of guilt", next: "start" }] }
+      { speaker: characters.Damen,
+        text: "You want to go again? $HAPPY",
+        characters: { Center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I’d love to, but… ."
+      },      
+      { speaker: characters.Damen,
+        text: "There… isn’t really a second date option… ",
+        characters: { Center: { character: characters.Damen, expression: "sad" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I’m sorry. $SAD.",
+        replace: true
+      },      
+      { speaker: characters.Damen,
+        text: "The others are really nice though, I’m sure you’ll have a great time.",
+        characters: { Center: { character: characters.Damen, expression: "neutral" } },
+      },      
+      { speaker: characters.Damen,
+        text: "So, try picking one of them?"
+      },    
+      { jump: "path-between"}
     ],
   },
+
+
+
+
+
+  //// ENDING ONCE ALL PATHS DONE
+
+
+  
 
 
 ];

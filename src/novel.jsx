@@ -23,7 +23,10 @@ export default function VisualNovel() {
   const [paths, setPaths] = useState({
     "a": false,
     "b": false,
-    "c": false
+    "c": false,
+    "test1": false,
+    "test2": false,
+    "test3": false,
   }); 
   const [replacements, setReplacements] = useState([{key:"$SMILE", value: ":))"}]);
 
@@ -38,21 +41,26 @@ export default function VisualNovel() {
     console.log(currentScene)
     
     scene = scenes.find(s => s.id === currentScene);
-
-    // check if all are done, to end.
-    if (scene.checkPaths) {
-      console.log("CHECKING PATHS COMPLETE?");
-      const pathStatus = scene.checkPaths.map((p) => { paths[p] === true; });
-      console.log(pathStatus);
-      if (pathStatus.every(val => val === true)) {
-        console.log("ALL PATHS DONE");
-        setCurrentScene(scene.else);
-      }
-    }
-
   }, [currentScene]);
 
   useEffect(() => {
+    // check if all are done, to end.
+
+    if (currentLine.checkPaths) {
+      console.log("CHECKING PATHS COMPLETE?", currentLine.checkPaths);
+      console.log(paths)
+      const pathStatus = currentLine.checkPaths.map((p) => { console.log(p); return paths[p]; });
+      console.log(pathStatus);
+      if (pathStatus.every(val => val === true)) {
+        console.log("ALL PATHS DONE");
+        setCurrentScene(currentLine.else);
+      } else {
+        console.log("NOT ALL PATHS DONE");
+        nextDialogue();
+      }
+    }
+
+
     console.log(dialogIndex)
     
     currentLine = scene.dialogue[dialogIndex];
