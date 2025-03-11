@@ -4097,7 +4097,14 @@ export const scenes = [
       },
       { speaker: characters.Damen,
         text: "Maybe they should have just tried harder. "
-      },//CONTINUE
+      }, {
+        choices: [
+          { text: "Tried harder? Seems like they were trying too hard", next: "garden-tried-harder" },
+          { text: "You seem pretty upset about your devs fighting. ", next: "garden-fighting" },
+          { text: "Are you… okay? ", next: "garden-okay" }
+        ]
+          
+      }
     ]
   },
   {
@@ -4151,7 +4158,14 @@ export const scenes = [
       },
       { speaker: characters.Damen,
         text: "Maybe they should have tried harder."
-      }, // CONTINUE
+      }, {
+        choices: [
+          { text: "Tried harder? Seems like they were trying too hard", next: "garden-tried-harder" },
+          { text: "You seem pretty upset about your devs fighting. ", next: "garden-fighting" },
+          { text: "Are you… okay? ", next: "garden-okay" }
+        ]
+          
+      }
     ]
   },
   {
