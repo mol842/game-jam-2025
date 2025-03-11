@@ -14,6 +14,12 @@ import oscarAnnoyed from "./assets/oscar/OscarAngry.png";
 import kuroAnnoyed from "./assets/kuro/KuroAngry.png";
 import damenAnnoyed from "./assets/damen/DamenAngry.png";
 
+
+import oscarSpecial from "./assets/oscar/oscarSpecial.png";
+import kuroSpecial from "./assets/kuro/kuroSpecial.png";
+import damenSpecial from "./assets/damen/damenSpecial.png";
+
+
 import hat1 from "./assets/oscar/hat1.png";
 import hat2 from "./assets/oscar/hat2.png";
 import hat3 from "./assets/oscar/hat3.png";
@@ -45,11 +51,11 @@ export const characters = {
   Oscar: {
     name: "Oscar",
     expressions: {
-      neutral: oscarNeutral,
+      neutral: oscarAnnoyed,
       happy: oscarNeutral,
       sad: oscarSad,
       annoyed: oscarAnnoyed,
-      angry: oscarAnnoyed
+      angry: oscarSpecial
     },
     accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ],
     colour: "rgba(9, 66, 10, 0.9)"
@@ -57,11 +63,11 @@ export const characters = {
   Kuro: {
     name: "Kuro 愛",
     expressions: {
-      neutral: kuroNeutral,
+      neutral: kuroSad,
       happy: kuroNeutral,
-      sad: kuroSad,
-      annoyed: kuroAnnoyed,
-      angry: kuroAnnoyed
+      sad: kuroAnnoyed,
+      annoyed: kuroSpecial,
+      angry: kuroSpecial
     },
     colour: "rgba(7, 24, 74, 0.9)"
   },
@@ -69,9 +75,9 @@ export const characters = {
     name: "Damen",
     expressions: {
       neutral: damenNeutral,
-      happy: damenNeutral,
+      happy: damenSad,
       sad: damenSad,
-      annoyed: damenAnnoyed,
+      annoyed: damenSpecial,
       angry: damenAnnoyed
     },
     colour: "rgba(72, 8, 8, 0.9)"

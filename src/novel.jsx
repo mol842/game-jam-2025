@@ -121,7 +121,7 @@ export default function VisualNovel() {
       } else {
         clearInterval(interval);
       }
-    }, text.length / 20);
+    }, text.length / 40);
     console.log(sceneCharacters);
   }, [dialogIndex, currentScene]);
   
