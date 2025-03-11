@@ -48,318 +48,326 @@ export const scenes = [
     //   { text: `Alrighty, time to replace the word HELP`, textInput: "$HELP" },
     //   { text: `lets try.... $HELP`, replace: true },
     ],
-  },
-  {
+    },
+    {
     id: "skip-ahead",
     background: coffeeShop,
     dialogue: [
-
       { speaker: characters.Oscar,
-        text: "Hey... I know you're proably just checking out this game quickly and don't have time to read the whole story.",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } }
+      text: "Hey... I know you're probably just checking out this game quickly and don't have time to read the whole story.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } }
       },
       { text: "But, uh, it would mean a lot to me if you didn't skip ahead.",
-        speaker: characters.Oscar,
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "sad" } }
       },
       { text: "At LEAST check out the intro before you do any individual paths.",
-          left: { character: characters.Oscar, expression: "sad" }, 
-        speaker: characters.Oscar,
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "sad" } }
       },
-      { text: "(Also, the devs didn't know how to implement save files, so if you do the ending in a seperate session then it might not make sense.)",
-        speaker: characters.Oscar,
+      { text: "(Also, the devs didn't know how to implement save files, so if you do the ending in a separate session then it might not make sense.)",
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } }
       },
       { text: "I mean, it's not like I can stop you, but... I'd appreciate it.",
-        speaker: characters.Oscar,
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "neutral" } }
       },
       { text: "Thanks.",
-        speaker: characters.Oscar,
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "happy" } }
       },
       { text: "...",
-        speaker: characters.Oscar
+      speaker: characters.Oscar,
+      characters: { left: { character: characters.Oscar, expression: "neutral" } }
       },
       { 
-        choices: [
-          { text: "Skip to the Intro", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
-          { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
-          { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
-          { text: "Skip to the ending", next: "end-intro"}
-        ],
-        characters: {}
+      choices: [
+        { text: "Skip to the Intro", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
+        { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
+        { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
+        { text: "Skip to the ending", next: "end-intro"}
+      ],
+      characters: {}
       }
     ],
-
-  },
-  {
+    },
+    {
     id: "start-intro",
     background: blank,
     dialogue: [
       { text: "In a far away space station... ",
-        characters: {}
+      characters: {}
       },
       { jump: "start-intro2" }
     ]
-
-  },
-  {
+    },
+    {
     id: "start-intro2",
     background: planet,
     dialogue: [
       { text: "... floating in the dark but glittering expanse of space",
-        characters: {}
+      characters: {}
       },
       { text: "A settlement far out of reach of any human being…"},
       { jump: "coffeeshop-start" }
     ]
-  },
-
-  {
+    },
+    {
     id: "coffeeshop-start",
     background: coffeeShop,
     dialogue: [
       { text: "You find yourself sitting in a space coffee shop (ignore the windows, reminder to fix that later)" },
       { speaker: characters.Oscar, 
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
-        text: "Hey there, I haven’t seen you before. You new in town?... um, I mean, space? (I don’t think that’s right)" 
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "Hey there, I haven’t seen you before. You new in town?... um, I mean, space? (I don’t think that’s right)" 
       },
       { choices: [
-          { text: "How did you know?", next: "coffeeshop-know"},
-          { text: "… New in space?", next: "coffeeshop-new"},
-          { text: "Isn’t your name meant to be blank until you introduce yourself?", next: "coffeeshop-blank"}
-        ],
-      },
-      { choices: [
-        { text: "Space Ball (working title)? Sounds interesting!", next: "coffeeshop-interesting"},
-        { text: "Space Ball (working tile)?... you’re kidding me? (working title)?", next: "coffeeshop-kidding"},
-        { text: "No need to explain, it sounds kind of dumb. Can you explain the windows instead?", next: "coffeeshop-windows"}
+        { text: "How did you know?", next: "coffeeshop-know"},
+        { text: "… New in space?", next: "coffeeshop-new"},
+        { text: "Isn’t your name meant to be blank until you introduce yourself?", next: "coffeeshop-blank"}
       ],
       },
       { choices: [
-        { text: "A date? And so soon? But I barely know anyone?", next: "coffeeshop-date-1" },
-        { text: "Do you have a date then? Since it’s so important.", next: "coffeeshop-date-2" },
-        { text: "I have to get a date? Like, it’s a requirement? That sounds kind of sketchy, to be honest.", next: "coffeeshop-date-3" }
+      { text: "Space Ball (working title)? Sounds interesting!", next: "coffeeshop-interesting"},
+      { text: "Space Ball (working tile)?... you’re kidding me? (working title)?", next: "coffeeshop-kidding"},
+      { text: "No need to explain, it sounds kind of dumb. Can you explain the windows instead?", next: "coffeeshop-windows"}
+      ],
+      },
+      { choices: [
+      { text: "A date? And so soon? But I barely know anyone?", next: "coffeeshop-date-1" },
+      { text: "Do you have a date then? Since it’s so important.", next: "coffeeshop-date-2" },
+      { text: "I have to get a date? Like, it’s a requirement? That sounds kind of sketchy, to be honest.", next: "coffeeshop-date-3" }
       ]
       },
     ],
-  },
-  { id: "coffeeshop-know",
+    },
+    { id: "coffeeshop-know",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "I’d remember meeting someone like you before. Since you’re new, I suppose no one has told you about the Space Ball (working title)? I’d love to walk you through it.",
-        characters: { left: { character: characters.Oscar, expression: "happy" } },
+      text: "I’d remember meeting someone like you before. Since you’re new, I suppose no one has told you about the Space Ball (working title)? I’d love to walk you through it.",
+      characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { jump: "coffeeshop-start", index: 3 }
     ],
-  },
-  { id: "coffeeshop-new",
+    },
+    { id: "coffeeshop-new",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "Y’know, because we’re in space? I think… On… a satellite? Or Planet?",
-        characters: { left: { character: characters.Oscar, expression: "sad" } },
+      text: "Y’know, because we’re in space? I think… On… a satellite? Or Planet?",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "(the devs were not that clear, but nebulous sci-fi is good enough, isn’t it?)",
+      text: "(the devs were not that clear, but nebulous sci-fi is good enough, isn’t it?)",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "A-anyway, you’re new, so you don’t know about the Space Ball(working title) coming up soon, right? I’m happy to explain it to you!",
+      text: "A-anyway, you’re new, so you don’t know about the Space Ball(working title) coming up soon, right? I’m happy to explain it to you!",
+      characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { jump: "coffeeshop-start", index: 3 }
     ],
-  },
-  { id: "coffeeshop-blank",
+    },
+    { id: "coffeeshop-blank",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "Well, my name is Oscar, so that fixed itself there! I’m surprised you noticed, that’s awfully nitpick- I mean, you’ve got a great eye for detail. Haha...",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
+      text: "Well, my name is Oscar, so that fixed itself there! I’m surprised you noticed, that’s awfully nitpick- I mean, you’ve got a great eye for detail. Haha...",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
        },
       { speaker: characters.Oscar,
-        text: "...",
+      text: "...",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "Now that that’s out of the way, have you heard about the Space Ball(working title)? Probably not, you are new here after all, so I’m happy to explain it.",
+      text: "Now that that’s out of the way, have you heard about the Space Ball(working title)? Probably not, you are new here after all, so I’m happy to explain it.",
+      characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { jump: "coffeeshop-start", index: 3 }
     ],
-  },
-  { id: "coffeeshop-interesting",
+    },
+    { id: "coffeeshop-interesting",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "It sure is, it’s one of the biggest celebrations in the year!... the space year?",
-        characters: { left: { character: characters.Oscar, expression: "sad" } },
+      text: "It sure is, it’s one of the biggest celebrations in the year!... the space year?",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "... moving on.", 
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
-
+      text: "... moving on.", 
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "It’s a great dance at the end of the month. The whole city- uh, station(?) will be there! They say if you dance together under the full moon…s… space moons…",
+      text: "It’s a great dance at the end of the month. The whole city- uh, station(?) will be there! They say if you dance together under the full moon…s… space moons…",
+      characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { speaker: characters.Oscar,
-        text: "(come on, really? That’s the script? It doesn’t even make sense!)",  
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
+      text: "(come on, really? That’s the script? It doesn’t even make sense!)",  
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
-        text: "*sigh*",
+      text: "*sigh*",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "… if you dance together under the multiple full space moons, you’ll join souls!",
-        characters: { left: { character: characters.Oscar, expression: "happy" } },
-
+      text: "… if you dance together under the multiple full space moons, you’ll join souls!",
+      characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { speaker: characters.Oscar,
-        text: "Getting a date is pretty important for this, so you’ll want to ask someone fast!",
+      text: "Getting a date is pretty important for this, so you’ll want to ask someone fast!",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { jump: "coffeeshop-start", index: 4 }
     ],
-  },
-  { id: "coffeeshop-kidding",
+    },
+    { id: "coffeeshop-kidding",
     background: coffeeShop,
     dialogue: [
       { 
-        speaker: characters.Oscar,
-        text: "Just ignore it, all right? Space Ball (working title) is what it’s called and we all have to live with it? You think I wanted this either? You’re not the one who has to live here!",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
+      speaker: characters.Oscar,
+      text: "Just ignore it, all right? Space Ball (working title) is what it’s called and we all have to live with it? You think I wanted this either? You’re not the one who has to live here!",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { 
-        speaker: characters.Oscar,
-        text: "…",
+      speaker: characters.Oscar,
+      text: "…",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha…",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha…",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "Anyway, the Space Ball (working title)! It’s a big, dance at the end of the month that in this completely habituated space station goes to. You bring your date to dance together and solidify your love for each other!",
+      text: "Anyway, the Space Ball (working title)! It’s a big, dance at the end of the month that in this completely habituated space station goes to. You bring your date to dance together and solidify your love for each other!",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "…",
+      text: "…",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "You do need a date though, so, uh, you should probably start thinking on that.",
+      text: "You do need a date though, so, uh, you should probably start thinking on that.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { jump: "coffeeshop-start", index: 4 }
-    
     ],
-  },
-  { id: "coffeeshop-windows",
+    },
+    { id: "coffeeshop-windows",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "...",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
+      text: "...",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
-        text: "...wow",
+      text: "...wow",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "You’re very rude- I mean. Bold. you’re very… bold. Haha…",
+      text: "You’re very rude- I mean. Bold. you’re very… bold. Haha…",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "I know for certain you were asked to ignore the windows.",
+      text: "I know for certain you were asked to ignore the windows.",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
-        text: "You’re just… not gonna play along at all? For the sake of politeness, if nothing else, you should at least pretend to have an interest in the Space Ball (working title).",
-        characters: { left: { character: characters.Oscar, expression: "sad" } },
+      text: "You’re just… not gonna play along at all? For the sake of politeness, if nothing else, you should at least pretend to have an interest in the Space Ball (working title).",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
-        text: "It’s a big dance at the end of the month that you need to find a date for.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "It’s a big dance at the end of the month that you need to find a date for.",
       },
       { speaker: characters.Oscar,
-        text: "… Don’t ask about the windows again.",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
-
+      text: "… Don’t ask about the windows again.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { jump: "coffeeshop-start", index: 4 }
     ],
-  },
-
-  
-  {
+    },
+    {
     id: "coffeeshop-date-1",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "That’s okay, a lot of people still don’t have dates, you don’t have to be so worried. If anyone’s asked by someone like you they’re bound to accept!",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "That’s okay, a lot of people still don’t have dates, you don’t have to be so worried. If anyone’s asked by someone like you they’re bound to accept!",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
       { speaker: characters.Oscar,
-        text: "All you need is a– Oh what the hell!",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
+      text: "All you need is a– Oh what the hell!",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { jump: "coffeeshop-chaos" }
     ]
-  },
-  
-  {
+    },
+    {
     id: "coffeeshop-date-2",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "What an interesting way to ask that question. Really, how… well mannered.",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "What an interesting way to ask that question. Really, how… well mannered.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
       { speaker: characters.Oscar,
-        text: "No I don’t. A lot of people don’t have dates yet, so don’t be nervous about being single yourself! I’m sure anyone would be thrilled to be asked out by you.",
+      text: "No I don’t. A lot of people don’t have dates yet, so don’t be nervous about being single yourself! I’m sure anyone would be thrilled to be asked out by you.",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "Though, for formality, you need a– Are you kidding me right now!",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
-
+      text: "Though, for formality, you need a– Are you kidding me right now!",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { jump: "coffeeshop-chaos" }
-
     ]
-  },
-  {
+    },
+    {
     id: "coffeeshop-date-3",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "I mean, it’s not a legal requirement… I don’t think. Actually, let me check..",
-        characters: { left: { character: characters.Oscar, expression: "neutral" } },
+      text: "I mean, it’s not a legal requirement… I don’t think. Actually, let me check..",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
        { speaker: characters.Oscar,
-        text: "...",
+      text: "...",
+      characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
       { speaker: characters.Oscar,
-        text: "Okay, so you do legally need to have a date, apparently. Which is… mildly dystopian. And calls into question what happens to whoever you don’t ask… .",
+      text: "Okay, so you do legally need to have a date, apparently. Which is… mildly dystopian. And calls into question what happens to whoever you don’t ask… .",
+      characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "(I can’t believe the devs included that in the lore when they couldn’t even fix Space Ball (working title). Their priorities are all over the place) ",
+      text: "(I can’t believe the devs included that in the lore when they couldn’t even fix Space Ball (working title). Their priorities are all over the place) ",
+      characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
-        text: "But to ask anyone out, you, legally, apparently, need to– I swear to space god!",
-        characters: { left: { character: characters.Oscar, expression: "annoyed" } },
-
+      text: "But to ask anyone out, you, legally, apparently, need to– I swear to space god!",
+      characters: { left: { character: characters.Oscar, expression: "angry" } },
       },
       { jump: "coffeeshop-chaos" }
     ]
-  },
-  
-  
-  {
+    },
+    {
     id: "coffeeshop-chaos",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Kuro, 
-        text: "Heya Oscar, sor–",
-        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" } },
+      text: "Heya Oscar, sor–",
+      characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Oscar, 
-        text: "Get Out!",
-        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "neutral" } },
-
+      text: "Get Out!",
+      characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Kuro, 
-        text: "so, in my defence–",
+      text: "so, in my defence–",
+      characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "We are meant to meet them one at a time! It is clearly outlined in the script!",
+      text: "We are meant to meet them one at a time! It is clearly outlined in the script!",
+      characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Kuro,
         text: "Do you know how long I’ve been wanting to get into this coffee shop? My entire existence! But we can only enter if the player is here, so excuse me for not waiting for you to take forever living out your rom-com coffee shop meet-cute dream.",
@@ -396,16 +404,16 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "I am not engaging with this question. ",
         characters: { 
-          left: { character: characters.Oscar, expression: "sad" }, 
+          left: { character: characters.Oscar, expression: "angry" }, 
           right: { character: characters.Kuro, expression: "neutral" },
-          center: { character: characters.Damen, expression: "neutral" } },
+          center: { character: characters.Damen, expression: "happy" } },
       },
       { speaker: characters.Kuro,
         text: "Oh, I know this one, actually. It’s because it was done by M instead of E.",
         characters: { 
           left: { character: characters.Oscar, expression: "sad" }, 
           right: { character: characters.Kuro, expression: "happy" },
-          center: { character: characters.Damen, expression: "neutral" } },
+          center: { character: characters.Damen, expression: "happy" } },
       },
       { speaker: characters.Damen,
         text: "I Thought E did all the art?",
@@ -428,12 +436,17 @@ export const scenes = [
       },
       { speaker: characters.Damen,
         text: "Don’t even talk to me about E’s stupid–",
+        characters: { 
+          left: { character: characters.Oscar, expression: "sad" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "angry" } },
+
 
       },
       { speaker: characters.Oscar,
         text: "How about, instead of gossiping about our devs, we just cut to the roses? Forward the plot or something.",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
+          left: { character: characters.Oscar, expression: "happy" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
 
@@ -480,13 +493,24 @@ export const scenes = [
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "annoyed" },
           center: { character: characters.Damen, expression: "neutral" } },
-
       },
+      
       { speaker: characters.Kuro,
         text: "...",
+        characters: { 
+
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
         text: "... They didn’t finish writing what the quote was meant to be?",
+        characters: { 
+
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Kuro,
         text: "That is literally what they put as a placeholder. The ‘...’ and everything.",
@@ -506,86 +530,112 @@ export const scenes = [
     ]
 
   },
+
   { id: "coffeeshop-leave",
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
         text: "NO DON’T LEAVE!!!",
         characters: { 
-          left: { character: characters.Oscar, expression: "annoyed" }, 
-          right: { character: characters.Kuro, expression: "neutral" },
-          center: { character: characters.Damen, expression: "neutral" } },
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
 
         text: "um… I mean…",
         characters: { 
-          left: { character: characters.Oscar, expression: "sad" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
 
       },
       { speaker: characters.Oscar,
         text: "Look, you are literally the only one doing what you are meant to here. So you are perfect where you are.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
 
       },
       { speaker: characters.Kuro,
         text: "Well, some of their dialogue options have been… strange.",
-
-      },
-      { speaker: characters.Damen,
-        text: "Also, we can’t really talk without you clicking through the text, so…",
-
-      },
-      { speaker: characters.Oscar,
-        text: "Don’t listen to them, you have been wonderful so far!",
-        characters: { 
-          left: { character: characters.Oscar, expression: "annoyed" }, 
-          right: { character: characters.Kuro, expression: "neutral" },
-          center: { character: characters.Damen, expression: "neutral" } },
-
-      },
-      { speaker: characters.Oscar,
-        text: "Especially considering this mess. The devs really… they were very stressed.",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
-
-
-      },
-      { speaker: characters.Kuro,
-        text: "They didn’t know what they were doing and fought, literally the entire time.",
-
-      },
-      { speaker: characters.Oscar,
-        text: "They were doing their best given the circumstances.",
-
-      },
-      { speaker: characters.Damen,
-        text: "Kuro’s not wrong, M and E couldn’t even focus long enough to rename the Space Ball (working title). No wonder this whole game is janky as hell.",
-
-      },
-      { speaker: characters.Oscar,
-        text: "Let’s not air all our family drama out in front of our guest, hmm?",
-
-      },
-      { speaker: characters.Kuro,
-        text: "Oh? You think we’re a fami–",
-
-      },
-      { speaker: characters.Oscar,
-        text: "ROSES.",
+            },
+            { speaker: characters.Damen,
+        text: "Also, we can’t really talk without you clicking through the text, so…",
         characters: { 
-          left: { character: characters.Oscar, expression: "annoyed" }, 
+          left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
-
-      },
-      { speaker: characters.Oscar,
+            },
+            { speaker: characters.Oscar,
+        text: "Don’t listen to them, you have been wonderful so far!",
+        characters: { 
+          left: { character: characters.Oscar, expression: "happy" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { speaker: characters.Oscar,
+        text: "Especially considering this mess. The devs really… they were very stressed.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "sad" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { speaker: characters.Kuro,
+        text: "They didn’t know what they were doing and fought, literally the entire time.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "sad" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { speaker: characters.Oscar,
+        text: "They were doing their best given the circumstances.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { speaker: characters.Damen,
+        text: "Kuro’s not wrong, M and E couldn’t even focus long enough to rename the Space Ball (working title). No wonder this whole game is janky as hell.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "annoyed" } },
+            },
+            { speaker: characters.Oscar,
+        text: "Let’s not air all our family drama out in front of our guest, hmm?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "annoyed" } },
+            },
+            { speaker: characters.Kuro,
+        text: "Oh? You think we’re a fami–",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "happy" },
+          center: { character: characters.Damen, expression: "annoyed" } },
+            },
+            { speaker: characters.Oscar,
+        text: "ROSES.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { speaker: characters.Oscar,
         text: "Let’s talk about the roses.",
-      },
-      { jump: "coffeeshop-roses"}
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+            },
+            { jump: "coffeeshop-roses"}
     ]
   },
   
@@ -607,21 +657,36 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "It’s a dating sim, okay, what were you expecting?",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
         text: "They do typify romance, but it does make for easy symbology. Like, this is practically the only thing the devs agreed on, so it’s best not to rock the boat at this point.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Kuro,
         text: "They’re both so stubborn, their arguments over every tiny detail have literally ruined everything, the roses are, like, the holy ground this place is built on.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Oscar,
         text: "Exactly, so I’d advise you to take them seriously.",
       },
       { speaker: characters.Oscar,
         text: "... Also, you have to get a rose to finish the game. You need one to ask one of us to the Space Ball (working title).",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { jump: "coffeeshop-rose-locations"}
     ]
@@ -638,9 +703,19 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: " I'm checking the notes, and I don't think they thought of the comparison. But it’s also not like they noted everything down. ",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Damen,
         text: "Roses are a pretty clear romantic symbol, it’s not like its exclusively a Bachelor or Bachelorette thing. So, I don’t think so?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "annoyed" } },
+
       },
       { speaker: characters.Kuro,
         text: "It’s definitely convergent evolution of some sort. Romantic convergent evolution. ",
@@ -650,9 +725,19 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: "We’re denying it too much aren’t we?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Damen,
         text: "Whether our life is more of a contrived and badly written lie than we already knew is irrelevant. ",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "annoyed" } },
+
       },
       { speaker: characters.Oscar,
         text: "What is relevant is that you need to have a rose so you can ask one of us to the Space Ball (working title) to finish the game. ",
@@ -666,30 +751,51 @@ export const scenes = [
       { speaker: characters.Oscar,
         text: "You sure are... vocal... in your irritation.",
         characters: { 
-          left: { character: characters.Oscar, expression: "neutral" }, 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-        text: "How... delightfully straight forwards of you.",
+        text: "How... delightfully straightforward of you.",
       },
       { speaker: characters.Kuro,
         text: "Wow, that looked like it hurt you to say. ",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Oscar,
         text: "I just think that maybe we could all get through this much easier if a single one of you co-operated, LITERALLY EVER..",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Damen,
         text: "Why are you yelling at me? I never did anything.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "sad" } },
+
       },
       { speaker: characters.Kuro,
         text: "Yeah, we didn’t– wait, you meant both of us, right?",
+        
       },
       { speaker: characters.Damen,
         text: "You are a naturally antagonistic person, Kuro. ",
       },
       { speaker: characters.Kuro,
         text: "I… is this what betrayal feels like? ",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Damen,
         text: "Betrayal is getting all your expressions deleted in petty vengeance because the devs got into a fight over clear character building vs plot progression. ",
@@ -699,6 +805,11 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: "... um… there there?",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Oscar,
         text: "Well, obviously the character building is winning because the plot is going nowhere, very slowly. ",
@@ -733,15 +844,35 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "IT IS NO A REAL ROSE! You get it from the jewelers! That’s what’s in the script.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "sad" } },
+
       },
       { speaker: characters.Kuro,
         text: "Literally, NO IT’S NOT!",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "angry" },
+          center: { character: characters.Damen, expression: "sad" } },
+
       },
       { speaker: characters.Damen,
         text: "Guy’s c’mon, don’t fight.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "annoyed" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Oscar,
         text: "Maybe you should learn how to read, Kuro, if you can’t even see the obvious–",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "sad" } },
+
       },
       { speaker: characters.Kuro,
         text: "All we do is read! That’s how this entire world works! It’s barely ever a game! Maybe you should learn to get your head out of your–",
@@ -751,6 +882,12 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "WE ARE CLEARLY VERY BUSY RIGHT NOW!",
+        characters: { 
+          left: { character: characters.Oscar, expression: "angry" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "sad" } },
+
+
       },
       { speaker: characters.Barista,
         text: "... I see...",
@@ -761,12 +898,26 @@ export const scenes = [
 
       { speaker: characters.Oscar,
         text: "...",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "sad" } },
+
+
       },
       { speaker: characters.Oscar,
         text: "I didn’t even know there were other npcs in here.",
+        
+        
       },
       { speaker: characters.Damen,
         text: "They don’t have any character art, so I guess they're easy to miss.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
+
       },
       { speaker: characters.Damen,
         text: "... Doesn’t mean you should yell at service workers, though.",
@@ -776,12 +927,23 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "My bad.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "sad" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
+
       },
       { speaker: characters.Kuro,
         text: "So, basically, we all have different scripts? That’s the problem here.",
       },
       { speaker: characters.Damen,
         text: "I think so. I mean, there were a lot of scrapped ideas and plotlines thrown around while the devs were making this.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "sad" } },
+
       },
       { speaker: characters.Damen,
         text: "E’s vision was bigger than they really had time for, and M cut it down a lot but never really had an eye for plot holes or contradictions.",
@@ -794,6 +956,11 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "We literally live for it, it’s why we were created.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "sad" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Kuro,
         text: "... Has anyone ever told you you’re depressingly fatalistic?",
@@ -806,9 +973,20 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
         text: "I’ll be at the Jewelers. The Space Jewelers.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "happy" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Oscar,
         text: "God, the devs really had no originality.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "annoyed" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
+
       },
       { speaker: characters.Kuro,
         text: "If you want less badly repressed rage, I’m going to be at the Space Market.",
@@ -818,15 +996,32 @@ export const scenes = [
       },
       { speaker: characters.Kuro,
         text: "... Space Market... god dammit.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "sad" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
       },
       { speaker: characters.Damen,
         text: "I’ll be at the Flower Garden.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "happy" } },
+
+
       },
       { speaker: characters.Damen,
         text: "... Huh.",
       },
       { speaker: characters.Damen,
         text: "Guess they forgot to put space on that one.",
+        characters: { 
+          left: { character: characters.Oscar, expression: "neutral" }, 
+          right: { character: characters.Kuro, expression: "neutral" },
+          center: { character: characters.Damen, expression: "neutral" } },
+
+
       }, 
       { choices:
         [

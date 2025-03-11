@@ -18,6 +18,11 @@ export default function VisualNovel() {
 
   let scene = scenes.find(s => s.id === currentScene);
   let currentLine = scene.dialogue[dialogIndex];
+  const defaultReplacements = [
+    {key: "$HAPPY", value: ":)"},
+    {key: "$SAD", value: ":("},
+    {key: "$MOURN", value: ":(((("},
+  ]
   // const [currLine, setCurrLine] = useState("");
 
   const [paths, setPaths] = useState({
@@ -59,11 +64,7 @@ export default function VisualNovel() {
 
         if (!replacements.length){
           setReplacements(
-            {
-              "$HAPPY": ":)",
-              "$SAD": ":(",
-              "$MOURN": ":((("
-            }
+            defaultReplacements
           );
           console.log("DEFAULT REPLACEMENTS");
         }
@@ -99,11 +100,17 @@ export default function VisualNovel() {
 
     // replace text 
     if (currentLine.replace) {
+    if (replacements.length > 0) {
       replacements.forEach((x) => {
         console.log(x.key, x.value);
         text = text.replaceAll(x.key, x.value);
-      } 
-    );
+      });
+    } else {
+      defaultReplacements.forEach((x) => {
+        console.log(x.key, x.value);
+        text = text.replaceAll(x.key, x.value);
+      });
+    }
 
     }
     let index = 0;
