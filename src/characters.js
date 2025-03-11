@@ -48,7 +48,8 @@ export const characters = {
       neutral: oscarNeutral,
       happy: oscarNeutral,
       sad: oscarSad,
-      annoyed: oscarAnnoyed
+      annoyed: oscarAnnoyed,
+      angry: oscarAnnoyed
     },
     accessories: [hat1, hat2, hat3, earrings1, earrings2, earrings3, necklace1, necklace2, necklace3, ],
     colour: "rgba(9, 66, 10, 0.9)"
@@ -59,7 +60,8 @@ export const characters = {
       neutral: kuroNeutral,
       happy: kuroNeutral,
       sad: kuroSad,
-      annoyed: kuroAnnoyed
+      annoyed: kuroAnnoyed,
+      angry: kuroAnnoyed
     },
     colour: "rgba(7, 24, 74, 0.9)"
   },
@@ -69,7 +71,8 @@ export const characters = {
       neutral: damenNeutral,
       happy: damenNeutral,
       sad: damenSad,
-      annoyed: damenAnnoyed
+      annoyed: damenAnnoyed,
+      angry: damenAnnoyed
     },
     colour: "rgba(72, 8, 8, 0.9)"
 

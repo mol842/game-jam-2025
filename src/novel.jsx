@@ -38,6 +38,18 @@ export default function VisualNovel() {
     console.log(currentScene)
     
     scene = scenes.find(s => s.id === currentScene);
+
+    // check if all are done, to end.
+    if (scene.checkPaths) {
+      console.log("CHECKING PATHS COMPLETE?");
+      const pathStatus = scene.checkPaths.map((p) => { paths[p] === true; });
+      console.log(pathStatus);
+      if (pathStatus.every(val => val === true)) {
+        console.log("ALL PATHS DONE");
+        setCurrentScene(scene.else);
+      }
+    }
+
   }, [currentScene]);
 
   useEffect(() => {
@@ -46,7 +58,7 @@ export default function VisualNovel() {
     currentLine = scene.dialogue[dialogIndex];
   }, [dialogIndex]);
 
-  useEffect(() => {    
+  useEffect(() => {
     if (currentLine.characters) {
       setSceneCharacters(currentLine.characters);
     }
