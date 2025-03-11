@@ -79,6 +79,8 @@ export default function VisualNovel() {
     console.log(dialogIndex)
     
     currentLine = scene.dialogue[dialogIndex];
+    console.log("LIIINE",currentLine)
+
   }, [dialogIndex]);
 
   useEffect(() => {
@@ -130,6 +132,32 @@ export default function VisualNovel() {
       }
     }, text.length / 40);
     console.log(sceneCharacters);
+
+    if (currentLine.checkPaths) {
+      console.log("CHECKING PATHS COMPLETE?", currentLine.checkPaths);
+      console.log(paths)
+      const pathStatus = currentLine.checkPaths.map((p) => { console.log(p); return paths[p]; });
+      console.log(pathStatus);
+      if (pathStatus.every(val => val === true)) {
+        console.log("ALL PATHS DONE");
+        setCurrentScene(currentLine.else);
+        // remove Oscars stupid hats etc
+        setAccessoriesOscar([]);
+
+        if (!replacements.length){
+          setReplacements(
+            defaultReplacements
+          );
+          console.log("DEFAULT REPLACEMENTS");
+        }
+          
+      } else {
+        console.log("NOT ALL PATHS DONE");
+        nextDialogue();
+      }
+    }
+
+
   }, [dialogIndex, currentScene]);
   
   const nextDialogue = () => {

@@ -38,6 +38,8 @@ export const scenes = [
       { choices: [
         { text: "START", next: "start-intro" },
         { text: "Skip Ahead", next: "skip-ahead" },
+        //{ text: "path-between", next: "path-between"}
+
         // { text: "Skip to the Space Jewelers with Oscar", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
         // { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
         // { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
@@ -4589,7 +4591,7 @@ export const scenes = [
       { speaker: characters.Damen,
         text: "I’ll see you back at the cafe."
       },
-      { jump: "damen-cafe"} // CONTINUE
+      { jump: "path-between"} 
     ]
   },
 
