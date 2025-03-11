@@ -4630,7 +4630,10 @@ export const scenes = [
     id: "end-intro",
     background: coffeeShop,
     dialogue: [
-      { text: "You are once again sitting in a coffee shop in outer space (ignore the windows, please just ignore the windows)" },
+      { text: "You are once again sitting in a coffee shop in outer space (ignore the windows, please just ignore the windows)",
+        characters: {}
+        
+      },
       { speaker: characters.Oscar, 
         text: "Okay, roll call! Everybody get in here already.",
         characters: { left: { character: characters.Oscar, expression: "happy" } }
