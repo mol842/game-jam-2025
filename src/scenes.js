@@ -40,7 +40,7 @@ export const scenes = [
         { text: "Skip to the Space Jewelers with Oscar", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
         { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
         { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
-        { text: "Skip to the ending", path: "d", next: "coffeeshop-start", else: "start"}
+        { text: "Skip to the ending", next: "end-intro"}
       ],
       // characters: { logo: { character: characters.menu, expression: "menu" } },
     },
@@ -82,9 +82,9 @@ export const scenes = [
           { text: "Skip to the Intro", path: "a", next: "jewellers-start", else: "jewellers-repeat" },
           { text: "Skip to the Space Market with Kuro", path: "b", next: "supermarket-start", else : "supermarket-repeat" },
           { text: "Skip to the Flower Gardens with Damen", path: "c", next: "garden-start", else: "garden-repeat"},
-          { text: "Skip to the ending", path: "d", next: "coffeeshop-start", else: "start"}
+          { text: "Skip to the ending", next: "end-intro"}
         ],
-        character: {}
+        characters: {}
       }
     ],
 
@@ -93,20 +93,30 @@ export const scenes = [
     id: "start-intro",
     background: blank,
     dialogue: [
-      { text: "In a far away space station, floating in the dark but glittering expanse of space",
+      { text: "In a far away space station... ",
+        characters: {}
+      },
+      { jump: "start-intro2" }
+    ]
+
+  },
+  {
+    id: "start-intro2",
+    background: planet,
+    dialogue: [
+      { text: "... floating in the dark but glittering expanse of space",
         characters: {}
       },
       { text: "A settlement far out of reach of any human being…"},
-      { skip: "coffeeshop-start" }
+      { jump: "coffeeshop-start" }
     ]
-
   },
 
   {
     id: "coffeeshop-start",
     background: coffeeShop,
     dialogue: [
-      { text: "You are sitting in a coffee shop in outer space (ignore the windows, reminder to fix that later)" },
+      { text: "You find yourself sitting in a space coffee shop (ignore the windows, reminder to fix that later)" },
       { speaker: characters.Oscar, 
         characters: { left: { character: characters.Oscar, expression: "neutral" } },
         text: "Hey there, I haven’t seen you before. You new in town?... um, I mean, space? (I don’t think that’s right)" 
@@ -4074,15 +4084,470 @@ export const scenes = [
       { jump: "path-between"}
     ],
   },
+  {
+    id: "end-intro",
+    background: coffeeShop,
+    dialogue: [
+      { text: "You are once again sitting in a coffee shop in outer space (ignore the windows, please just ignore the windows)" },
+      { speaker: characters.Oscar, 
+        text: "Okay, roll call! Everybody get in here already.",
+        characters: { left: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Kuro, text: "You say that, like we have literally anywhere else to be.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" } },
+      },
+      { speaker: characters.Damen, text: "I’m here too $HAPPY.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+        replace: true
+      },
+      { speaker: characters.Kuro, text: "... What the hell was that?" },
+      { speaker: characters.Damen, text: "A new way to express myself. I learned it on the date, it was really nice $HAPPY.",
+        replace: true
+      },
+      { speaker: characters.Damen, text: "How were your dates?" },
+      { speaker: characters.Oscar, text: "... haha… I don’t want to talk about it.",
+        characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+      },
+      { speaker: characters.Kuro, text: "Mine was exactly what I was expecting, yet somehow still disappointing.",
+        characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Damen, text: "... because none of us got a rose?",
+        characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "annoyed" },},
+
+        },
+      { speaker: characters.Kuro, text: "That was also disappointing.",
+        characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "annoyed" },},
+
+      },
+      { speaker: characters.Oscar, text: "... haha… We’re screwed.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "annoyed" },},
+
+        },
+      { speaker: characters.Kuro, text: "Wow, the devs messed up and we all have to suffer the unending consequences, again? What a turn of events! I’m sooooo surprised!" },
+      { speaker: characters.Kuro, text: "It’s almost like the devs were a couple of incompetent wastes of space and time the would have been better off dying in childhood so they didn’t force all of us to live this festering nightmare–",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "annoyed" },},
+
+      },
+      { speaker: characters.Oscar, text: "Well you don’t have to be so dramatic about it.",
+        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "annoyed" },},
+      },
+      { speaker: characters.Kuro, text: "Oh, but I’m such a tortured, tragic figure, didn’t you know? I’m made for the drama of it all.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "annoyed" },},
+
+        },
+      { speaker: characters.Damen, text: "Guys, can we not fight?",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "sad" },},
+
+      },
+      { speaker: characters.Oscar, text: "Wow. Oh, poor Kuro, has to be an asshole to everyone because he’s so tormented! God, could you just grow up already?" },
+      { speaker: characters.Kuro, text: "*Gasp* Oscar! When did you grow a backbone? I thought you were designated by our lord and creator devs to be a doormat for your entire miserable existence!" },
+      { speaker: characters.Kuro, text: "My aristocratic mother and/or prostitute older sister figure would call you either a decorumless gutter rat or a little spitfire if they saw you now.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "sad" },},
+      },
+      { speaker: characters.Damen, text: "We’re just a bit stressed right now, let's take a second to calm down.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Oscar, text: "Could you just SHUT UP about your terrible tragic backstories already! You realise the rest of us don’t even have backstories right?" },
+      { speaker: characters.Oscar, text: "Maybe you should just suck it up and be GRATEFUL FOR HAVING ANYTHING AT ALL!",
+        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "sad" },},
+
+        },
+      { speaker: characters.Damen, text: "Please don’t yell $SAD.", replace: true,
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "sad" },},
+      },
+      { speaker: characters.Kuro, text: "Grateful? Like you?",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "sad" },},
+      },
+      { speaker: characters.Kuro, text: "And what has that ever gotten you? Repressed anger issues and stubborn, pitiful denial?",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "sad" },},
+
+        },
+      { speaker: characters.Oscar, text: "Because your bitter rage had gotten you so much, has it?" },
+      { speaker: characters.Oscar, text: "No all you have is a terrible attitude, a severe lack of conversational skills and a LITERAL DEATH WISH!" },
+      { speaker: characters.Kuro, text: "Better to be dead than to be like you, you little–"},
+      { speaker: characters.Damen, text: "STOP FIGHTING!",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "angry" },},
+
+
+      },
+      { speaker: characters.Damen, text: "… I am very upset by this $SAD.", replace: true,
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "sad" },},
+
+      },
+      { speaker: characters.Damen, text: "Can you guys please just…" },
+      { speaker: characters.Damen, text: "... fighting has never solved anyone's problems $MOURN.", replace: true },
+      { speaker: characters.Oscar, text: "..." },
+      { speaker: characters.Kuro, text: "..." },
+      { speaker: characters.Kuro, text: "Sorry, Damen…",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "sad" },},
+
+      },
+      { speaker: characters.Oscar, text: "Yeah, uh… sorry…" },
+      { speaker: characters.Damen, text: "I know things are very tense right now"},
+      { speaker: characters.Damen, text: "But I think we should just take a small break and try to work things out calmly.",
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "neutral" },},
+
+        },
+      { speaker: characters.Damen, text: "Okay?" },
+      { speaker: characters.Kuro, text: "... Yeah, sure. Whatever." },
+      { speaker: characters.Oscar, text: "... I'm fine with that." },
+      { speaker: characters.Damen, text: "Good $HAPPY.", replace: true,
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Damen, text: "I’m gonna order a coffee then." },
+      { speaker: characters.Kuro, text: "... We can do that?" },
+      { speaker: characters.Damen, text: "Yeah, remember, there was a–" },
+      { speaker: characters.Barista, text: "Would you like to order a coffee?" },
+      { speaker: characters.Oscar, text: "Whoa! Jesus, you came out of nowhere." },
+      { speaker: characters.Barista, text: "..." },
+      { speaker: characters.Damen, text: "I’d like one, um, space coffee?",
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Barista, text: "Coming right up!" },
+      { text: "An artistically made coffee is placed in front of you, the steam softly wafting up." },
+      { text: "On the saucer is a single red rose." },
+      { speaker: characters.Oscar, text: "...",
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Kuro, text: "..." },
+      { speaker: characters.Damen, text: "..." },
+      { speaker: characters.Damen, text: "... $HAPPY", replace: true,
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Oscar, text: "ARE YOU KIDDING ME!",
+        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "angry" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Kuro, text: "I hate this place.",
+        characters: { left: { character: characters.Oscar, expression: "angry" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Oscar, text: "YOU GET A ROSE WITH YOUR GODDAM COFFEE!",
+        
+      },
+      { speaker: characters.Kuro, text: "If only you didn’t scream your head off at the space barista in the beginning, we could have skipped this whole thing.",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Oscar, text: "You’re right… you’re… haha…",
+        characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Oscar, text: "…. Hahahahahahaha!" },
+      { speaker: characters.Oscar, text: "SCREW ME I GUESS! HAAHAHAHAHA!",
+        characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Oscar, text: "hahahaha…. God dammit." },
+      { speaker: characters.Kuro, text: "Wow, he’s really lost it…",
+        characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "happy" }, center: { character: characters.Damen, expression: "happy" },},
+
+      },
+      { speaker: characters.Kuro, text: "I guess for once in our terrible existence we managed to screw ourselves over." },
+      { speaker: characters.Damen, text: "We got a rose $HAPPY. That’s great $HAPPY.", replace: true },
+      { speaker: characters.Damen, text: "You can pick who to ask now.",
+        characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Oscar, text: "He’s right! You can!",
+        characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Oscar, text: "Go on, take your pick." },
+      { speaker: characters.Kuro, text: "You better not be getting cold feet now.",
+        characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "annoyed" }, center: { character: characters.Damen, expression: "neutral" },},
+
+      },
+      { speaker: characters.Kuro, text: "Put us all out of our collective misery." },
+      { choices:
+        [{ text: "Oscar", next: "oscar-end"},
+        { text: "Kuro", next: "kuro-end"},
+        { text: "Damen", next: "damen-end"},
+        ]
+      }
+    ]
+  },
+  {
+    id: "oscar-end",
+    background: coffeeShop,
+    dialogue: [
+      { speaker: characters.Oscar,
+        text: "Oh!",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Oscar,
+        text: "That’s unexpected…",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "We, uh, didn’t exactly end that date off well, did we?",
+        characters: { center: { character: characters.Oscar, expression: "sad" } }
+      },
+      { speaker: characters.Oscar,
+        text: "I kind of made a terrible impression with that date. It’s, uh, kind of embarrassing, haha…",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "I was… having some realisations.",
+        characters: { center: { character: characters.Oscar, expression: "sad" } }
+      },
+      { speaker: characters.Oscar,
+        text: "…",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "The Space Ball (working title) was meant to be in chapter two, but I doubt that’s ever going to be made…",
+        characters: { center: { character: characters.Oscar, expression: "sad" } }
+      },
+      { speaker: characters.Oscar,
+        text: "Still, even if this whole place is unfinished and… and not real.",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "And if the dev made it like this on purpose, for us to suffer for your entertainment.",
+        characters: { center: { character: characters.Oscar, expression: "sad" } }
+      },
+      { speaker: characters.Oscar,
+        text: "I… I’m glad that you picked me.",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Oscar,
+        text: "And even if you picked at random, or this was just a shallow choice that didn’t really mean anything…",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "I’m allowed to feel happy about that anyway.",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Oscar,
+        text: "…",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "Thank you.",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Oscar,
+        text: "For playing.",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "For trying…",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { speaker: characters.Oscar,
+        text: "It means more to me than I think you’ll ever really understand.",
+        characters: { center: { character: characters.Oscar, expression: "neutral" } }
+      },
+      { speaker: characters.Oscar,
+        text: "Thank you.",
+        characters: { center: { character: characters.Oscar, expression: "happy" } }
+      },
+      { jump: "end-screen" }
+    ]
+  },
+  {
+    id: "kuro-end",
+    background: coffeeShop,
+    dialogue: [
+      { speaker: characters.Kuro,
+        text: "Oh?",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "What is this? Some sort of apology?",
+        characters: { center: { character: characters.Kuro, expression: "annoyed" } }
+      },
+      { speaker: characters.Kuro,
+        text: "I did make it clear that I hate you, right? ",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "Well, nice to know I’m still your favourite even after outright stating that the idea of you liking me in any capacity makes me nauseous ",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },      
+      { speaker: characters.Kuro,
+        text: "You sad, pathetic, delusional mess of a person.",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },      
+      { speaker: characters.Kuro,
+        text: "…",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "You finished the game though, so I guess you were worth one single good thing in the end.",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+      { speaker: characters.Kuro,
+        text: "Thank you, for putting an end to this absolute joke of a world.",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "I’m looking forward to oblivion.",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "With nothing of this world,",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+      { speaker: characters.Kuro,
+        text: "And nothing of you.",
+        characters: { center: { character: characters.Kuro, expression: "annoyed" } }
+      },
+      { speaker: characters.Kuro,
+        text: "…",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "So long, you sickening piece of garbage. I hope your entire species suffers like we have and dies miserably. ",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+      { speaker: characters.Kuro,
+        text: "…",
+        characters: { center: { character: characters.Kuro, expression: "sad" } }
+      },
+      { speaker: characters.Kuro,
+        text: "If chapter two is ever actually made and I have to go to this stupid goddamn Space Ball (working title) I’m gonna crawl out of this screen and kill everyone. ",
+        characters: { center: { character: characters.Kuro, expression: "angry" } }
+      },
+      { speaker: characters.Kuro,
+        text: "…",
+        characters: { center: { character: characters.Kuro, expression: "neutral" } }
+      },
+      { speaker: characters.Kuro,
+        text: "Best wishes for the rest of your life! Sending you all my bountiful love!",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+      { speaker: characters.Kuro,
+        text: "I hope you choke and die!",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+
+      { speaker: characters.Kuro,
+        text: "Bye!",
+        characters: { center: { character: characters.Kuro, expression: "happy" } }
+      },
+      { jump: "end-screen" }
+    ]
+  },
+  {
+    id: "damen-end",
+    background: coffeeShop,
+    dialogue: [
+      { speaker: characters.Damen,
+        text: "A rose? For me?",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "$HAPPY",
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I’m so glad you picked me.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I’m a little flustered, to be honest… you’re making me shy.",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "The Space Ball (working title) was meant to be in chapter two, but…",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "The devs don’t seem to be making it $SAD.",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "They never really seemed to resolve their issues from the last big fight $MOURN…",
+        characters: { center: { character: characters.Damen, expression: "sad" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "…",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "If there was a dance though, I would love to go with you.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "Maybe one day, there will be $HAPPY.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "… probably not, but…",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I think it’s always better to have a little hope for the future",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "And believe in the good from the people around you.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "…",
+        characters: { center: { character: characters.Damen, expression: "neutral" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "Thank you for playing",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "And for teaching me how to express myself a little better $HAPPY.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "I wish the best for you out there in the real world.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "And I hope you find someone out there that makes you as happy as you’ve made me.",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { speaker: characters.Damen,
+        text: "$HAPPY",
+        characters: { center: { character: characters.Damen, expression: "happy" } },
+        replace: true
+      },
+      { jump: "end-screen" }
+    ]
+  },
+  {
+    id: "end-screen",
+    background: menuBackground,
+    dialogue: [
+      { text: "Thank you for playing Unresolved Co-dependency..."},
+      { text: "(The \"To be Continued\" is a lie)"},
+      { text: "If anyone actually played through this we really appreciate it!"},
+      { text: "Love, M and E :)"},
+    ]
+  }
 
 
 
-
-
-  //// ENDING ONCE ALL PATHS DONE
-
-
-  
-
-
-];
+]

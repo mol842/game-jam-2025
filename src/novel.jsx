@@ -28,7 +28,7 @@ export default function VisualNovel() {
     "test2": false,
     "test3": false,
   }); 
-  const [replacements, setReplacements] = useState([{key:"$SMILE", value: ":))"}]);
+  const [replacements, setReplacements] = useState([]);
 
   const [accessoriesOscar, setAccessoriesOscar] = useState([]);
 
@@ -54,6 +54,20 @@ export default function VisualNovel() {
       if (pathStatus.every(val => val === true)) {
         console.log("ALL PATHS DONE");
         setCurrentScene(currentLine.else);
+        // remove Oscars stupid hats etc
+        setAccessoriesOscar([]);
+
+        if (!replacements.length){
+          setReplacements(
+            {
+              "$HAPPY": ":)",
+              "$SAD": ":(",
+              "$MOURN": ":((("
+            }
+          );
+          console.log("DEFAULT REPLACEMENTS");
+        }
+          
       } else {
         console.log("NOT ALL PATHS DONE");
         nextDialogue();
