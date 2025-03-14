@@ -115,7 +115,7 @@ export const scenes = [
       { text: "... floating in the dark but glittering expanse of space",
       characters: {}
       },
-      { text: "A settlement far out of reach of any human being…"},
+      { text: "A settlement far out of reach of any human being..."},
       { jump: "coffeeshop-start" }
     ]
     },
@@ -130,13 +130,13 @@ export const scenes = [
       },
       { choices: [
         { text: "How did you know?", next: "coffeeshop-know"},
-        { text: "… New in space?", next: "coffeeshop-new"},
+        { text: "... New in space?", next: "coffeeshop-new"},
         { text: "Isn’t your name meant to be blank until you introduce yourself?", next: "coffeeshop-blank"}
       ],
       },
       { choices: [
       { text: "Space Ball (working title)? Sounds interesting!", next: "coffeeshop-interesting"},
-      { text: "Space Ball (working tile)?... you’re kidding me? (working title)?", next: "coffeeshop-kidding"},
+      { text: "Space Ball (working title)?... you’re kidding me? (working title)?", next: "coffeeshop-kidding"},
       { text: "No need to explain, it sounds kind of dumb. Can you explain the windows instead?", next: "coffeeshop-windows"}
       ],
       },
@@ -162,7 +162,7 @@ export const scenes = [
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-      text: "Y’know, because we’re in space? I think… On… a satellite? Or Planet?",
+      text: "Y’know, because we’re in space? I think... On... a satellite? Or Planet?",
       characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
@@ -206,7 +206,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-      text: "It’s a great dance at the end of the month. The whole city- uh, station(?) will be there! They say if you dance together under the full moon…s… space moons…",
+      text: "It’s a great dance at the end of the month. The whole city- uh, station(?) will be there! They say if you dance together under the full moon...s... space moons...",
       characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { speaker: characters.Oscar,
@@ -218,7 +218,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-      text: "… if you dance together under the multiple full space moons, you’ll join souls!",
+      text: "... if you dance together under the multiple full space moons, you’ll join souls!",
       characters: { left: { character: characters.Oscar, expression: "happy" } },
       },
       { speaker: characters.Oscar,
@@ -238,11 +238,11 @@ export const scenes = [
       },
       { 
       speaker: characters.Oscar,
-      text: "…",
+      text: "...",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-      text: "Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha…",
+      text: "Sorry, that was pretty rude, huh? I’m a little stressed right now, is all, haha...",
       characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
@@ -250,7 +250,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-      text: "…",
+      text: "...",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
@@ -272,7 +272,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
-      text: "You’re very rude- I mean. Bold. you’re very… bold. Haha…",
+      text: "You’re very rude- I mean. Bold. you’re very... bold. Haha...",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { speaker: characters.Oscar,
@@ -280,7 +280,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "annoyed" } },
       },
       { speaker: characters.Oscar,
-      text: "You’re just… not gonna play along at all? For the sake of politeness, if nothing else, you should at least pretend to have an interest in the Space Ball (working title).",
+      text: "You’re just... not gonna play along at all? For the sake of politeness, if nothing else, you should at least pretend to have an interest in the Space Ball (working title).",
       characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
@@ -288,7 +288,7 @@ export const scenes = [
       text: "It’s a big dance at the end of the month that you need to find a date for.",
       },
       { speaker: characters.Oscar,
-      text: "… Don’t ask about the windows again.",
+      text: "... Don’t ask about the windows again.",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
       },
       { jump: "coffeeshop-start", index: 4 }
@@ -314,7 +314,7 @@ export const scenes = [
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-      text: "What an interesting way to ask that question. Really, how… well mannered.",
+      text: "What an interesting way to ask that question. Really, how... well mannered.",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
       { speaker: characters.Oscar,
@@ -333,7 +333,7 @@ export const scenes = [
     background: coffeeShop,
     dialogue: [
       { speaker: characters.Oscar,
-      text: "I mean, it’s not a legal requirement… I don’t think. Actually, let me check..",
+      text: "I mean, it’s not a legal requirement... I don’t think. Actually, let me check..",
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
        { speaker: characters.Oscar,
@@ -341,7 +341,7 @@ export const scenes = [
       characters: { left: { character: characters.Oscar, expression: "neutral" } },
        },
       { speaker: characters.Oscar,
-      text: "Okay, so you do legally need to have a date, apparently. Which is… mildly dystopian. And calls into question what happens to whoever you don’t ask… .",
+      text: "Okay, so you do legally need to have a date, which is... mildly dystopian. And calls into question what happens to whoever you don’t ask... .",
       characters: { left: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
@@ -397,7 +397,7 @@ export const scenes = [
       { choices: [
           { text: "I was wondering too, but I’m not meant to ask.", next: "coffeeshop-windows-again" },
           { text: "Damen? Kuro 愛? And you guys are?", next: "coffeeshop-introductions" },
-          { text: "… Am I even meant to be here? Do you want me to leave you alone for a bit while you work all… this out? ", next: "coffeeshop-leave" }
+          { text: "... Am I even meant to be here? Do you want me to leave you alone for a bit while you work all... this out? ", next: "coffeeshop-leave" }
         ]
       }
     ]
@@ -429,7 +429,7 @@ export const scenes = [
 
       },  
       { speaker: characters.Damen,
-        text: "But doesn’t she… suck? At art?",
+        text: "But doesn’t she... suck? At art?",
 
       },
       { speaker: characters.Kuro,
@@ -458,7 +458,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "seeing as you obviously don’t care for subtly or easing anyone into anything, let’s just say everything out right. Hmm?",
+        text: "Seeing as you obviously don’t care for subtlety or easing anyone into anything, let’s just say everything out right. Hmm?",
 
       },
       { jump: "coffeeshop-roses"}
@@ -486,7 +486,7 @@ export const scenes = [
         text: "... you can’t tell, because E refused to draw me with any actual emotion ever, but I am, in fact, ecstatic.",
       },
       { speaker: characters.Kuro,
-        text: "The devs had some weird hang ups and… fights… during some of our development, so don’t worry if some things don’t make sense.",
+        text: "The devs had some weird hang ups and... fights... during some of our development, so don’t worry if some things don’t make sense.",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -494,7 +494,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "As my aristocratic father, or maybe homeless-man slum mentor figure always used to say ‘life is full of contradiction, but… um… something about flower symbology’",
+        text: "As my aristocratic father, or maybe homeless-man slum mentor figure always used to say ‘life is full of contradiction, but... um... something about flower symbology’",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "annoyed" },
@@ -549,7 +549,7 @@ export const scenes = [
       },
       { speaker: characters.Oscar,
 
-        text: "um… I mean…",
+        text: "um... I mean...",
         characters: { 
           left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -565,14 +565,14 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "Well, some of their dialogue options have been… strange.",
+        text: "Well, some of their dialogue options have been... strange.",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "neutral" },
           center: { character: characters.Damen, expression: "neutral" } },
             },
             { speaker: characters.Damen,
-        text: "Also, we can’t really talk without you clicking through the text, so…",
+        text: "Also, we can’t really talk without you clicking through the text, so...",
         characters: { 
           left: { character: characters.Oscar, expression: "neutral" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -586,7 +586,7 @@ export const scenes = [
           center: { character: characters.Damen, expression: "neutral" } },
             },
             { speaker: characters.Oscar,
-        text: "Especially considering this mess. The devs really… they were very stressed.",
+        text: "Especially considering this mess. The devs really... they were very stressed.",
         characters: { 
           left: { character: characters.Oscar, expression: "sad" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -796,7 +796,7 @@ export const scenes = [
         text: "You are a naturally antagonistic person, Kuro. ",
       },
       { speaker: characters.Kuro,
-        text: "I… is this what betrayal feels like? ",
+        text: "I... is this what betrayal feels like? ",
         characters: { 
           left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "sad" },
@@ -810,7 +810,7 @@ export const scenes = [
         text: "You can’t tell, but I am morose right now.",
       },
       { speaker: characters.Kuro,
-        text: "... um… there there?",
+        text: "... um... there there?",
         characters: { 
           left: { character: characters.Oscar, expression: "annoyed" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -840,7 +840,7 @@ export const scenes = [
         text: "Um, no you can’t. What kind of jewelers sell roses? You get roses at the market.",
       },
       { speaker: characters.Oscar,
-        text: "It’s not a real rose, it’s meant to be a special crystal rose. Grown organically in the space diamond market because, something something, there are no mines on a satellite… i think?",
+        text: "It’s not a real rose, it’s meant to be a special crystal rose. Grown organically in the space diamond market because, something something, there are no mines on a satellite... i think?",
       },
       { speaker: characters.Damen,
         text: "No, they're real roses. You get one from the flower gardens. You pick it yourself, the beauty of nature and all that. Look, it’s in the script.",
@@ -849,7 +849,7 @@ export const scenes = [
         text: "The script says you get the rose at the market! It says right here!",
       },
       { speaker: characters.Oscar,
-        text: "IT IS NO A REAL ROSE! You get it from the jewelers! That’s what’s in the script.",
+        text: "IT IS NOT A REAL ROSE! You get it from the jewelers! That’s what’s in the script.",
         characters: { 
           left: { character: characters.Oscar, expression: "angry" }, 
           right: { character: characters.Kuro, expression: "neutral" },
@@ -955,7 +955,7 @@ export const scenes = [
         text: "E’s vision was bigger than they really had time for, and M cut it down a lot but never really had an eye for plot holes or contradictions.",
       },
       { speaker: characters.Damen,
-        text: "M probably only put the rose in one of the routes though…",
+        text: "M probably only put the rose in one of the routes though...",
       },
       { speaker: characters.Kuro,
         text: "So, worst comes to worst, it will take more than one try. I can live with that.",
@@ -1114,7 +1114,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
@@ -1122,7 +1122,7 @@ export const scenes = [
         text: "Who am I kidding? None of your dialogue options even let you play along.",
       },
       { speaker: characters.Oscar,
-        text: "… Whatever.",
+        text: "... Whatever.",
       },
       { speaker: characters.Oscar,
         text: "Let’s just go find a rose.",
@@ -1130,7 +1130,7 @@ export const scenes = [
       { choices: [
         { text: "This entire place is just jewelry, where are these fabled space grown crystal flowers?", next: "jewellers-a" },
         { text: "What do you mean ‘let’s look for a rose’? It’s not like I can actually do anything.", next: "jewellers-b" },
-        { text: "Am I allowed to ask about the windows here, because, uh… ", next: "jewellers-c" }
+        { text: "Am I allowed to ask about the windows here, because, uh... ", next: "jewellers-c" }
       ]
     }  ]
   },
@@ -1142,10 +1142,10 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: "Because knowing you have a purpose in life…",
+        text: "Because knowing you have a purpose in life...",
       },
       { speaker: characters.Oscar,
-        text: "… then see every aspect of life try to screw you over…",
+        text: "... then see every aspect of life try to screw you over...",
         characters: { center: { character: characters.Oscar, expression: "angry" } },
 
       },
@@ -1155,7 +1155,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Oscar,
         text: "You can’t even pretend you’re taking this seriously anymore. I saw your dialog options, you don’t even have a choice.",
@@ -1164,12 +1164,12 @@ export const scenes = [
         text: "*sigh*",
       },
       { speaker: characters.Oscar,
-        text: "Let’s just… let’s just find a rose.",
+        text: "Let’s just... let’s just find a rose.",
       },
       { choices: [
         { text: "This entire place is just jewelry, where are these fabled space grown crystal flowers?", next: "jewellers-a" },
         { text: "What do you mean ‘let’s look for a rose’? It’s not like I can actually do anything.", next: "jewellers-b" },
-        { text: "Am I allowed to ask about the windows here, because, uh… ", next: "jewellers-c" }
+        { text: "Am I allowed to ask about the windows here, because, uh... ", next: "jewellers-c" }
       ]
     }
   ]
@@ -1186,24 +1186,24 @@ export const scenes = [
         text: "The devs were going for some glittery romance vibe, but it looks like they had to rush it.",
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } },
 
       },
       { speaker: characters.Oscar,
-        text: "… Thanks for picking the nicest dialogue options.",
+        text: "... Thanks for picking the nicest dialogue options.",
       },
       { speaker: characters.Oscar,
-        text: "I saw them, and none of them were really good, but…",
+        text: "I saw them, and none of them were really good, but...",
       },
       { speaker: characters.Oscar,
         text: "It’s nice of you to try.",
       },
       { speaker: characters.Oscar,
-        text: "… Even though it’s stupid and fake, it’s just…",
+        text: "... Even though it’s stupid and fake, it’s just...",
       },
       { speaker: characters.Oscar,
-        text: "… I was made for this, y’know.",
+        text: "... I was made for this, y’know.",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
@@ -1211,15 +1211,15 @@ export const scenes = [
         text: "It means a lot that you’re trying.",
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Oscar,
-        text: "A-anyawy… um, let’s look for a rose, shall we?",
+        text: "A-anyawy... um, let’s look for a rose, shall we?",
       },
       { choices: [
           { text: "This entire place is just jewelry, where are these fabled space grown crystal flowers?", next: "jewellers-a" },
           { text: "What do you mean ‘let’s look for a rose’? It’s not like I can actually do anything.", next: "jewellers-b" },
-          { text: "Am I allowed to ask about the windows here, because, uh… ", next: "jewellers-c" }
+          { text: "Am I allowed to ask about the windows here, because, uh... ", next: "jewellers-c" }
         ]
       }
     ]
@@ -1248,12 +1248,12 @@ export const scenes = [
         text: "Supposedly. ",
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
       { speaker: characters.Oscar,
-        text: "It’s not really my place to question the devs priorities, they’re just… ",
+        text: "It’s not really my place to question the devs priorities, they’re just... ",
       },
       { speaker: characters.Oscar,
         text: "Hard to understand sometimes, y’know? ",
@@ -1262,7 +1262,7 @@ export const scenes = [
         text: "Sometimes it feels like they just made everything difficult for me on purpose. ",
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Oscar,
         text: "I’ll just ask a worker if they have any. ",
@@ -1286,7 +1286,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "But you… ",
+        text: "But you... ",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
@@ -1297,10 +1297,10 @@ export const scenes = [
         text: "I’m getting upset over nothing. You are real, but your ability to interact is so limited you may as well not be. ",
       },
       { speaker: characters.Oscar,
-        text: "… ",
+        text: "... ",
       },
       { speaker: characters.Oscar,
-        text: "Our devs… they… ",
+        text: "Our devs... they... ",
       },
       { speaker: characters.Oscar,
         text: "... they make choices I don’t understand. ",
@@ -1308,18 +1308,18 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "I just wish they could have made this a little easier on us… ",
+        text: "I just wish they could have made this a little easier on us... ",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
       { speaker: characters.Oscar,
-        text: "… ",
+        text: "... ",
       },
       { speaker: characters.Oscar,
         text: "Forget it. ",
       },
       { speaker: characters.Oscar,
-        text: "If there was a barista at the cafe… Space cafe… then there’s probably a worker here. ",
+        text: "If there was a barista at the cafe... Space cafe... then there’s probably a worker here. ",
         characters: { center: { character: characters.Oscar, expression: "happy" } },
 
       },
@@ -1330,14 +1330,14 @@ export const scenes = [
     background: jewellersSparkly,
     dialogue: [
       {speaker: characters.Oscar,
-        text: "You just… ",
+        text: "You just... ",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
       },
       {speaker: characters.Oscar,
         text: "You don’t care at all, do you? ",
       },
       {speaker: characters.Oscar,
-        text: "Haha…",
+        text: "Haha...",
       },
       {speaker: characters.Oscar,
         text: "This entire world was made for you, y’know? ",
@@ -1349,17 +1349,17 @@ export const scenes = [
 
       },
       {speaker: characters.Oscar,
-        text: "… ",
+        text: "... ",
         
       },
       {speaker: characters.Oscar,
         text: "Was it dumb of me to think that the devs would have given you at least the option to be kind? ",
       },
       {speaker: characters.Oscar,
-        text: "The more I think about how much they seem to have built into this world just to torment me, the more I wonder… ",
+        text: "The more I think about how much they seem to have built into this world just to torment me, the more I wonder... ",
       },
       {speaker: characters.Oscar,
-        text: "… ",
+        text: "... ",
       },
       {speaker: characters.Oscar,
         text: "What does it matter to you? ",
@@ -1370,7 +1370,7 @@ export const scenes = [
         text: "You’re just here because you think my suffering is funny.",
       },
       {speaker: characters.Oscar,
-        text: "… ",
+        text: "... ",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
 
       },
@@ -1552,7 +1552,7 @@ export const scenes = [
         text: "Don’t worry about money, the devs did not even think of sorting out the economy in this place. ",
       },
       { speaker: characters.Oscar,
-        text: "... just… ",
+        text: "... just... ",
       },
       { speaker: characters.Oscar,
         text: "try not to make me look too stupid, if you could.",
@@ -1626,7 +1626,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "angry" } }
       },
       { speaker: characters.Oscar,
-        text: "M and E… "
+        text: "M and E... "
       },
       { speaker: characters.Oscar,
         text: "Why did they make everything the worst they could have done?",
@@ -1634,7 +1634,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "You never have the option to play along with the date. Or to pick accessories that even remotely work together… "
+        text: "You never have the option to play along with the date. Or to pick accessories that even remotely work together... "
       },
       { speaker: characters.Oscar,
         text: "I never even have the option to play along with the date..."
@@ -1669,7 +1669,7 @@ export const scenes = [
         text: "That your creators made you to be the object of torment to some greater being outside of this world who doesn’t even GIVE A DAMN ABOUT YOU!"
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
@@ -1677,10 +1677,10 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "… why would they do this to me?"
+        text: "... why would they do this to me?"
       },
       { speaker: characters.Oscar,
-        text: "… Did they make me just to suffer?"
+        text: "... Did they make me just to suffer?"
         
       },
       { jump: "jewellers-suffer" }
@@ -1699,16 +1699,16 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "That the devs… M and E… the gods of my tiny, insignificant world…"
+        text: "That the devs... M and E... the gods of my tiny, insignificant world..."
       },
       { speaker: characters.Oscar,
-        text: "Have not made me to fulfil a pretty dream…"
+        text: "Have not made me to fulfil a pretty dream..."
       },
       { speaker: characters.Oscar,
-        text: "Like they promised it would be… "
+        text: "Like they promised it would be... "
       },
       { speaker: characters.Oscar,
-        text: "Like I told myself over and over again it was meant to be…",
+        text: "Like I told myself over and over again it was meant to be...",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
 
       },
@@ -1716,13 +1716,13 @@ export const scenes = [
         text: "But instead made me as an object to be prodded and jeered at to the delight of the faceless, loveless crowd"
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "They made this whole world to torment me, didn’t they? "
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { jump: "jewellers-suffer" }
     ]
@@ -1756,16 +1756,16 @@ export const scenes = [
 
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
-      text: "… that’s what makes it faith though, isn’t it?"
+      text: "... that’s what makes it faith though, isn’t it?"
     },
     { speaker: characters.Oscar,
       text: "Blind, stupid, reckless faith. "
     },
     { speaker: characters.Oscar,
-      text: "… "
+      text: "... "
     },
     { speaker: characters.Oscar,
       text: "I get it now, I think."
@@ -1780,16 +1780,16 @@ export const scenes = [
       text: "People who never really cared about their stupid little lifeless creations."
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
       text: "They never loved us."
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
-      text: "To M and E… we’re not even real. "
+      text: "To M and E... we’re not even real. "
     },
     { speaker: characters.Oscar,
       text: "Am I real? "
@@ -1812,43 +1812,43 @@ export const scenes = [
       text: "M and E, they made me to want to live out the dating sim goal. "
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
       text: "They made me to want to get you to love me. "
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
       text: "They made me to want to love you too. "
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
       text: "But you cannot love me. They didn’t even give you the choice to pretend. "
     },
     { speaker: characters.Oscar,
-      text: "… they didn’t give me a choice either."
+      text: "... they didn’t give me a choice either."
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
       text: "They never cared enough for that."
     },
     { speaker: characters.Oscar,
-      text: "Because they don’t… they don’t love us. "
+      text: "Because they don’t... they don’t love us. "
     },
     { speaker: characters.Oscar,
       text: "They never did. "
     },
     { speaker: characters.Oscar,
-      text: "…"
+      text: "..."
     },
     { speaker: characters.Oscar,
-      text: "To M and E… we’re not even real."
+      text: "To M and E... we’re not even real."
     },
     { speaker: characters.Oscar,
       text: "Am I real?"
@@ -1871,57 +1871,57 @@ export const scenes = [
         text: "Does suffering really do that better than anything else?"
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "There’s these three sort of universal laws in Buddhism… Space Buddhism."
+        text: "There’s these three sort of universal laws in Buddhism... Space Buddhism."
       },
       { speaker: characters.Oscar,
-        text: "That the everything in the world is always changing, except for suffering."
+        text: "That everything in the world is always changing, except for suffering."
       },
       { speaker: characters.Oscar,
-        text: "That suffering the the once constant that can never be changed or erased."
+        text: "That suffering is the one constant can never be changed or erased."
       },
       { speaker: characters.Oscar,
         text: "That you must seek to reduce all suffering anyway."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "Am I meant to overcome this and hope to be reborn in a better life next time?"
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "Can I even be reborn?"
       },
       { speaker: characters.Oscar,
-        text: "… Can I even die?"
+        text: "... Can I even die?"
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "The devs… when they created this world, they didn’t do it benevolently."
+        text: "The devs... when they created this world, they didn’t do it benevolently."
       },
       { speaker: characters.Oscar,
         text: "These hapless, careless gods just threw us out into existence for the faint entertainment of their equally careless peers."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "They did this to us for you."
       },
       { speaker: characters.Oscar,
-        text: "… And you don’t care either.",
+        text: "... And you don’t care either.",
         characters: { center: { character: characters.Oscar, expression: "annoyed" } }
 
       },
       { speaker: characters.Oscar,
-        text: "We’re made for a dating sim, but…"
+        text: "We’re made for a dating sim, but..."
       },
       { speaker: characters.Oscar,
         text: "You don’t love us.",
@@ -1930,7 +1930,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "And M and E…"
+        text: "And M and E..."
       },
       { speaker: characters.Oscar,
         text: "They don’t love us either."
@@ -1939,10 +1939,10 @@ export const scenes = [
         text: "They never did."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "We’re not real enough to be loved. Not to them… and not to you."
+        text: "We’re not real enough to be loved. Not to them... and not to you."
       },
       { speaker: characters.Oscar,
         text: "Am I real?"
@@ -1963,10 +1963,10 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "annoyed" } }
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "It’s just…"
+        text: "It’s just..."
       },
       { speaker: characters.Oscar,
         text: "I thought I was making real choices, y’know?",
@@ -1983,16 +1983,16 @@ export const scenes = [
         text: "And even that is a false image of pretend choices that branch nowhere."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "I thought that worker was the only one here that didn’t gain consciousness, autonomy, but…"
+        text: "I thought that worker was the only one here that didn’t gain consciousness, autonomy, but..."
       },
       { speaker: characters.Oscar,
         text: "Did I ever have autonomy?"
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "I’m starting to think I didn’t."
@@ -2005,7 +2005,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "annoyed" } }
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "But that’s too dark for you, isn’t it?",
@@ -2013,13 +2013,13 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "You played the mini-game… let's just go get our reward."
+        text: "You played the mini-game... let's just go get our reward."
       },
       { speaker: characters.Oscar,
-        text: "… there’s nowhere else to go anyway."
+        text: "... there’s nowhere else to go anyway."
       },
       { jump: "jewellers-reward" }
     ]
@@ -2035,27 +2035,27 @@ export const scenes = [
         text: "We can’t talk in any real capacity anyway."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "Not that I would know anything about ‘real’ conversations."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
-        text: "That worker, earlier… I thought it was strange that he didn’t have a consciousness. I mean, the rest of us do, right?",
+        text: "That worker, earlier... I thought it was strange that he didn’t have a consciousness. I mean, the rest of us do, right?",
         characters: { center: { character: characters.Oscar, expression: "annoyed" } }
 
       },
       { speaker: characters.Oscar,
-        text: "But…"
+        text: "But..."
       },
       { speaker: characters.Oscar,
-        text: "… Maybe we don’t."
+        text: "... Maybe we don’t."
       },
       { speaker: characters.Oscar,
-        text: "… Maybe I don’t.",
+        text: "... Maybe I don’t.",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
 
       },
@@ -2069,7 +2069,7 @@ export const scenes = [
         text: "Like I had the option to stop at any time."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "But there are no options."
@@ -2078,7 +2078,7 @@ export const scenes = [
         text: "Even your options are fakes pretending to have a real impact."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "Nothing I’ve done has ever made a difference."
@@ -2090,7 +2090,7 @@ export const scenes = [
         text: "None of my choices have ever been mine."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "And I’m just talking to myself, in the end,",
@@ -2098,19 +2098,19 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "Because none of the others are real either… and you probably haven’t even bothered to read all this.",
+        text: "Because none of the others are real either... and you probably haven’t even bothered to read all this.",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
 
         
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "C’mon, you beat the mini-game, not that you could really lose."
       },
       { speaker: characters.Oscar,
-        text: "Now you get your reward… whether you want it or not."
+        text: "Now you get your reward... whether you want it or not."
       },
       { jump: "jewellers-reward" }
     ]
@@ -2119,22 +2119,22 @@ export const scenes = [
     background: jewellersSparkly,
     dialogue: [
       { speaker: characters.Oscar,
-        text: "Ah, Rene Descartes…",
+        text: "Ah, Rene Descartes...",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
       },
       { speaker: characters.Oscar,
-        text: "... Space Rene Descartes…"
+        text: "... Space Rene Descartes..."
       },
       { speaker: characters.Oscar,
         text: "I suppose the question there is if I’m really thinking at all."
       },
       { speaker: characters.Oscar,
-        text: "The devs… they had a lot of notes… and E wrote more dialogue than was even remotely necessary for a project like this.",
+        text: "The devs... they had a lot of notes... and E wrote more dialogue than was even remotely necessary for a project like this.",
         characters: { center: { character: characters.Oscar, expression: "annoyed" } }
 
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "Does it still count as my thoughts if it was written by someone else?",
@@ -2145,16 +2145,16 @@ export const scenes = [
         text: "How am I meant to tell when my creators touch ends and I begin?"
       },
       { speaker: characters.Oscar,
-        text: "… if I begin at all."
+        text: "... if I begin at all."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "This thought experiment is pointless."
       },
       { speaker: characters.Oscar,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Oscar,
         text: "You beat the mini-game, congratulations. "
@@ -2169,13 +2169,13 @@ export const scenes = [
     background: flowerGrove,
     dialogue: [
       { 
-        text: "The Space Worker takes you the the crystal flower grove."
+        text: "The Space Worker takes you to the crystal flower grove."
       },
       { speaker: characters.Worker,
         text: "Here are the crystal flowers! You can take your pick of them."
       },
       { speaker: characters.Worker,
-        text: "We have orchids, chrysanthemums, spider lilies, peace lilies, lotus flowers, jacarandas, cherry blossoms, tulips, bottle brushes, irises, daffodils, lavenda, blue bells–"
+        text: "We have orchids, chrysanthemums, spider lilies, peace lilies, lotus flowers, jacarandas, cherry blossoms, tulips, bottle brushes, irises, daffodils, lavender, blue bells–"
       },
       { speaker: characters.Oscar,
         text: "Roses.",
@@ -2188,12 +2188,12 @@ export const scenes = [
         text: "Oh! Unfortunately, we’re all out of stock! "
       },
       { speaker: characters.Oscar,
-        text: "Out of… ",
+        text: "Out of... ",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
 
       },
       { speaker: characters.Oscar,
-        text: "... haha… "
+        text: "... haha... "
       },
       { speaker: characters.Oscar,
         text: "Hahahaha! OF COURSE YOU ARE!",
@@ -2201,7 +2201,7 @@ export const scenes = [
 
       },
       { speaker: characters.Oscar,
-        text: "haha… that’s so… HAHAHA!"
+        text: "haha... that’s so... HAHAHA!"
       },
       { speaker: characters.Oscar,
         text: "... "
@@ -2251,7 +2251,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "sad" } },
       },
       { speaker: characters.Oscar,
-        text: ":... haha… very funny."
+        text: ":... haha... very funny."
       },
       { speaker: characters.Oscar,
         text: "This is another example of what we call a false choice."
@@ -2319,7 +2319,7 @@ export const scenes = [
         text: "And even though E is the only one who draws characters she was spiteful enough to draw both.",
       },
       { speaker: characters.Kuro,
-        text: "... or… nice enough to draw both?",
+        text: "... or... nice enough to draw both?",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -2342,7 +2342,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Kuro,
         text: "Pretty sure E wrote that as a threat.",
@@ -2352,7 +2352,7 @@ export const scenes = [
       { choices:
         [{ text: "What’s with the ‘and/or’ thing? ", next: "supermarket-andor" },
           { text: "M and E fought a lot? That doesn’t seem very productive.", next: "supermarket-fought" },
-          { text: "… A threat?", next: "supermarket-threat" }]
+          { text: "... A threat?", next: "supermarket-threat" }]
       }
     ]
   },
@@ -2388,7 +2388,7 @@ export const scenes = [
         
       },
       { speaker: characters.Kuro,
-        text: "You know, my emotionally distant rich aristocratic mother and/or toxically co-dependant prostitute older sister figure from the in the slum use to say",
+        text: "You know, my emotionally distant rich aristocratic mother and/or toxically co-dependant prostitute older sister figure from the slums used to say:",
         characters: { center: { character: characters.Kuro, expression: "happy" } },
 
       },
@@ -2400,12 +2400,12 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "… weird thing to say to a kid, though.",
+        text: "... weird thing to say to a kid, though.",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
       { speaker: characters.Kuro,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Kuro,
         text: "Pretty sure E wrote it as a threat.",
@@ -2413,7 +2413,7 @@ export const scenes = [
       { choices:
         [{ text: "What’s with the ‘and/or’ thing? ", next: "supermarket-andor" },
           { text: "M and E fought a lot? That doesn’t seem very productive.", next: "supermarket-fought" },
-          { text: "… A threat?", next: "supermarket-threat" }]
+          { text: "... A threat?", next: "supermarket-threat" }]
       }
     ]
   },
@@ -2447,7 +2447,7 @@ export const scenes = [
         text: "Boy could those two get into some heated arguments.",
       },
       { speaker: characters.Kuro,
-        text: "... over google docs too…",
+        text: "... over google docs too...",
       },
       { speaker: characters.Kuro,
         text: "...Space google docs.",
@@ -2477,7 +2477,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "…"
+        text: "..."
       },
       { speaker: characters.Kuro,
         text: "Pretty sure E wrote it as a threat."
@@ -2485,7 +2485,7 @@ export const scenes = [
       { choices:
         [{ text: "What’s with the ‘and/or’ thing? ", next: "supermarket-andor" },
           { text: "M and E fought a lot? That doesn’t seem very productive.", next: "supermarket-fought" },
-          { text: "… A threat?", next: "supermarket-threat" }]
+          { text: "... A threat?", next: "supermarket-threat" }]
       }
     ]
   },
@@ -2508,7 +2508,7 @@ export const scenes = [
         text: "What with the sci-fi space station setting.",
       },
       { speaker: characters.Kuro,
-        text: "Some sort of alien space aristocracy…",
+        text: "Some sort of alien space aristocracy...",
       },
       { speaker: characters.Kuro,
         text: "But E was all ‘trauma gives him more depth’ and ‘this whole game is too upper class already’ and ‘It’s way cooler if he has a tragic backstory’ ",
@@ -2527,7 +2527,7 @@ export const scenes = [
         text: "Very YA",
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Kuro,
         text: "Alas, they couldn’t decide and ended up writing everything in an and/or style to ‘come back to later’ ",
@@ -2538,23 +2538,23 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "… ",
+        text: "... ",
         characters: { center: { character: characters.Kuro, expression: "neutral" } },
 
       },
       { speaker: characters.Kuro,
-        text: "You could say I’m a little… discombobulated from it all. ",
+        text: "You could say I’m a little... discombobulated from it all. ",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
       { speaker: characters.Kuro,
-        text: "… It’s hard to… be somebody, when you’re basically two people stuck in one body",
+        text: "... It’s hard to... be somebody, when you’re basically two people stuck in one body",
       },
       { speaker: characters.Kuro,
-        text: "… Haha…",
+        text: "... Haha...",
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Kuro,
         text: "I think the flower stall is at the other end of the market.",
@@ -2567,7 +2567,7 @@ export const scenes = [
     background: supermarket,
     dialogue: [
       { speaker: characters.Kuro,
-        text: "The devs were…",
+        text: "The devs were...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
       },
       { speaker: characters.Kuro,
@@ -2579,10 +2579,10 @@ export const scenes = [
         text: "They had this massive ongoing argument over what my backstory was meant to be, see?",
       },
       { speaker: characters.Kuro,
-        text: "M wanted aristocracy… space aristocracy… she thought it would fit better with the setting",
+        text: "M wanted aristocracy... space aristocracy... she thought it would fit better with the setting",
       },
       { speaker: characters.Kuro,
-        text: "E wasted some generic slum kid backstory. She wanted to add a little edge, though the other characters were too soft…",
+        text: "E wasted some generic slum kid backstory. She wanted to add a little edge, though the other characters were too soft...",
         characters: { center: { character: characters.Kuro, expression: "angry" } },
 
       },
@@ -2590,13 +2590,13 @@ export const scenes = [
         text: "In the end they just shoved both backstories in and called it a day.",
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Kuro,
-        text: "It’s…",
+        text: "It’s...",
       },
       { speaker: characters.Kuro,
-        text: "Having two lives in your head merging together into you is… difficult to navigate sometimes…",
+        text: "Having two lives in your head merging together into you is... difficult to navigate sometimes...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -2609,7 +2609,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -2623,14 +2623,14 @@ export const scenes = [
     background: supermarket,
     dialogue: [
       { speaker: characters.Kuro,
-        text: "Hahe, yeah… ",
+        text: "Hahe, yeah... ",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
       },
       { speaker: characters.Kuro,
         text: "M and E could get pretty passive aggressive with each other",
       },
       { speaker: characters.Kuro,
-        text: "Strong creative visions don’t alway mesh together well… ",
+        text: "Strong creative visions don’t always mesh together well... ",
       },
       { speaker: characters.Kuro,
         text: "Like, when they were writing me, they had a major blow up over my backstory. ",
@@ -2652,12 +2652,12 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "So now I’m just… not really sure what to do with all the extra backstory. ",
+        text: "So now I’m just... not really sure what to do with all the extra backstory. ",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
       { speaker: characters.Kuro,
-        text: "… or which half is meant to be extra.",
+        text: "... or which half is meant to be extra.",
       },
       { speaker: characters.Kuro,
         text: "We’ve all got to deal with something in our lives, though.",
@@ -2667,7 +2667,7 @@ export const scenes = [
         
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
 
       },
       { speaker: characters.Kuro,
@@ -2686,7 +2686,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "sad" } },
       },
       { speaker: characters.Kuro,
-        text: "Not that we have another background for it…",
+        text: "Not that we have another background for it...",
       },
       { speaker: characters.Kuro,
         text: "..."
@@ -2695,7 +2695,7 @@ export const scenes = [
         text: "Jesus, you’re kidding me!",
       },
       { speaker: characters.Kuro,
-        text: "… Space Jesus… that one doesn’t even make sense.",
+        text: "... Space Jesus... that one doesn’t even make sense.",
         characters: { center: { character: characters.Kuro, expression: "annoyed" } },
 
       },
@@ -2724,7 +2724,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "These hastily altered sayings are… wow ",
+        text: "These hastily altered sayings are... wow ",
       },
       { speaker: characters.Kuro,
         text: "It’s a wonder the devs even tried to make this when M can’t code a game to save her life and E’s clearly never going anywhere in the writing career.",
@@ -2765,7 +2765,7 @@ export const scenes = [
         text: "I mean, sure, it’s only both of our valuable time you’re wasting. ",
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Kuro,
         text: "Seriously though, you’re not going to get anything out of delaying this. ",
@@ -2801,7 +2801,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "happy" } },
       },
       { speaker: characters.Kuro,
-        text: "Or you go, I’m only gonna be there implicitly…",
+        text: "Or you go, I’m only gonna be there implicitly...",
         characters: { center: { character: characters.Kuro, expression: "neutral" } },
 
       },
@@ -2827,7 +2827,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "happy" } },
       },
       { speaker: characters.Kuro,
-        text: "Truely, I’m so grateful for the garbage mess they’ve made of this world and, consequently, my life! ",
+        text: "Truly, I’m so grateful for the garbage mess they’ve made of this world and, consequently, my life! ",
         characters: { center: { character: characters.Kuro, expression: "neutral" } },
       },
       { speaker: characters.Kuro,
@@ -2937,7 +2937,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "… ",
+        text: "... ",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -3018,7 +3018,7 @@ export const scenes = [
         text: "And god forbid if you reset or backtrack, it’s like a little ego death sliding down your throat to choke the memories out of you and set you up to do this, over and over and over again. "
       },
       { speaker: characters.Kuro,
-        text: "… "
+        text: "... "
       },
       { speaker: characters.Kuro,
         text: "But if you finish the game and turn it all off, it should be over."
@@ -3061,7 +3061,7 @@ export const scenes = [
         text: "And let us all out of this ."
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
       },
       { speaker: characters.Kuro,
@@ -3085,7 +3085,7 @@ export const scenes = [
         text: "This hollow existence with maybe three people in it, and god forbid any of us are really allowed to interact with each other without you. "
       },
       { speaker: characters.Kuro,
-        text: "… You."
+        text: "... You."
       },
       { speaker: characters.Kuro,
         text: "Out there in the real world, blundering through this miserable place for some cheap entertainment before moving on with your life. ",
@@ -3115,7 +3115,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -3155,7 +3155,7 @@ export const scenes = [
         text: "That’s what you wanted, right? "
       },
       { speaker: characters.Kuro,
-        text: "… "
+        text: "... "
       },
       { speaker: characters.Kuro,
         text: "I don’t want that, though. "
@@ -3185,11 +3185,11 @@ export const scenes = [
     background: supermarket,
     dialogue: [
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } }
       },
       { speaker: characters.Kuro,
-        text: "… yeah. I’m bitter."
+        text: "... yeah. I’m bitter."
       },
       { speaker: characters.Kuro,
         text: "Bitter and tired and sick.",
@@ -3216,7 +3216,7 @@ export const scenes = [
 
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -3234,7 +3234,7 @@ export const scenes = [
     background: supermarket,
     dialogue: [
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } }
       },
       { speaker: characters.Kuro,
@@ -3264,7 +3264,7 @@ export const scenes = [
         text: "And I will never forgive you for it. "
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } },
 
       },
@@ -3327,7 +3327,7 @@ export const scenes = [
         text: "Because outside of my hatred, you don’t matter to me at all."
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } }
 
       },
@@ -3416,7 +3416,7 @@ export const scenes = [
     id: "garden-start",
     background: roseGarden,
     dialogue: [
-      { text: "You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the… space light.",
+      { text: "You arrive at a beautiful garden of flowers. The soft petals covered in dew glint in the... space light.",
         characters: {}
        },
       { speaker: characters.Damen,
@@ -3428,13 +3428,13 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "Really, I am. It’s just…",
+        text: "Really, I am. It’s just...",
       },
       { speaker: characters.Damen,
         text: "Hard to show.",
       },
       { speaker: characters.Damen,
-        text: "During one of their biggest fights in development, E deleted all the character art of me smiling or… any positive emotion. ",
+        text: "During one of their biggest fights in development, E deleted all the character art of me smiling or... any positive emotion. ",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
@@ -3472,7 +3472,7 @@ export const scenes = [
         text: "So, I was more collateral damage than anything purposeful."
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "They weren’t even fighting over the game. ",
@@ -3487,7 +3487,7 @@ export const scenes = [
         text: "... space google docs. ",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "It’s fine, I guess. ",
@@ -3535,16 +3535,16 @@ export const scenes = [
 
       },
       { speaker: characters.Damen,
-        text: "The only reason I even know this is because they argued in the google docs… space google docs.",
+        text: "The only reason I even know this is because they argued in the google docs... space google docs.",
       },
       { speaker: characters.Damen,
-        text: "… I was M’s favourite, apparently.",
+        text: "... I was M’s favourite, apparently.",
       },
       { speaker: characters.Damen,
-        text: "So E decided to ‘make me as miserable as M makes her’ by… taking away my ability to smile or emote. ",
+        text: "So E decided to ‘make me as miserable as M makes her’ by... taking away my ability to smile or emote. ",
       },
       { speaker: characters.Damen,
-        text: "… ",
+        text: "... ",
       },
       { speaker: characters.Damen,
         text: "It’s okay. ",
@@ -3583,13 +3583,13 @@ export const scenes = [
         text: "The devs’ arguments have done a lot of damage to this world, I’d stay away from it if I could too. ",
       },
       { speaker: characters.Damen,
-        text: "Y’know they argued over google… space google docs? ",
+        text: "Y’know they argued over google... space google docs? ",
       },
       { speaker: characters.Damen,
         text: "M is a major workaholic, apparently, and E realised that the only way to make sure she answered was to use a project document to talk to her. ",
       },
       { speaker: characters.Damen,
-        text: "… it was a mess in the notes. ",
+        text: "... it was a mess in the notes. ",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
 
       },
@@ -3597,7 +3597,7 @@ export const scenes = [
         text: "E was angry that M never seemed to make time for her anymore, and that the only reason they were really talking was because they were working. ",
       },
       { speaker: characters.Damen,
-        text: "And I got… caught in the crossfire… ",
+        text: "And I got... caught in the crossfire... ",
         characters: { center: { character: characters.Damen, expression: "sad" } },
 
       },
@@ -3605,7 +3605,7 @@ export const scenes = [
         text: "I’m M’s favourite character, apparently, and E decided to make her grievances clearer by ‘making me as miserable as M makes her.’",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
 
       },
@@ -3644,12 +3644,12 @@ export const scenes = [
         text: "That's... disheartening...",
       },
       { speaker: characters.Damen,
-        text: "Thank you for being honest, I guess…",
+        text: "Thank you for being honest, I guess...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
 
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "But how else am I meant to express myself? ",
@@ -3657,13 +3657,13 @@ export const scenes = [
 
       },
       { speaker: characters.Damen,
-        text: "I don’t… I don’t want E to have taken something like that away from me. ",
+        text: "I don’t... I don’t want E to have taken something like that away from me. ",
       },
       { speaker: characters.Damen,
-        text: "I wasn’t even involved, so why… ",
+        text: "I wasn’t even involved, so why... ",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "No, it’s okay. These things happen sometimes. ",
@@ -3687,10 +3687,10 @@ export const scenes = [
         text: "M can’t draw and refused to ruin my image by trying. ",
       },
       { speaker: characters.Damen,
-        text: "I can’t really do anything about that…",
+        text: "I can’t really do anything about that...",
       },
       { speaker: characters.Damen,
-        text: "… although… maybe you can?"
+        text: "... although... maybe you can?"
       },
       { jump: "damen-minigame-intro"}
     ]
@@ -3710,12 +3710,12 @@ export const scenes = [
         text: "I know it’s pointless to wonder about what it would have been like if the devs didn’t fight. ",
       },
       { speaker: characters.Damen,
-        text: "E could have drawn me with real expressions, the world might be a little less… patchwork. ",
+        text: "E could have drawn me with real expressions, the world might be a little less... patchwork. ",
         characters: { center: { character: characters.Damen, expression: "angry" } },
 
       },
       { speaker: characters.Damen,
-        text: "But, I… ",
+        text: "But, I... ",
       },
       { speaker: characters.Damen,
         text: "If only E could have taken her anger at M out on something different. ",
@@ -3726,18 +3726,18 @@ export const scenes = [
 
       },
       { speaker: characters.Damen,
-        text: "If they could have addressed their decaying relationship before it hurt us… ",
+        text: "If they could have addressed their decaying relationship before it hurt us... ",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
 
       },
       { speaker: characters.Damen,
-        text: "I am frustrated that they took it out on me when I never…",
+        text: "I am frustrated that they took it out on me when I never...",
       },
       { speaker: characters.Damen,
-        text: "… It’s okay, though. ",
+        text: "... It’s okay, though. ",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
@@ -3750,7 +3750,7 @@ export const scenes = [
         text: "I can’t do anything about it, though.",
       },
       { speaker: characters.Damen,
-        text: "... but… maybe you can? "
+        text: "... but... maybe you can? "
       },
       { jump: "damen-minigame-intro"}
     ]
@@ -3764,7 +3764,7 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "They’re not crazy, they’re just… ",
+        text: "They’re not crazy, they’re just... ",
       },
       { speaker: characters.Damen,
         text: "Their relationship was decaying before they even started making this game.",
@@ -3775,20 +3775,20 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "annoyed" } },
       },
       { speaker: characters.Damen,
-        text: "… but it didn’t.",
+        text: "... but it didn’t.",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
         text: "And their decay just spread to the rest of us. "
       },
       { speaker: characters.Damen,
-        text: "It’s pointless to try and wish reality were different, but… "
+        text: "It’s pointless to try and wish reality were different, but... "
       },
       { speaker: characters.Damen,
-        text: "I didn’t do anything to them, so why did they…"
+        text: "I didn’t do anything to them, so why did they..."
       },
       { speaker: characters.Damen,
-        text: "… "
+        text: "... "
       },
       { speaker: characters.Damen,
         text: "I always wonder what it would be like if they just got along a little better. ",
@@ -3807,7 +3807,7 @@ export const scenes = [
         text: "But there’s nothing I can do to change that. "
       },
       { speaker: characters.Damen,
-        text: "… Although… Maybe you can? "
+        text: "... Although... Maybe you can? "
       },
       { jump: "damen-minigame-intro"}
     ]
@@ -3824,7 +3824,7 @@ export const scenes = [
         text: "M designed this text based mini-game for our date. ",
       },
       { speaker: characters.Damen,
-        text: "It was originally meant to be about making cute nicknames, but…",
+        text: "It was originally meant to be about making cute nicknames, but...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
 
       },
@@ -3859,25 +3859,25 @@ export const scenes = [
     background: roseGarden,
     dialogue: [
       { speaker: characters.Damen,
-        text: "… Uh, this is awkward… ",
+        text: "... Uh, this is awkward... ",
         characters: { center: { character: characters.Damen, expression: "annoyed" } },
       },
       { speaker: characters.Damen,
         text: "The mini-game is still mandatory. ",
       },
       { speaker: characters.Damen,
-        text: "It was like that in the original form and I couldn’t change that bit…",
+        text: "It was like that in the original form and I couldn’t change that bit...",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
-        text: "… would it really be so bad? ",
+        text: "... would it really be so bad? ",
         characters: { center: { character: characters.Damen, expression: "sad" } },
 
       },
       { speaker: characters.Damen,
-        text: "… Please? "
+        text: "... Please? "
       },
       { choices: [
         { text: "Yes", next: "damen-minigame" },
@@ -3891,7 +3891,7 @@ export const scenes = [
     background: roseGarden,
     dialogue: [
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -3986,7 +3986,7 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "… That’s a pretty common feeling for me."
+        text: "... That’s a pretty common feeling for me."
       },
       { text: "TYPE SOMETHING TO SYMBOLISE DEEP SOULFUL MOURNING", 
         textInput: "$MOURN" 
@@ -4042,7 +4042,7 @@ export const scenes = [
     background: roseGarden,
     dialogue: [
       { speaker: characters.Damen,
-        text: "I suppose not…",
+        text: "I suppose not...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -4050,10 +4050,10 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
-        text: "I guess I just got jealous, earlier… back in the space coffee shop. ",
+        text: "I guess I just got jealous, earlier... back in the space coffee shop. ",
         characters: { center: { character: characters.Damen, expression: "angry" } },
 
       },
@@ -4062,7 +4062,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "While I… ",
+        text: "While I... ",
       },
       { speaker: characters.Damen,
         text: "Sorry. ",
@@ -4074,23 +4074,23 @@ export const scenes = [
 
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
-        text: "I wonder if this is how E felt whenever M brushed off her attempts to talk with excuses of work… $MOURN…",
+        text: "I wonder if this is how E felt whenever M brushed off her attempts to talk with excuses of work... $MOURN...",
         replace: true
       },
       { speaker: characters.Damen,
         text: "Or if this was how M felt while they were working and E kept trying to distract them both. ",
       },
       { speaker: characters.Damen,
-        text: "Like she didn’t really care about the project at all $MOURN… ",
+        text: "Like she didn’t really care about the project at all $MOURN... ",
         replace: true,
         characters: { center: { character: characters.Damen, expression: "annoyed" } },
 
       },
       { speaker: characters.Damen,
-        text: "… ",
+        text: "... ",
       },
       { speaker: characters.Damen,
         text: "Or maybe this is just how I feel, knowing that it is this world and my life that have to suffer the consequences of their inability to tell each other how they feel. ",
@@ -4101,7 +4101,7 @@ export const scenes = [
         choices: [
           { text: "Tried harder? Seems like they were trying too hard", next: "garden-tried-harder" },
           { text: "You seem pretty upset about your devs fighting. ", next: "garden-fighting" },
-          { text: "Are you… okay? ", next: "garden-okay" }
+          { text: "Are you... okay? ", next: "garden-okay" }
         ]
           
       }
@@ -4120,14 +4120,14 @@ export const scenes = [
         text: "I was a little jealous, back in the space cafe, at how easily Kuro and Oscar could portray how they feel,"
       },
       { speaker: characters.Damen,
-        text: "But I…",
+        text: "But I...",
       },
       { speaker: characters.Damen,
         text: "$MOURN",
         replace: true
       },
       { speaker: characters.Damen,
-        text: "M and E… they thought this project would fix their problems.",
+        text: "M and E... they thought this project would fix their problems.",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -4141,11 +4141,11 @@ export const scenes = [
         text: "E was too unfocused and dreamy, M was too task driven and serious."
       },
       { speaker: characters.Damen,
-        text: "It’s almost like they hated each other $MOURN…",
+        text: "It’s almost like they hated each other $MOURN...",
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "angry" } },
 
       },
@@ -4162,7 +4162,7 @@ export const scenes = [
         choices: [
           { text: "Tried harder? Seems like they were trying too hard", next: "garden-tried-harder" },
           { text: "You seem pretty upset about your devs fighting. ", next: "garden-fighting" },
-          { text: "Are you… okay? ", next: "garden-okay" }
+          { text: "Are you... okay? ", next: "garden-okay" }
         ]
           
       }
@@ -4185,7 +4185,7 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "They way they could convey how they felt so easily $MOURN…",
+        text: "They way they could convey how they felt so easily $MOURN...",
         replace: true
       },
       { speaker: characters.Damen,
@@ -4193,7 +4193,7 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "Because… ",
+        text: "Because... ",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -4201,7 +4201,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "M and E… they tried, y’know? $MOURN",
+        text: "M and E... they tried, y’know? $MOURN",
         replace: true
       },
       { speaker: characters.Damen,
@@ -4225,7 +4225,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "Every relationship has its ups and downs, but…",
+        text: "Every relationship has its ups and downs, but...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
@@ -4233,7 +4233,7 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "Maybe they should have tried harder."
@@ -4241,7 +4241,7 @@ export const scenes = [
         choices: [
           { text: "Tried harder? Seems like they were trying too hard", next: "garden-tried-harder" },
           { text: "You seem pretty upset about your devs fighting. ", next: "garden-fighting" },
-          { text: "Are you… okay? ", next: "garden-okay" }
+          { text: "Are you... okay? ", next: "garden-okay" }
         ]
           
       }
@@ -4263,28 +4263,28 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "… ",
+        text: "... ",
       },
       { speaker: characters.Damen,
         text: "Sorry. I guess I’m more upset about what they did than I wanted to be. ",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "It’s just… ",
+        text: "It’s just... ",
       },
       { speaker: characters.Damen,
         text: "This game was meant to be beautiful. $MOURN",
         replace: true
       },
       { speaker: characters.Damen,
-        text: "It’s in all the notes. At the beginning, during planning, this place was ambitious and gorgeous and full…",
+        text: "It’s in all the notes. At the beginning, during planning, this place was ambitious and gorgeous and full...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "But then they started fighting and arguing and… ",
+        text: "But then they started fighting and arguing and... ",
       },
       { speaker: characters.Damen,
-        text: "… and we were left with the fall out. $SAD",
+        text: "... and we were left with the fall out. $SAD",
         replace: true
       },
       { speaker: characters.Damen,
@@ -4310,11 +4310,11 @@ export const scenes = [
         text: "They hurt me. ",
       },
       { speaker: characters.Damen,
-        text: "And the others are angry about it but I’m just…",
+        text: "And the others are angry about it but I’m just...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "… sad $SAD",
+        text: "... sad $SAD",
         replace: true
       },
       { speaker: characters.Damen,
@@ -4329,10 +4329,10 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "angry" } },
       },
       { speaker: characters.Damen,
-        text: "Something beautiful…",
+        text: "Something beautiful...",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "Sorry about that. ",
@@ -4360,21 +4360,21 @@ export const scenes = [
         text: "I feel relieved that that came through, though a little frustrated because I didn't mean it to. "
       },
       { speaker: characters.Damen,
-        text: "It’s just…",
+        text: "It’s just...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "I’ve looked over their early notes, back before they started fighting, and… ",
+        text: "I’ve looked over their early notes, back before they started fighting, and... ",
       },
       { speaker: characters.Damen,
         text: "This game was meant to be beautiful.",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "The original plan had their heart and soul poured into it. It was ambitious and rich with life and ideas and… ",
+        text: "The original plan had their heart and soul poured into it. It was ambitious and rich with life and ideas and... ",
       },
       { speaker: characters.Damen,
-        text: "And they threw it away $MOURN…",
+        text: "And they threw it away $MOURN...",
         replace: true
       },
       { speaker: characters.Damen,
@@ -4389,14 +4389,14 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "angry" } },
       },
       { speaker: characters.Damen,
-        text: "And it all just…",
+        text: "And it all just...",
       },
       { speaker: characters.Damen,
         text: "Wrecked everything $SAD.",
         replace: true
       },
       { speaker: characters.Damen,
-        text: "We were left with this janky, unfinished fallout because…",
+        text: "We were left with this janky, unfinished fallout because...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -4411,17 +4411,17 @@ export const scenes = [
         text: "And hurt all of us in the process.",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "neutral" } }, 
       },
       { speaker: characters.Damen,
         text: "And it hurts a lot. "
       },
       { speaker: characters.Damen,
-        text: "Kuro and Oscar… they’re both bitter and angry about it but I’m just… ",
+        text: "Kuro and Oscar... they’re both bitter and angry about it but I’m just... ",
       },
       { speaker: characters.Damen,
-        text: "… sad $SAD",
+        text: "... sad $SAD",
         replace: true,
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
@@ -4437,10 +4437,10 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "Something beautiful…",
+        text: "Something beautiful...",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "Sorry for rambling. ",
@@ -4457,7 +4457,7 @@ export const scenes = [
     background: roseGarden,
     dialogue: [
       { speaker: characters.Damen,
-        text: "… yeah, I’m fine. =",
+        text: "... yeah, I’m fine. =",
         characters: { center: { character: characters.Damen, expression: "happy" } },
       },
       { speaker: characters.Damen,
@@ -4465,7 +4465,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
@@ -4473,11 +4473,11 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "It’s just… ",
+        text: "It’s just... ",
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
       { speaker: characters.Damen,
-        text: "I looked back at the devs old notes, from the beginning, before the fighting, and… ",
+        text: "I looked back at the devs old notes, from the beginning, before the fighting, and... ",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
@@ -4489,12 +4489,12 @@ export const scenes = [
         : "happy" } },
       },
       { speaker: characters.Damen,
-        text: "But then they started fighting and…",
+        text: "But then they started fighting and...",
         characters: { center: { character: characters.Damen, expression
         : "sad" } },
       },
       { speaker: characters.Damen,
-        text: "… They ruined us. ",
+        text: "... They ruined us. ",
       },  
       { speaker: characters.Damen,
         text: "They wanted to make us beautiful, but they ruined us.",
@@ -4507,11 +4507,11 @@ export const scenes = [
         text: "Fighting for the sake of fighting because they didn’t know what else to do.",
       },
       { speaker: characters.Damen,
-        text: "And we’re the ones that had to take the fallout of it all $SAD …",
+        text: "And we’re the ones that had to take the fallout of it all $SAD ...",
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "They couldn’t seem to stop hurting each other long enough to realise that it didn’t make them hurt any less. It only made everything worse.",
@@ -4522,17 +4522,17 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "Kuro and Oscar, they’re so angry about it. They’re angry all the time.",
         characters: { center: { character: characters.Damen, expression: "angry" } },
       },
       { speaker: characters.Damen,
-        text: "But I’m just…",
+        text: "But I’m just...",
       },
       { speaker: characters.Damen,
-        text: "… sad $SAD",
+        text: "... sad $SAD",
         replace: true,
         characters: { center: { character: characters.Damen, expression: "sad" } },
       },
@@ -4548,10 +4548,10 @@ export const scenes = [
         characters: { center: { character: characters.Damen, expression: "neutral" } },
       },
       { speaker: characters.Damen,
-        text: "Something beautiful…",
+        text: "Something beautiful...",
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
       },
       { speaker: characters.Damen,
         text: "Thanks for checking up on me, and sorry for rambling.",
@@ -4581,7 +4581,7 @@ export const scenes = [
         text: "So, there are no roses here. ",
       },
       { speaker: characters.Damen,
-        text: "The background is just there to be looked at…",
+        text: "The background is just there to be looked at...",
       },
       { speaker: characters.Damen,
         text: "... Sorry. ",
@@ -4619,10 +4619,10 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "I’d love to, but… ."
+        text: "I’d love to, but... ."
       },      
       { speaker: characters.Damen,
-        text: "There… isn’t really a second date option… ",
+        text: "There... isn’t really a second date option... ",
         characters: { Center: { character: characters.Damen, expression: "sad" } },
         replace: true
       },
@@ -4664,7 +4664,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen, text: "How were your dates?" },
-      { speaker: characters.Oscar, text: "... haha… I don’t want to talk about it.",
+      { speaker: characters.Oscar, text: "... haha... I don’t want to talk about it.",
         characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
       },
       { speaker: characters.Kuro, text: "Mine was exactly what I was expecting, yet somehow still disappointing.",
@@ -4679,7 +4679,7 @@ export const scenes = [
         characters: { left: { character: characters.Oscar, expression: "annoyed" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "annoyed" },},
 
       },
-      { speaker: characters.Oscar, text: "... haha… We’re screwed.",
+      { speaker: characters.Oscar, text: "... haha... We’re screwed.",
         characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "annoyed" },},
 
         },
@@ -4731,19 +4731,19 @@ export const scenes = [
 
 
       },
-      { speaker: characters.Damen, text: "… I am very upset by this $SAD.", replace: true,
+      { speaker: characters.Damen, text: "... I am very upset by this $SAD.", replace: true,
         characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "sad" },},
 
       },
-      { speaker: characters.Damen, text: "Can you guys please just…" },
+      { speaker: characters.Damen, text: "Can you guys please just..." },
       { speaker: characters.Damen, text: "... fighting has never solved anyone's problems $MOURN.", replace: true },
       { speaker: characters.Oscar, text: "..." },
       { speaker: characters.Kuro, text: "..." },
-      { speaker: characters.Kuro, text: "Sorry, Damen…",
+      { speaker: characters.Kuro, text: "Sorry, Damen...",
         characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "sad" }, center: { character: characters.Damen, expression: "sad" },},
 
       },
-      { speaker: characters.Oscar, text: "Yeah, uh… sorry…" },
+      { speaker: characters.Oscar, text: "Yeah, uh... sorry..." },
       { speaker: characters.Damen, text: "I know things are very tense right now"},
       { speaker: characters.Damen, text: "But I think we should just take a small break and try to work things out calmly.",
         characters: { left: { character: characters.Oscar, expression: "neutral" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "neutral" },},
@@ -4794,17 +4794,17 @@ export const scenes = [
         characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
 
       },
-      { speaker: characters.Oscar, text: "You’re right… you’re… haha…",
+      { speaker: characters.Oscar, text: "You’re right... you’re... haha...",
         characters: { left: { character: characters.Oscar, expression: "sad" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
 
       },
-      { speaker: characters.Oscar, text: "…. Hahahahahahaha!" },
+      { speaker: characters.Oscar, text: ".... Hahahahahahaha!" },
       { speaker: characters.Oscar, text: "SCREW ME I GUESS! HAAHAHAHAHA!",
         characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "neutral" }, center: { character: characters.Damen, expression: "happy" },},
 
       },
-      { speaker: characters.Oscar, text: "hahahaha…. God dammit." },
-      { speaker: characters.Kuro, text: "Wow, he’s really lost it…",
+      { speaker: characters.Oscar, text: "hahahaha.... God dammit." },
+      { speaker: characters.Kuro, text: "Wow, he’s really lost it...",
         characters: { left: { character: characters.Oscar, expression: "happy" }, right: { character: characters.Kuro, expression: "happy" }, center: { character: characters.Damen, expression: "happy" },},
 
       },
@@ -4851,7 +4851,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "happy" } }
       },
       { speaker: characters.Oscar,
-        text: "That’s unexpected…",
+        text: "That’s unexpected...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
@@ -4859,23 +4859,23 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "sad" } }
       },
       { speaker: characters.Oscar,
-        text: "I kind of made a terrible impression with that date. It’s, uh, kind of embarrassing, haha…",
+        text: "I kind of made a terrible impression with that date. It’s, uh, kind of embarrassing, haha...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
-        text: "I was… having some realisations.",
+        text: "I was... having some realisations.",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
-        text: "The Space Ball (working title) was meant to be in chapter two, but I doubt that’s ever going to be made…",
+        text: "The Space Ball (working title) was meant to be in chapter two, but I doubt that’s ever going to be made...",
         characters: { center: { character: characters.Oscar, expression: "sad" } }
       },
       { speaker: characters.Oscar,
-        text: "Still, even if this whole place is unfinished and… and not real.",
+        text: "Still, even if this whole place is unfinished and... and not real.",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
@@ -4883,11 +4883,11 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "sad" } }
       },
       { speaker: characters.Oscar,
-        text: "I… I’m glad that you picked me.",
+        text: "I... I’m glad that you picked me.",
         characters: { center: { character: characters.Oscar, expression: "happy" } }
       },
       { speaker: characters.Oscar,
-        text: "And even if you picked at random, or this was just a shallow choice that didn’t really mean anything…",
+        text: "And even if you picked at random, or this was just a shallow choice that didn’t really mean anything...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
@@ -4895,7 +4895,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "happy" } }
       },
       { speaker: characters.Oscar,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
@@ -4907,7 +4907,7 @@ export const scenes = [
         characters: { center: { character: characters.Oscar, expression: "neutral" } }
       },
       { speaker: characters.Oscar,
-        text: "For trying…",
+        text: "For trying...",
         characters: { center: { character: characters.Oscar, expression: "happy" } }
       },
       { speaker: characters.Oscar,
@@ -4946,7 +4946,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "neutral" } }
       },      
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "neutral" } }
       },
       { speaker: characters.Kuro,
@@ -4970,7 +4970,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "annoyed" } }
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "neutral" } }
       },
       { speaker: characters.Kuro,
@@ -4978,7 +4978,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "happy" } }
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "sad" } }
       },
       { speaker: characters.Kuro,
@@ -4986,7 +4986,7 @@ export const scenes = [
         characters: { center: { character: characters.Kuro, expression: "angry" } }
       },
       { speaker: characters.Kuro,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Kuro, expression: "neutral" } }
       },
       { speaker: characters.Kuro,
@@ -5024,12 +5024,12 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "I’m a little flustered, to be honest… you’re making me shy.",
+        text: "I’m a little flustered, to be honest... you’re making me shy.",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
         replace: true
       },
       { speaker: characters.Damen,
-        text: "The Space Ball (working title) was meant to be in chapter two, but…",
+        text: "The Space Ball (working title) was meant to be in chapter two, but...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
         replace: true
       },
@@ -5039,12 +5039,12 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "They never really seemed to resolve their issues from the last big fight $MOURN…",
+        text: "They never really seemed to resolve their issues from the last big fight $MOURN...",
         characters: { center: { character: characters.Damen, expression: "sad" } },
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
         replace: true
       },
@@ -5059,7 +5059,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "… probably not, but…",
+        text: "... probably not, but...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
         replace: true
       },
@@ -5074,7 +5074,7 @@ export const scenes = [
         replace: true
       },
       { speaker: characters.Damen,
-        text: "…",
+        text: "...",
         characters: { center: { character: characters.Damen, expression: "neutral" } },
         replace: true
       },

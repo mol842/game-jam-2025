@@ -11,6 +11,30 @@
 
 }
 
+
+
+html {
+  @media (orientation: landscape) {
+    #rotate-device-warning {
+      display: none;
+      
+    }
+  }
+  
+  @media only screen and (orientation: portrait) {
+    #rotate-device-warning {
+      display: block;
+      width: 100%;
+      background-color: lightpink;
+      padding: 10px;
+      margin-bottom: 70%;
+      border: 2px solid pink;
+    }
+
+  }
+}
+
+
 .background {
   z-index: -200;
   width: 100%;

@@ -243,6 +243,14 @@ export default function VisualNovel() {
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
+      {
+        currentScene == "start" && (
+          <div id="rotate-device-warning" className="warning">
+          <p><b>Mobile users:</b> For the best experience, please hold your device in the landscape orientation.</p>
+        </div>
+        )  
+      }
+
 
       {/* character images */}
       {sceneCharacters && Object.entries(sceneCharacters).map(([position, details]) => (
