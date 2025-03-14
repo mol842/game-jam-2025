@@ -12,26 +12,20 @@
 }
 
 
+#rotate-device-warning {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 40%;
+  padding: 1%;
+  text-align: center;
+  transform: translateX(-50%);
 
-html {
-  @media (orientation: landscape) {
-    #rotate-device-warning {
-      display: none;
-      
-    }
-  }
+
+  /* width: 100%; */
+  background-color: rgb(252, 202, 210);
+  border: 2px solid lightpink;
   
-  @media only screen and (orientation: portrait) {
-    #rotate-device-warning {
-      display: block;
-      width: 100%;
-      background-color: lightpink;
-      padding: 10px;
-      margin-bottom: 70%;
-      border: 2px solid pink;
-    }
-
-  }
 }
 
 

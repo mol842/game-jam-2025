@@ -243,13 +243,6 @@ export default function VisualNovel() {
   return (
     <div className="game-container" >
       <img className="background" src={scene.background} />
-      {
-        currentScene == "start" && (
-          <div id="rotate-device-warning" className="warning">
-          <p><b>Mobile users:</b> For the best experience, please hold your device in the landscape orientation.</p>
-        </div>
-        )  
-      }
 
 
       {/* character images */}
@@ -289,9 +282,19 @@ export default function VisualNovel() {
         </div>
       )}
 
+{
+        currentScene == "start" && (
+          <div id="rotate-device-warning" >
+          <p><b>Mobile users:</b> For the best experience, please hold your device in the landscape orientation.</p>
+        </div>
+        )  
+      }
+
       {/* chocies */}
       {showChoices && currentLine?.choices && (
+        
         console.log("asking", currentLine.choices),
+        
         <div className="choices-box">
           {currentLine.choices.map(choice => (
             <button key={choice.text} onClick={() => {
